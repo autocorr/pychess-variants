@@ -458,6 +458,13 @@ label.piece.piece5.chennis {
     background-image: url('images/pieces/disguised/w.svg');
 }
 
+label.piece.piece0.gethenian {
+    background-image: url('images/pieces/green/wN.svg');
+}
+label.piece.piece1.gethenian {
+    background-image: url('images/pieces/disguised/w.svg');
+}
+
 label.piece.piece0.spartan {
     background-image: url('images/pieces/spartan/bK.svg');
 }
