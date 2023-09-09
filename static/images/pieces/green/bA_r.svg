@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="128"
+   height="128"
+   viewBox="0 0 45 45"
+   id="svg26"
+   sodipodi:docname="bA.svg">
+  <metadata
+     id="metadata32">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs30" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview28" />
+  <!-- futó: alap -->
+  <g
+     fill="#000"
+     stroke="#000"
+     stroke-width="1.5"
+     stroke-linejoin="round"
+     id="g6">
+    <!-- test -->
+    <path
+       d="m 28.117566,9.9743696 c -4.5,-2.5 -14.5,-2.5 -18,0 -0.4999997,-0.5 0,2.0000004 0,2.0000004 0,2.5 3.5,4 3.5,4 -5.4999997,1.5 -5.9999997,14.5 9,19.5 7,-8 6.5,-18 1,-19.5 0,0 4.5,-1.5 4.5,-4 0,0 0.5,-0.5 0,-2.0000004 z"
+       id="path2" />
+    <!-- talp -->
+    <path
+       d="m 35.117566,5.9743696 c -3.39,0.97 -10.11,-0.43 -16.5,2 -2.39,-2.43 -7.11,-1.03 -10.4999997,-2 0,0 -1.65,-0.54 -3,-2 0.68,-0.97 1.65,-0.99 3,-0.5 3.3899997,0.97 9.1099997,-0.46 11.4999997,1 5.39,-1.46 12.11,-0.03 15.5,-1 1.354,-0.49 2.323,-0.47 3,0.5 -1.354,1.94 -3,2 -3,2 z"
+       id="path4" />
+  </g>
+  <!-- huszár: fej -->
+  <g
+     transform="translate(+4, -5.5) scale(0.9) rotate(10)"
+     fill="#000"
+     stroke="#000"
+     stroke-width="1.666"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="g10">
+    <path
+       d="m 25.741958,32.997578 c -0.38,-2.91 5.55,-7.37 8,-9 3,-2 2.82,-4.34 5,-4 1.042,0.94 -1.41,3.04 0,3 1,0 -0.19,-1.23 1,-2 1,0 4.003,-1 4,4 0,2 -6,12 -6,12 0,0 -1.89,1.9 -2,3.5 0.73,0.994 0.5,2 0.5,3 -1,1 -3,-2.5 -3,-2.5 h -2 c 0,0 -0.78,1.992 -2.5,3 -1,0 -1,-3 -1,-3"
+       id="path8" />
+  </g>
+  <!-- futó: vonalak -->
+  <g
+     fill="none"
+     stroke="#FFF"
+     stroke-width="1.5"
+     stroke-linecap="round"
+     id="g18">
+    <path
+       d="m 23.617566,15.97437 h -10"
+       id="path12" />
+    <path
+       d="m 28.117566,11.97437 h -18"
+       id="path14" />
+    <!-- kereszt -->
+    <path
+       d="m 16.617566,26.97437 1,-7 m 2,4.5 h -5"
+       id="path16" />
+  </g>
+  <!-- huszár: vonalak -->
+  <g
+     transform="translate(+4, -5.5) scale(0.9) rotate(10)"
+     fill="#FFF"
+     stroke="#FFF"
+     stroke-width="1.5"
+     stroke-linejoin="round"
+     id="g24">
+    <!-- orr -->
+    <path
+       d="m 40.241958,25.497578 a 0.5,0.5 0 1 1 1,0 0.5,0.5 0 1 1 -1,0 z"
+       id="path20" />
+    <!-- szem -->
+    <path
+       d="m 34.491958,36.797578 a 0.50027791,1.5008337 30 1 1 1.5,-2.6 0.50027791,1.5008337 30 1 1 -1.5,2.6 z"
+       id="path22" />
+  </g>
+</svg>
