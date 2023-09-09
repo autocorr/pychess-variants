@@ -241,4 +241,35 @@ nFoldValue = win
 flagPiece = k
 flagRegionWhite = *9
 flagRegionBlack = *1
-immobilityIllegal = true`
+immobilityIllegal = true
+
+# A Kyoto Shogi variant with a left/right theme.
+[gethenian]
+maxRank = 7
+maxFile = 7
+king = -
+customPiece1  = k:K
+customPiece2  = q:mW
+customPiece3  = r:llffR
+customPiece4  = o:rrbbR
+customPiece5  = b:lB
+customPiece6  = i:rB
+customPiece7  = n:lllvN
+customPiece8  = t:rrrvN
+customPiece9  = m:WlF
+customPiece10 = s:WrF
+startFen = 1rkb3/1mnm3/7/7/7/3+M+N+M1/3+B+K+R1[] w - - 0 1
+promotionPieceTypes = -
+promotedPieceType = k:q r:o b:i n:t m:s
+promotionRegionWhite = *1 *2 *3 *4 *5 *6 *7
+promotionRegionBlack = *7 *6 *5 *4 *3 *2 *1
+mandatoryPiecePromotion = true
+pieceDemotion = true
+pieceDrops = true
+capturesToHand = true
+dropPromoted = true
+immobilityIllegal = false
+extinctionValue = loss
+extinctionPieceTypes = kq
+extinctionPseudoRoyal = true
+stalemateValue = loss`
