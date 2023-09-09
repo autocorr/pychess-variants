@@ -394,6 +394,7 @@ TRANSLATED_VARIANT_NAMES = {
     "3check": _("Three check"),
     "3check960": _("Three check 960"),
     "mansindam": _("Mansindam"),
+    "gethenian": _("Gethenian"),
 }
 
 del _
