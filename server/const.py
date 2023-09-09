@@ -136,6 +136,7 @@ VARIANTS = (
     "ordamirror",
     "chak",
     "chennis",
+    "gethenian",
     "spartan",
 )
 
@@ -188,6 +189,7 @@ VARIANT_ICONS = {
     "chak": "🐬",
     "chennis": "🎾",
     "mansindam": "⛵",
+    "gethenian": "✋",
     "duck": "🦆",
     "spartan": "⍺",
     "kingofthehill": "🏴",
@@ -251,6 +253,7 @@ CATEGORIES = {
         "ordamirror",
         "chak",
         "chennis",
+        "gethenian",
         "shinobiplus",
         "spartan",
     ),
