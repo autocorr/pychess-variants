@@ -459,10 +459,10 @@ label.piece.piece5.chennis {
 }
 
 label.piece.piece0.gethenian {
-    background-image: url('images/pieces/green/wN_r.svg');
-}
-label.piece.piece0.gethenian {
     background-image: url('images/pieces/green/bN.svg');
+}
+label.piece.piece1.gethenian {
+    background-image: url('images/pieces/green/wN_r.svg');
 }
 label.piece.piece2.gethenian {
     background-image: url('images/pieces/disguised/w.svg');

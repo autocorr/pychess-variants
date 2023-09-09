@@ -36,26 +36,26 @@
     background-image: url('../../images/pieces/green/bK_r.svg');
 }
 .gethenian .cg-wrap piece.r-piece.enemy {
-    background-image: url('../../images/pieces/green/bR.svg');
-}
-.gethenian .cg-wrap piece.pr-piece.enemy {
     background-image: url('../../images/pieces/green/bR_r.svg');
 }
-.gethenian .cg-wrap piece.b-piece.enemy {
-    background-image: url('../../images/pieces/green/bB.svg');
+.gethenian .cg-wrap piece.pr-piece.enemy {
+    background-image: url('../../images/pieces/green/bR.svg');
 }
-.gethenian .cg-wrap piece.pb-piece.enemy {
+.gethenian .cg-wrap piece.b-piece.enemy {
     background-image: url('../../images/pieces/green/bB_r.svg');
 }
-.gethenian .cg-wrap piece.n-piece.enemy {
-    background-image: url('../../images/pieces/green/bN.svg');
+.gethenian .cg-wrap piece.pb-piece.enemy {
+    background-image: url('../../images/pieces/green/bB.svg');
 }
-.gethenian .cg-wrap piece.pn-piece.enemy {
+.gethenian .cg-wrap piece.n-piece.enemy {
     background-image: url('../../images/pieces/green/bN_r.svg');
 }
+.gethenian .cg-wrap piece.pn-piece.enemy {
+    background-image: url('../../images/pieces/green/bN.svg');
+}
 .gethenian .cg-wrap piece.m-piece.enemy {
-    background-image: url('../../images/pieces/green/bCommoner.svg');
+    background-image: url('../../images/pieces/green/bCommoner_r.svg');
 }
 .gethenian .cg-wrap piece.pm-piece.enemy {
-    background-image: url('../../images/pieces/green/bCommoner_r.svg');
+    background-image: url('../../images/pieces/green/bCommoner.svg');
 }
