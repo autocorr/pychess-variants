@@ -49,6 +49,9 @@
 .chennis7x7 cg-board {
     background-image: url('images/board/chennis.png');
 }
+.gethenian7x7 cg-board {
+    background-image: url('images/board/7x7blue.svg');
+}
 .standard9x9 cg-board {
     background-image: url('images/board/9x9brown.svg');
 }
