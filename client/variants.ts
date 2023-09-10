@@ -847,7 +847,7 @@ export const VARIANTS: Record<string, Variant> = {
         icon: "✋",
         boardFamily: "gethenian7x7", pieceFamily: "gethenian",
         pieceRow: ["k", "b", "i", "n", "m"],
-        pocket: { roles: ["r", "b", "i", "m"], captureToHand: true },
+        pocket: { roles: ["n", "b", "i", "m"], captureToHand: true },
         promotion: { type: "shogi", roles: ["b", "i", "n", "m"] },
     }),
 

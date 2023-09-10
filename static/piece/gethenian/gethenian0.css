@@ -48,10 +48,10 @@
     background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Rook_dark_arrow.svg');
 }
 .gethenian .cg-wrap piece.n-piece.enemy {
-    background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Knight_light_left.svg');
+    background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Knight_light_right.svg');
 }
 .gethenian .cg-wrap piece.pn-piece.enemy {
-    background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Knight_dark_right.svg');
+    background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Knight_dark_left.svg');
 }
 .gethenian .cg-wrap piece.m-piece.enemy {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Commoner_light.svg');
