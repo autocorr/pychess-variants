@@ -64,7 +64,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     chennis: { pieceCSS: ["chennis0", "chennis1", "chennis2", "chennis3", "chennis4", "disguised"] },
     spartan: { pieceCSS: ["spartan0", "disguised"] },
     mansindam: { pieceCSS: ["mansindam2", "mansindam1", "mansindam3", "mansindam4", "disguised"] },
-    gethenian: { pieceCSS: ["gethenian1", "gethenian0", "disguised"] },
+    gethenian: { pieceCSS: ["gethenian0", "disguised"] },
 };
 
 export interface Variant {
@@ -843,12 +843,12 @@ export const VARIANTS: Record<string, Variant> = {
 
     gethenian: variant({
         name: "gethenian", tooltip: "Pieces alternate between left- and right-hand forms with each move.",
-        startFen: "1rkb3/1mnm3/7/7/7/3+M+N+M1/3+B+K+R1[] w - - 0 1",
+        startFen: "2ikb2/2mnm2/7/7/7/2MNM2/2B+KI2[] w - - 0 1",
         icon: "✋",
         boardFamily: "gethenian7x7", pieceFamily: "gethenian",
-        pieceRow: ["k", "r", "b", "n", "m"],
-        pocket: { roles: ["r", "b", "n", "m"], captureToHand: true },
-        promotion: { type: "shogi", roles: ["r", "b", "n", "m"] },
+        pieceRow: ["k", "b", "i", "n", "m"],
+        pocket: { roles: ["r", "b", "i", "m"], captureToHand: true },
+        promotion: { type: "shogi", roles: ["b", "i", "n", "m"] },
     }),
 
     // We support the functionality to import/store/analyze some variants
