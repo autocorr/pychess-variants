@@ -85,7 +85,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -95,7 +95,7 @@
      id="layer1"
      style="display: inline;">
     <path
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#de3434;fill-opacity:1;stroke:none"
        inkscape:connector-curvature="0"
        id="path3035-8-2"
        d="M 4.05078,25.418 V 24.5391 C 5.27477,23.9662 6.48245,23.2077 7.67383,22.2637 8.86526,21.3197 10.30732,19.8841 12,17.957 h 1.562501 C 12.66409,20.1836 11.39456,22.2084 9.75391,24.0313 h 25.507811 c -1.64062,-1.8229 -2.90364,-3.8477 -3.78906,-6.0743 h 1.54297 c 1.6927,1.9271 3.13476,3.3627 4.32617,4.3067 1.1914,0.944 2.39908,1.7025 3.62305,2.2754 v 0.8789 c -1.22397,0.5599 -2.43165,1.3151 -3.62305,2.2656 -1.19141,0.9505 -2.63347,2.3893 -4.32617,4.3164 h -1.54297 c 0.88542,-2.2265 2.14844,-4.2513 3.78906,-6.0742 H 9.75391 c 1.64065,1.8229 2.91018,3.8477 3.808591,6.0742 H 12 C 10.30732,30.0729 8.86526,28.6341 7.67383,27.6836 6.48245,26.7331 5.27477,25.9779 4.05078,25.418 Z" />

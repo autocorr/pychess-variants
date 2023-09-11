@@ -13,7 +13,7 @@
    sodipodi:version="0.32"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
    version="1.0"
-   sodipodi:docname="mag_Bishop_dark_arrow.svg"
+   sodipodi:docname="mag_Bishop_dark_arrow_left.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
   <defs
      id="defs3130">
@@ -92,7 +92,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -104,7 +104,7 @@
     <path
        d="m 9.0917442,8.934445 0.621,-0.622 c 1.2699998,0.46 2.6609998,0.778 4.1709998,0.953 1.51,0.175 3.545,0.18 6.104,0.014 l 1.105,1.105 c -2.21,0.939 -4.539,1.473 -6.988,1.602 l 18.038,18.037 a 20.156,20.156 0 0 1 1.616,-6.975 l 1.09,1.091 c -0.165,2.56 -0.16,4.595 0.015,6.105 0.175,1.51 0.492,2.9 0.952,4.17 l -0.621,0.622 c -1.261,-0.47 -2.65,-0.79 -4.164,-0.96 -1.515,-0.17 -3.552,-0.172 -6.111,-0.007 l -1.091,-1.09 a 20.157,20.157 0 0 1 6.974,-1.617 l -18.038,-18.036 a 20.478,20.478 0 0 1 -1.602,6.988 l -1.104,-1.105 c 0.165,-2.56 0.163,-4.597 -0.007,-6.111 -0.1699998,-1.515 -0.4899998,-2.903 -0.9599998,-4.164 z"
        id="path5521"
-       style="fill:#808080;fill-opacity:1" />
+       style="fill:#de3434;fill-opacity:1" />
     <path
        style="fill:#9a1976;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 9,36 C 12.385255,35.027671 19.114744,36.430821 22.5,34 C 25.885256,36.430821 32.614745,35.027671 36,36 C 36,36 37.645898,36.541507 39,38 C 38.322949,38.972328 37.354102,38.986164 36,38.5 C 32.614745,37.527672 25.885256,38.958493 22.5,37.5 C 19.114744,38.958493 12.385255,37.527672 9,38.5 C 7.6458978,38.986164 6.6770511,38.972328 6,38 C 7.3541023,36.055343 9,36 9,36 z "
