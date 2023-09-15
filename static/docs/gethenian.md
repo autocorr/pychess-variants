@@ -2,9 +2,9 @@
 
 ![Starting position](/static/images/CVariantsGuide/Gethenian_starting_position.png)
 
-> *When the Ekuman first came to Gethen they brought with them the ancient Terran game of Chess. As has happened in all time and places, the peoples of Karhide and Orgoreyn adapted it for themselves. The features of Gethenian Chess are reflected in the old Handdaran lay that begins "Light is the left hand of darkness / and darkness the right hand of light."*
+> *When the Ekuman first came to Gethen they brought with them the ancient Terran game of Chess. As has happened in all time and places, the peoples of Karhide and Orgoreyn adapted it for themselves. The nature of Gethenian Chess is thus reflected in the old Handdaran lay that begins "Light is the left hand of darkness and darkness the right hand of light."*
 
-**Gethenian Chess** is a variant set in the fictional world of Ursula K. Le Guin's science-fiction novel "The Left Hand of Darkness." As in [**Kyoto Shogi**](/variants/kyotoshogi) and [**Chennis**](/variants/chennis), pieces alternately promote or demote between two sides when moved. Rather than pieces alternating between short- and long-range movements, however, pieces in Gethenian Chess alternate between left- and right-handed move sets. These are termed "light" and "dark," respectively, and are represented visually by the default piece theme for the first player (cyan) and the second player (magenta), shown below.
+**Gethenian Chess** is a variant set in the fictional world of Ursula K. Le Guin's science-fiction novel "The Left Hand of Darkness." As in [**Kyoto Shogi**](/variants/kyotoshogi) and [**Chennis**](/variants/chennis), pieces alternately promote or demote between two sides when moved. Rather than pieces alternating between short- and long-range movements, however, pieces in Gethenian Chess alternate between similar range movements but with left- and right-handed themes. These are termed "light" and "dark," respectively, and are represented visually in the default piece theme for the first player (cyan) and the second player (magenta), shown below.
 
 ![Piece combinations](/static/images/CVariantsGuide/Gethenian_piece_combinations.png)
 
@@ -28,7 +28,7 @@ The *Light King* moves and captures one square in each direction (shown above wi
 
 ![Minister movement](/static/images/CVariantsGuide/Gethenian_minister_movement.png)
 
-The *Light* and *Dark Minister's* move and capture the same was as the Gold and Silver Generals in Shogi.
+The *Light* and *Dark Minister's* move and capture the same way as the Gold and Silver Generals in Shogi.
 
 ![Bishop and Rook movements](/static/images/CVariantsGuide/Gethenian_bishop_rook_movement.png)
 
@@ -39,11 +39,6 @@ Light Knight | Dark Knight
 ![Light Knight movement](/static/images/CVariantsGuide/Gethenian_knight_light_movement.png) | ![Dark Knight movement](/static/images/CVariantsGuide/Gethenian_knight_dark_movement.png)
 
 The *Light Knight* moves and captures on the left-handed spaces of a standard Knight movement (shown in the above left image). It promotes to the *Dark Knight*, which moves and captures on the right-handed spaces (above right).
-
-## Additional rules
-
-* Draw by three-fold repitition.
-* Draw by 50-move rule (capture).
 
 ## Piece values
 
