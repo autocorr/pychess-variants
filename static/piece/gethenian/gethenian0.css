@@ -1,61 +1,61 @@
-.gethenian .cg-wrap piece.k-piece.ally {
+.gethenian .cg-wrap piece.k-piece.white {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_King_light.svg');
 }
-.gethenian .cg-wrap piece.pk-piece.ally {
+.gethenian .cg-wrap piece.pk-piece.white {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_King_dark.svg');
 }
-.gethenian .cg-wrap piece.b-piece.ally {
+.gethenian .cg-wrap piece.b-piece.white {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Bishop_light_arrow_left.svg');
 }
-.gethenian .cg-wrap piece.pb-piece.ally {
+.gethenian .cg-wrap piece.pb-piece.white {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Rook_dark_arrow_left.svg');
 }
-.gethenian .cg-wrap piece.i-piece.ally {
+.gethenian .cg-wrap piece.i-piece.white {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Bishop_light_arrow_right.svg');
 }
-.gethenian .cg-wrap piece.pi-piece.ally {
+.gethenian .cg-wrap piece.pi-piece.white {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Rook_dark_arrow_right.svg');
 }
-.gethenian .cg-wrap piece.n-piece.ally {
+.gethenian .cg-wrap piece.n-piece.white {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Knight_light_left.svg');
 }
-.gethenian .cg-wrap piece.pn-piece.ally {
+.gethenian .cg-wrap piece.pn-piece.white {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Knight_dark_right.svg');
 }
-.gethenian .cg-wrap piece.m-piece.ally {
+.gethenian .cg-wrap piece.m-piece.white {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Commoner_light.svg');
 }
-.gethenian .cg-wrap piece.pm-piece.ally {
+.gethenian .cg-wrap piece.pm-piece.white {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Commoner_dark.svg');
 }
 
-.gethenian .cg-wrap piece.k-piece.enemy {
+.gethenian .cg-wrap piece.k-piece.black {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_King_light.svg');
 }
-.gethenian .cg-wrap piece.pk-piece.enemy {
+.gethenian .cg-wrap piece.pk-piece.black {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_King_dark.svg');
 }
-.gethenian .cg-wrap piece.b-piece.enemy {
+.gethenian .cg-wrap piece.b-piece.black {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Bishop_light_arrow_left.svg');
 }
-.gethenian .cg-wrap piece.pb-piece.enemy {
+.gethenian .cg-wrap piece.pb-piece.black {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Rook_dark_arrow_left.svg');
 }
-.gethenian .cg-wrap piece.i-piece.enemy {
+.gethenian .cg-wrap piece.i-piece.black {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Bishop_light_arrow_right.svg');
 }
-.gethenian .cg-wrap piece.pi-piece.enemy {
+.gethenian .cg-wrap piece.pi-piece.black {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Rook_dark_arrow_right.svg');
 }
-.gethenian .cg-wrap piece.n-piece.enemy {
+.gethenian .cg-wrap piece.n-piece.black {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Knight_light_left.svg');
 }
-.gethenian .cg-wrap piece.pn-piece.enemy {
+.gethenian .cg-wrap piece.pn-piece.black {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Knight_dark_right.svg');
 }
-.gethenian .cg-wrap piece.m-piece.enemy {
+.gethenian .cg-wrap piece.m-piece.black {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Commoner_light.svg');
 }
-.gethenian .cg-wrap piece.pm-piece.enemy {
+.gethenian .cg-wrap piece.pm-piece.black {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Commoner_dark.svg');
 }
