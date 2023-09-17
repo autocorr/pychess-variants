@@ -5,16 +5,16 @@
     background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_King_dark.svg');
 }
 .gethenian .cg-wrap piece.b-piece.white {
-    background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Bishop_light_arrow_left.svg');
+    background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Bishop_light_cutout_left.svg');
 }
 .gethenian .cg-wrap piece.pb-piece.white {
-    background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Rook_dark_arrow_left.svg');
+    background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Rook_dark_stripe_left.svg');
 }
 .gethenian .cg-wrap piece.i-piece.white {
-    background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Bishop_light_arrow_right.svg');
+    background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Bishop_light_cutout_right.svg');
 }
 .gethenian .cg-wrap piece.pi-piece.white {
-    background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Rook_dark_arrow_right.svg');
+    background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Rook_dark_stripe_right.svg');
 }
 .gethenian .cg-wrap piece.n-piece.white {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/cyan_Knight_light_left.svg');
@@ -36,16 +36,16 @@
     background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_King_dark.svg');
 }
 .gethenian .cg-wrap piece.b-piece.black {
-    background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Bishop_light_arrow_left.svg');
+    background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Bishop_light_cutout_left.svg');
 }
 .gethenian .cg-wrap piece.pb-piece.black {
-    background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Rook_dark_arrow_left.svg');
+    background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Rook_dark_stripe_left.svg');
 }
 .gethenian .cg-wrap piece.i-piece.black {
-    background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Bishop_light_arrow_right.svg');
+    background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Bishop_light_cutout_right.svg');
 }
 .gethenian .cg-wrap piece.pi-piece.black {
-    background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Rook_dark_arrow_right.svg');
+    background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Rook_dark_stripe_right.svg');
 }
 .gethenian .cg-wrap piece.n-piece.black {
     background-image: url('../../images/pieces/gethenian/cburnett_cm/mag_Knight_light_left.svg');
