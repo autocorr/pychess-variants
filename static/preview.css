@@ -462,6 +462,9 @@ label.piece.piece0.gethenian {
     background-image: url('images/pieces/gethenian/cburnett_cm/cyan_Knight_light_left.svg');
 }
 label.piece.piece1.gethenian {
+    background-image: url('images/pieces/green/wN_r.svg');
+}
+label.piece.piece2.gethenian {
     background-image: url('images/pieces/disguised/w.svg');
 }
 
