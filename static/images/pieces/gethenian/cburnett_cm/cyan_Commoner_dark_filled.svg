@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,7 +58,7 @@
        r="0.7230342"
        cy="287.63052"
        cx="5.9601755"
-       style="fill:#199a8b;stroke:#199a8b;stroke-width:0.433821;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1" />
+       style="fill:#106359;stroke:#106359;stroke-width:0.433821;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1" />
     <circle
        id="circle4539"
        r="0.43382055"
@@ -67,14 +67,14 @@
        style="fill:none;stroke:#ffffff;stroke-width:0.433821;stroke-linejoin:round" />
     <g
        id="g4543"
-       style="fill:#199a8b;stroke:#199a8b;stroke-width:1.5;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1"
+       style="fill:#106359;stroke:#106359;stroke-width:1.5;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1"
        transform="matrix(0.28921369,0,0,0.28921369,-0.54713251,283.72613)">
       <!-- test -->
       <path
          id="path4541"
          d="m 11.5,37 c 5.5,3.5 15.5,3.5 21,0 v -7 c 0,0 9,-4.5 6,-11 -5.5,-7 -26.5,-7 -32,0 -3,6.5 5,10.5 5,10.5 z"
          inkscape:connector-curvature="0"
-         style="stroke:#199a8b;stroke-opacity:1;fill:#199a8b;fill-opacity:1" />
+         style="stroke:#106359;stroke-opacity:1;fill:#106359;fill-opacity:1" />
     </g>
     <g
        id="g4553"
