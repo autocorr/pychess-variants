@@ -19,6 +19,7 @@ V2C = {
     "makruk": "m",
     "placement": "p",
     "dragon": "R",
+    "grasshopperking": "Y",
     "seirawan": "s",
     "shogi": "g",
     "minishogi": "a",

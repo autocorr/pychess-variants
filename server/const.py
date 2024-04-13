@@ -141,6 +141,7 @@ VARIANTS = (
     # "gothhouse",
     # "embassy",
     "dragon",
+    "grasshopperking",
     "seirawan",
     "seirawan960",
     "shouse",
@@ -178,6 +179,7 @@ VARIANT_ICONS = {
     "capablanca": "P",
     "capahouse": "&",
     "dragon": "🐉",
+    "grasshopperking": "🦗",
     "seirawan": "L",
     "seirawan960": "}",
     "shouse": "$",
@@ -263,6 +265,7 @@ CATEGORIES = {
         "capahouse",
         "capahouse960",
         "dragon",
+        "grasshopperking",
         "seirawan",
         "seirawan960",
         "shouse",
@@ -342,6 +345,8 @@ def variant_display_name(variant):
         return "THREE-CHECK"
     elif variant == "dragon":
         return "DRAGON CHESS"
+    elif variant == "grasshopperking":
+        return "GRASSHOPPER KING"
     else:
         return variant.upper()
 
@@ -408,6 +413,7 @@ TRANSLATED_VARIANT_NAMES = {
     # "gothhouse",
     # "embassy",
     "dragon": _("Dragon Chess"),
+    "grasshopperking": _("Grasshopper King"),
     "seirawan": _("S-Chess"),
     "seirawan960": _("S-Chess960"),
     "shouse": _("S-House"),
