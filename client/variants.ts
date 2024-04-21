@@ -769,7 +769,6 @@ export const VARIANTS: Record<string, Variant> = {
         icon: "🦗",
         boardFamily: "standard8x8", pieceFamily: "standard",
         pieceRow: ["k", "q", "r", "b", "n", "p"],
-        promotion: { type: "regular", order: ["q", "n", "r", "b"] },
         rules: { enPassant: true },
     }),
 
