@@ -17,7 +17,7 @@
     background-image: url('../../images/pieces/green/wQ.svg');
 }
 .standard piece.k-piece.white {
-    background-image: url('../../images/pieces/green/wK_r.svg');
+    background-image: url('../../images/pieces/green/wK.svg');
 }
 .standard piece.p-piece.black {
     background-image: url('../../images/pieces/green/bP.svg');
@@ -35,5 +35,5 @@
     background-image: url('../../images/pieces/green/bQ.svg');
 }
 .standard piece.k-piece.black {
-    background-image: url('../../images/pieces/green/bK_r.svg');
+    background-image: url('../../images/pieces/green/bK.svg');
 }
