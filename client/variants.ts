@@ -45,6 +45,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     capa: { pieceCSS: ["capa0", "capa1", "capa2", "capa3", "capa4", "capa5", "disguised"] },
     dragon: { pieceCSS: ["dragon1", "dragon0", "dragon2", "disguised"] },
     seirawan: { pieceCSS: ["seir1", "seir0", "seir2", "seir3", "seir4", "seir5", "disguised"] },
+    grasshopperking: { pieceCSS: ["ghking0", "disguised"] },
     makruk: { pieceCSS: ["makrukwb", "makrukwr", "makruk", "makruks", "makruki", "makrukc", "disguised"] },
     sittuyin: { pieceCSS: ["sittuyins", "sittuyinkagr", "sittuyinkabr", "sittuyinm", "sittuyini", "sittuyincb", "disguised"] },
     asean: { pieceCSS: ["aseani", "aseanm", "aseanc", "aseans", "aseancb", "disguised"] },
@@ -766,10 +767,18 @@ export const VARIANTS: Record<string, Variant> = {
     grasshopperking: variant({
         name: "grasshopperking", displayName: "grasshopper king", tooltip: "Kings move as grasshoppers.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-        icon: "🦗",
-        boardFamily: "standard8x8", pieceFamily: "standard",
+        chess960: true, icon: "🦗",
+        boardFamily: "standard8x8", pieceFamily: "grasshopperking",
         pieceRow: ["k", "q", "r", "b", "n", "p"],
         rules: { enPassant: true },
+        alternateStart: {
+            '': "",
+            'Balanced 1': "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1",
+            'Balanced 2': "rnbqkbnr/pppppppp/8/8/8/3P4/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+            'Balanced 3': "rnbqkbnr/pppppppp/8/8/8/4P3/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+            'Balanced 4': "rnbqkbnr/pppppppp/8/8/5P2/8/PPPPP1PP/RNBQKBNR b KQkq - 0 1",
+            'No castle': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1'
+        },
     }),
 
     orda: variant({

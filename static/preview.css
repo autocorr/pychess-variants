@@ -445,6 +445,10 @@ label.piece.piece3.hoppel {
     background-image: url('images/pieces/disguised/b.svg');
 }
 
+label.piece.piece0.hoppel {
+    background-image: url('images/pieces/green/wK_r.svg');
+}
+
 label.piece.piece0.mansindam {
     background-image: url('images/pieces/mansindam/intl/wn.svg');
 }
