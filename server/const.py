@@ -164,6 +164,8 @@ VARIANTS = (
     "chennis",
     "spartan",
     "ataxx",
+    "torpedo",
+    "torpedo960",
 )
 
 VARIANT_ICONS = {
@@ -227,6 +229,8 @@ VARIANT_ICONS = {
     "kingofthehill960": "🏁",
     "3check": "☰",
     "3check960": "☷",
+    "torpedo": "🏄",
+    "torpedo960": "🏄",
 }
 
 VARIANT_960_TO_PGN = {
@@ -260,6 +264,8 @@ CATEGORIES = {
         "3check",
         "3check960",
         "duck",
+        "torpedo",
+        "torpedo960",
     ),
     "fairy": (
         "capablanca",
@@ -454,6 +460,8 @@ TRANSLATED_VARIANT_NAMES = {
     "3check": _("Three check"),
     "3check960": _("Three check 960"),
     "mansindam": _("Mansindam"),
+    "torpedo": _("Torpedo"),
+    "torpedo960": _("Torpedo 960"),
 }
 
 del _

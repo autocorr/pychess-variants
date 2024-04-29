@@ -408,6 +408,15 @@ export const VARIANTS: Record<string, Variant> = {
         },
     }),
 
+    'torpedo': variant({
+        name: "torpedo", displayName: "torpedo", tooltip: "Pawns always move up to two squares.",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 3+3 0 1",
+        chess960: true, icon: "🏄", icon960: "🏄",
+        boardFamily: "standard8x8", pieceFamily: "standard",
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
+        rules: { enPassant: true },
+    }),
+
     duck: variant({
         name: "duck", tooltip: "The duck must be moved to a new square after every turn.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1002,7 +1011,7 @@ export const noPuzzleVariants = [
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "chess" ] },
+    standard: { variants: [ "chess", "torpedo" ] },
     fairy:    { variants: [ "grasshopperking" ] },
     //standard: { variants: [ "chess", "crazyhouse", "atomic", "kingofthehill", "3check", "placement", "duck" ] },
     //sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
