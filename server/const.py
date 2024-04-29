@@ -290,7 +290,13 @@ CATEGORIES = {
         "shinobiplus",
         "spartan",
     ),
-    "makruk": ("makruk", "makpong", "cambodian", "sittuyin", "asean"),
+    "makruk": (
+        "makruk",
+        "makpong",
+        "cambodian",
+        "sittuyin",
+        "asean",
+    ),
     "shogi": (
         "shogi",
         "minishogi",
@@ -300,8 +306,15 @@ CATEGORIES = {
         "torishogi",
         "cannonshogi",
     ),
-    "xiangqi": ("xiangqi", "manchu", "janggi", "minixiangqi"),
-    "other": ("ataxx"),
+    "xiangqi": (
+        "xiangqi",
+        "manchu",
+        "janggi",
+        "minixiangqi",
+    ),
+    "other": (
+        "ataxx",
+    ),
 }
 
 VARIANT_GROUPS = {}
