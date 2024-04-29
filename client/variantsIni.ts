@@ -280,4 +280,8 @@ nFoldValue = win
 flagPiece = k
 flagRegionWhite = *9
 flagRegionBlack = *1
-immobilityIllegal = true`
+immobilityIllegal = true
+
+[grasshopperking:chess]
+king = k:gQ
+stalemateValue = loss`

@@ -1,0 +1,6 @@
+.grasshopperking piece.white {
+    background-image: url('../../images/pieces/disguised/w.svg');
+}
+.grasshopperking piece.black {
+    background-image: url('../../images/pieces/disguised/b.svg');
+}

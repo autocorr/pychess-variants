@@ -1,0 +1,36 @@
+.grasshopperking piece.p-piece.white {
+    background-image: url('../../images/pieces/green/wP.svg');
+}
+.grasshopperking piece.b-piece.white {
+    background-image: url('../../images/pieces/green/wB.svg');
+}
+.grasshopperking piece.n-piece.white {
+    background-image: url('../../images/pieces/green/wN.svg');
+}
+.grasshopperking piece.r-piece.white {
+    background-image: url('../../images/pieces/green/wR.svg');
+}
+.grasshopperking piece.q-piece.white {
+    background-image: url('../../images/pieces/green/wQ.svg');
+}
+.grasshopperking piece.k-piece.white {
+    background-image: url('../../images/pieces/green/wK_r.svg');
+}
+.grasshopperking piece.p-piece.black {
+    background-image: url('../../images/pieces/green/bP.svg');
+}
+.grasshopperking piece.b-piece.black {
+    background-image: url('../../images/pieces/green/bB.svg');
+}
+.grasshopperking piece.n-piece.black {
+    background-image: url('../../images/pieces/green/bN.svg');
+}
+.grasshopperking piece.r-piece.black {
+    background-image: url('../../images/pieces/green/bR.svg');
+}
+.grasshopperking piece.q-piece.black {
+    background-image: url('../../images/pieces/green/bQ.svg');
+}
+.grasshopperking piece.k-piece.black {
+    background-image: url('../../images/pieces/green/bK_r.svg');
+}
