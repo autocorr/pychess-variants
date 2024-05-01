@@ -410,8 +410,26 @@ export const VARIANTS: Record<string, Variant> = {
 
     'torpedo': variant({
         name: "torpedo", displayName: "torpedo", tooltip: "Pawns always move up to two squares.",
-        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 3+3 0 1",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
         chess960: true, icon: "🏄", icon960: "🏄",
+        boardFamily: "standard8x8", pieceFamily: "standard",
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
+        rules: { enPassant: true },
+    }),
+
+    'kinglet': variant({
+        name: "kinglet", displayName: "kinglet", tooltip: "Capture all of the pawns to win.",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        chess960: true, icon: "🤴", icon960: "🤴",
+        boardFamily: "standard8x8", pieceFamily: "standard",
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
+        rules: { enPassant: true },
+    }),
+
+    'extinction': variant({
+        name: "extinction", displayName: "extinction", tooltip: "Capture all of one piece type to win.",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        chess960: true, icon: "☠️", icon960: "☠️",
         boardFamily: "standard8x8", pieceFamily: "standard",
         pieceRow: ["k", "q", "r", "b", "n", "p"],
         rules: { enPassant: true },
@@ -1011,15 +1029,13 @@ export const noPuzzleVariants = [
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "chess", "torpedo" ] },
+    standard: { variants: [ "chess", "torpedo", "kinglet", "extinction" ] },
+    sea:      { variants: [ ] },
+    shogi:    { variants: [ ] },
+    xiangqi:  { variants: [ ] },
     fairy:    { variants: [ "grasshopperking" ] },
-    //standard: { variants: [ "chess", "crazyhouse", "atomic", "kingofthehill", "3check", "placement", "duck" ] },
-    //sea:      { variants: [ "makruk", "makpong", "cambodian", "sittuyin", "asean" ] },
-    //shogi:    { variants: [ "shogi", "minishogi", "kyotoshogi", "dobutsu", "gorogoroplus", "torishogi", "cannonshogi" ] },
-    //xiangqi:  { variants: [ "xiangqi", "manchu", "janggi", "minixiangqi" ] },
-    //fairy:    { variants: [ "capablanca", "capahouse", "dragon", "seirawan", "shouse", "grand", "grandhouse", "shako", "shogun", "hoppelpoppel", "mansindam", "grasshopperking" ] },
-    //army:     { variants: [ "orda", "khans", "synochess", "shinobiplus", "empire", "ordamirror", "chak", "chennis", "spartan" ] },
-    //other:    { variants: [ "ataxx" ] }
+    army:     { variants: [ ] },
+    other:    { variants: [ ] }
 };
 
 function variantGroupLabel(group: string): string {

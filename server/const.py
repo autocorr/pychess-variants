@@ -166,6 +166,10 @@ VARIANTS = (
     "ataxx",
     "torpedo",
     "torpedo960",
+    "kinglet",
+    "kinglet960",
+    "extinction",
+    "extinction960",
 )
 
 VARIANT_ICONS = {
@@ -231,6 +235,10 @@ VARIANT_ICONS = {
     "3check960": "☷",
     "torpedo": "🏄",
     "torpedo960": "🏄",
+    "kinglet": "🤴",
+    "kinglet960": "🤴",
+    "extinction": "☠️",
+    "extinction960": "☠️",
 }
 
 VARIANT_960_TO_PGN = {
@@ -266,6 +274,10 @@ CATEGORIES = {
         "duck",
         "torpedo",
         "torpedo960",
+        "kinglet",
+        "kinglet960",
+        "extinction",
+        "extinction960",
     ),
     "fairy": (
         "capablanca",
@@ -462,6 +474,10 @@ TRANSLATED_VARIANT_NAMES = {
     "mansindam": _("Mansindam"),
     "torpedo": _("Torpedo"),
     "torpedo960": _("Torpedo 960"),
+    "kinglet": _("Kinglet"),
+    "kinglet960": _("Kinglet 960"),
+    "extinction": _("Extinction"),
+    "extinction960": _("Extinction 960"),
 }
 
 del _
