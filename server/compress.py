@@ -62,6 +62,7 @@ V2C = {
     "torpedo": "!",
     "kinglet": "\"",
     "extinction": "#",
+    "berolina": "$",
 }
 C2V = {v: k for k, v in V2C.items()}
 

@@ -170,6 +170,8 @@ VARIANTS = (
     "kinglet960",
     "extinction",
     "extinction960",
+    "berolina",
+    "berolina960",
 )
 
 VARIANT_ICONS = {
@@ -239,6 +241,8 @@ VARIANT_ICONS = {
     "kinglet960": "🤴",
     "extinction": "☠️",
     "extinction960": "☠️",
+    "berolina": "🥨",
+    "berolina960": "🥨",
 }
 
 VARIANT_960_TO_PGN = {
@@ -278,6 +282,8 @@ CATEGORIES = {
         "kinglet960",
         "extinction",
         "extinction960",
+        "berolina",
+        "berolina960",
     ),
     "fairy": (
         "capablanca",
@@ -478,6 +484,8 @@ TRANSLATED_VARIANT_NAMES = {
     "kinglet960": _("Kinglet 960"),
     "extinction": _("Extinction"),
     "extinction960": _("Extinction 960"),
+    "berolina": _("Berolina"),
+    "berolina960": _("Berolina 960"),
 }
 
 del _

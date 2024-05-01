@@ -435,6 +435,15 @@ export const VARIANTS: Record<string, Variant> = {
         rules: { enPassant: true },
     }),
 
+    'berolina': variant({
+        name: "berolina", displayName: "berolina", tooltip: "Pawns capture directly forward and move diagonally forward.",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        chess960: true, icon: "🥨", icon960: "🥨",
+        boardFamily: "standard8x8", pieceFamily: "standard",
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
+        rules: { enPassant: true },
+    }),
+
     duck: variant({
         name: "duck", tooltip: "The duck must be moved to a new square after every turn.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1029,7 +1038,7 @@ export const noPuzzleVariants = [
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "chess", "torpedo", "kinglet", "extinction" ] },
+    standard: { variants: [ "chess", "torpedo", "kinglet", "extinction", "berolina" ] },
     sea:      { variants: [ ] },
     shogi:    { variants: [ ] },
     xiangqi:  { variants: [ ] },
