@@ -312,4 +312,13 @@ promotedPieceType = q:k r:k b:k n:k p:k
 mandatoryPiecePromotion = true
 flagRegionWhite = *8
 flagRegionBlack = *1
+
+# Hybrid variant of makruk and crazyhouse
+[makhouse:makruk]
+startFen = rnsmksnr/8/pppppppp/8/8/PPPPPPPP/8/RNSKMSNR[] w - - 0 1
+pieceDrops = true
+capturesToHand = true
+firstRankPawnDrops = true
+promotionZonePawnDrops = true
+immobilityIllegal = true
 `

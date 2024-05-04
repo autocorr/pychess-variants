@@ -522,6 +522,20 @@ export const VARIANTS: Record<string, Variant> = {
         ui: { counting: "makruk", showPromoted: true },
     }),
 
+    'makhouse': variant({
+        name: "makhouse", displayName: "makruk house", tooltip: "Thai Chess with captures to hand and drops.",
+        startFen: "rnsmksnr/8/pppppppp/8/8/PPPPPPPP/8/RNSKMSNR[] w - - 0 1",
+        icon: "Q",
+        boardFamily: "makruk8x8", pieceFamily: "makruk",
+        pieceRow: ["k", "s", "m", "n", "r", "p", "m~" as cg.Letter],
+        pocket: {
+            roles: ["s", "m", "n", "r", "p"],
+            captureToHand: true,
+        },
+        promotion: { type: "regular", order: ["m"] },
+        ui: { counting: "makruk", showPromoted: true },
+    }),
+
     makpong: variant({
         name: "makpong", tooltip: "Makruk variant where kings cannot move to escape out of check.",
         startFen: "rnsmksnr/8/pppppppp/8/8/PPPPPPPP/8/RNSKMSNR w - - 0 1",
@@ -1108,7 +1122,7 @@ export const noPuzzleVariants = [
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     standard: { variants: [ "chess", "atomar", "backrank", "berolina", "coregal", "extinction", "kinglet", "legan", "pocketknight", "racingchess", "torpedo", ] },
-    sea:      { variants: [ "karouk", ] },
+    sea:      { variants: [ "karouk", "makhouse", ] },
     shogi:    { variants: [ ] },
     xiangqi:  { variants: [ ] },
     fairy:    { variants: [ "grasshopperking", ] },

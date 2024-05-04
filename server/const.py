@@ -184,6 +184,7 @@ VARIANTS = (
     "pocketknight",
     "pocketknight960",
     "karouk",
+    "makhouse",
 )
 
 VARIANT_ICONS = {
@@ -267,6 +268,7 @@ VARIANT_ICONS = {
     "pocketknight": "🐴",
     "pocketknight960": "🐴",
     "karouk": "!",
+    "makhouse": "Q",
 }
 
 VARIANT_960_TO_PGN = {
@@ -356,6 +358,7 @@ CATEGORIES = {
         "sittuyin",
         "asean",
         "karouk",
+        "makhouse",
     ),
     "shogi": (
         "shogi",
@@ -534,6 +537,7 @@ TRANSLATED_VARIANT_NAMES = {
     "pocketknight": _("Pocket Knight"),
     "pocketknight960": ("Pocket Knight 960"),
     "karouk": _("Kar Ouk"),
+    "makhouse": _("Makruk House"),
 }
 
 del _

@@ -73,6 +73,7 @@ MONTHLY_VARIANTS = (
     "backrank",
     "pocketknight",
     "karouk",
+    "makhouse",
 )
 
 # Old MONTHLY tournaments, needed to create translated tourney names
