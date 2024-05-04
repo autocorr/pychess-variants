@@ -162,6 +162,7 @@ VARIANTS = (
     "ordamirror",
     "chak",
     "chennis",
+    "gethenian",
     "spartan",
     "ataxx",
     "torpedo",
@@ -243,6 +244,7 @@ VARIANT_ICONS = {
     "chak": "🐬",
     "chennis": "🎾",
     "mansindam": "⛵",
+    "gethenian": "✋",
     "duck": "🦆",
     "spartan": "⍺",
     "kingofthehill": "🏴",
@@ -350,6 +352,7 @@ CATEGORIES = {
         "ordamirror",
         "chak",
         "chennis",
+        "gethenian",
         "shinobiplus",
         "spartan",
     ),
@@ -542,6 +545,7 @@ TRANSLATED_VARIANT_NAMES = {
     "karouk": _("Kar Ouk"),
     "makhouse": _("Makruk House"),
     "jesonmor": _("Jeson Mor"),
+    "gethenian": _("Gethenian"),
 }
 
 del _
