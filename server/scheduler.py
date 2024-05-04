@@ -74,6 +74,7 @@ MONTHLY_VARIANTS = (
     "pocketknight",
     "karouk",
     "makhouse",
+    "jesonmor",
 )
 
 # Old MONTHLY tournaments, needed to create translated tourney names

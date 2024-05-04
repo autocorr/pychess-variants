@@ -103,6 +103,9 @@ export function result(variant: Variant, status: number, result: string) {
                 case 'kingofthehill':
                     text = _('King in the center');
                     break;
+                case 'jesonmor':
+                    text = _('Knight in the center');
+                    break;
                 case '3check':
                     text = _('Three checks');
                     break;

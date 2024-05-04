@@ -185,6 +185,7 @@ VARIANTS = (
     "pocketknight960",
     "karouk",
     "makhouse",
+    "jesonmor",
 )
 
 VARIANT_ICONS = {
@@ -269,6 +270,7 @@ VARIANT_ICONS = {
     "pocketknight960": "🐴",
     "karouk": "!",
     "makhouse": "Q",
+    "jesonmor": "🏇",
 }
 
 VARIANT_960_TO_PGN = {
@@ -377,6 +379,7 @@ CATEGORIES = {
     ),
     "other": (
         "ataxx",
+        "jesonmor",
     ),
 }
 
@@ -538,6 +541,7 @@ TRANSLATED_VARIANT_NAMES = {
     "pocketknight960": ("Pocket Knight 960"),
     "karouk": _("Kar Ouk"),
     "makhouse": _("Makruk House"),
+    "jesonmor": _("Jeson Mor"),
 }
 
 del _

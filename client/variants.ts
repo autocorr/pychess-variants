@@ -1100,6 +1100,15 @@ export const VARIANTS: Record<string, Variant> = {
         pocket: { roles: ["p", "n", "b", "r", "a", "c", "q"], captureToHand: true },
         rules: { enPassant: true },
     }),
+
+    'jesonmor': variant({
+        name: "jesonmor", displayName: "jeson mor", tooltip: "Bring a Knight to the central square.",
+        startFen: "nnnnnnnnn/9/9/9/9/9/9/9/NNNNNNNNN w - - 0 1",
+        icon: "🏇",
+        boardFamily: "standard9x9", pieceFamily: "standard",
+        pieceRow: ["n"],
+        ui: { boardMark: 'kingofthehill' },
+    }),
 };
 
 export const variants = Object.keys(VARIANTS);
@@ -1127,7 +1136,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     xiangqi:  { variants: [ ] },
     fairy:    { variants: [ "grasshopperking", ] },
     army:     { variants: [ ] },
-    other:    { variants: [ ] }
+    other:    { variants: [ "jesonmor", ] }
 };
 
 function variantGroupLabel(group: string): string {

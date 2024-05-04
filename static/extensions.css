@@ -272,3 +272,16 @@
   z-index: 1;
   pointer-events: none;
 }
+
+.kingofthehill .cg-540 cg-board::before {
+  width: 11.11%;
+  height: 11.11%;
+  box-shadow: 0 0 10px rgba(0,0,0,.7);
+  background: rgba(230,230,230,.2);
+  content: "";
+  position: absolute;
+  top: 44.44%;
+  left: 44.44%;
+  z-index: 1;
+  pointer-events: none;
+}
