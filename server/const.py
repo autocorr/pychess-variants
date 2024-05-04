@@ -175,6 +175,8 @@ VARIANTS = (
     "atomar",
     "atomar960",
     "legan",
+    "coregal",
+    "coregal960",
 )
 
 VARIANT_ICONS = {
@@ -249,6 +251,8 @@ VARIANT_ICONS = {
     "atomar": "🤯",
     "atomar960": "🤯",
     "legan": "↖️",
+    "coregal": "🧑‍🤝‍🧑",
+    "coregal960": "🧑‍🤝‍🧑",
 }
 
 VARIANT_960_TO_PGN = {
@@ -288,11 +292,10 @@ CATEGORIES = {
         "kinglet960",
         "extinction",
         "extinction960",
-        "berolina",
-        "berolina960",
         "atomar",
         "atomar960",
-        "legan",
+        "coregal",
+        "coregal960",
     ),
     "fairy": (
         "capablanca",
@@ -311,6 +314,9 @@ CATEGORIES = {
         "shogun",
         "hoppelpoppel",
         "mansindam",
+        "legan",
+        "berolina",
+        "berolina960",
     ),
     "army": (
         "orda",
@@ -498,6 +504,8 @@ TRANSLATED_VARIANT_NAMES = {
     "atomar": _("Atomar"),
     "atomar960": _("Atomar 960"),
     "legan": _("Legan Chess"),
+    "coregal": _("Coregal"),
+    "coregal960": _("Coregal960"),
 }
 
 del _

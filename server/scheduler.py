@@ -61,6 +61,14 @@ MONTHLY_VARIANTS = (
     "kingofthehill960",
     "3check960",
     "mansindam",
+    "torpedo",
+    "kinglet",
+    "extinction",
+    "atomar",
+    "berolina",
+    "legan",
+    "coregal",
+    "grasshopperking",
 )
 
 # Old MONTHLY tournaments, needed to create translated tourney names
