@@ -471,6 +471,38 @@ export const VARIANTS: Record<string, Variant> = {
         rules: { enPassant: true },
     }),
 
+    'racingchess': variant({
+        name: "racingchess", displayName: "racingchess", tooltip: "Cross to win, no checks.",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        chess960: true, icon: "🔃", icon960: "🔃",
+        boardFamily: "standard8x8", pieceFamily: "standard",
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
+        rules: { enPassant: true },
+    }),
+
+    'backrank': variant({
+        name: "backrank", displayName: "backrank", tooltip: "Reach the back rank with any piece.",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        chess960: true, icon: "☝️", icon960: "☝️",
+        boardFamily: "standard8x8", pieceFamily: "standard",
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
+        rules: { enPassant: true },
+    }),
+
+    'pocketknight': variant({
+        name: "pocketknight", displayName: "pocket knight", tooltip: "Start with a Knight in hand.",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR[nN] w KQkq - 0 1",
+        chess960: true, icon: "🐴", icon960: "🐴",
+        boardFamily: "standard8x8", pieceFamily: "standard",
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
+        pocket: { roles: ["n"], captureToHand: false },
+        rules: { enPassant: true },
+        alternateStart: {
+            '': "",
+            'No castle': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR[nN] w - - 0 1'
+        },
+    }),
+
     duck: variant({
         name: "duck", tooltip: "The duck must be moved to a new square after every turn.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -503,6 +535,16 @@ export const VARIANTS: Record<string, Variant> = {
     cambodian: variant({
         name: "cambodian", displayName: "ouk chaktrang", tooltip: "Cambodian Chess. Makruk with a few additional opening abilities.",
         startFen: "rnsmksnr/8/pppppppp/8/8/PPPPPPPP/8/RNSKMSNR w DEde - 0 1",
+        icon: "!",
+        boardFamily: "makruk8x8", pieceFamily: "makruk",
+        pieceRow: ["k", "s", "m", "n", "r", "p", "m~" as cg.Letter],
+        promotion: { type: "regular", order: ["m"] },
+        ui: { counting: "makruk", showPromoted: true },
+    }),
+
+    'karouk': variant({
+        name: "karouk", displayName: "kar ouk", tooltip: "Cambodian Chess but check to win.",
+        startFen: "rnsmksnr/8/pppppppp/8/8/PPPPPPPP/8/RNSKMSNR w DEde 1+1 0 1",
         icon: "!",
         boardFamily: "makruk8x8", pieceFamily: "makruk",
         pieceRow: ["k", "s", "m", "n", "r", "p", "m~" as cg.Letter],
@@ -1065,11 +1107,11 @@ export const noPuzzleVariants = [
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "chess", "torpedo", "kinglet", "extinction", "atomar", "coregal", "berolina", "legan" ] },
-    sea:      { variants: [ ] },
+    standard: { variants: [ "chess", "atomar", "backrank", "berolina", "coregal", "extinction", "kinglet", "legan", "pocketknight", "racingchess", "torpedo", ] },
+    sea:      { variants: [ "karouk", ] },
     shogi:    { variants: [ ] },
     xiangqi:  { variants: [ ] },
-    fairy:    { variants: [ "grasshopperking" ] },
+    fairy:    { variants: [ "grasshopperking", ] },
     army:     { variants: [ ] },
     other:    { variants: [ ] }
 };

@@ -177,6 +177,13 @@ VARIANTS = (
     "legan",
     "coregal",
     "coregal960",
+    "racingchess",
+    "racingchess960",
+    "backrank",
+    "backrank960",
+    "pocketknight",
+    "pocketknight960",
+    "karouk",
 )
 
 VARIANT_ICONS = {
@@ -253,6 +260,13 @@ VARIANT_ICONS = {
     "legan": "↖️",
     "coregal": "🧑‍🤝‍🧑",
     "coregal960": "🧑‍🤝‍🧑",
+    "racingchess": "🔃",
+    "racingchess960": "🔃",
+    "backrank": "☝️",
+    "backrank960": "☝️",
+    "pocketknight": "🐴",
+    "pocketknight960": "🐴",
+    "karouk": "!",
 }
 
 VARIANT_960_TO_PGN = {
@@ -296,6 +310,12 @@ CATEGORIES = {
         "atomar960",
         "coregal",
         "coregal960",
+        "racingchess",
+        "racingchess960",
+        "backrank",
+        "backrank960",
+        "pocketknight",
+        "pocketknight960",
     ),
     "fairy": (
         "capablanca",
@@ -335,6 +355,7 @@ CATEGORIES = {
         "cambodian",
         "sittuyin",
         "asean",
+        "karouk",
     ),
     "shogi": (
         "shogi",
@@ -505,7 +526,14 @@ TRANSLATED_VARIANT_NAMES = {
     "atomar960": _("Atomar 960"),
     "legan": _("Legan Chess"),
     "coregal": _("Coregal"),
-    "coregal960": _("Coregal960"),
+    "coregal960": _("Coregal 960"),
+    "racingchess": _("Racing Chess"),
+    "racingchess960": _("Racing Chess 960"),
+    "backrank": _("Backrank"),
+    "backrank960": _("Backrank 960"),
+    "pocketknight": _("Pocket Knight"),
+    "pocketknight960": ("Pocket Knight 960"),
+    "karouk": _("Kar Ouk"),
 }
 
 del _

@@ -69,6 +69,10 @@ MONTHLY_VARIANTS = (
     "legan",
     "coregal",
     "grasshopperking",
+    "racingchess",
+    "backrank",
+    "pocketknight",
+    "karouk",
 )
 
 # Old MONTHLY tournaments, needed to create translated tourney names

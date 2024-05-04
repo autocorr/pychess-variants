@@ -284,4 +284,32 @@ immobilityIllegal = true
 
 [grasshopperking:chess]
 king = k:gQ
-stalemateValue = loss`
+stalemateValue = loss
+
+# Racing Chess
+# Win by campmate. No checks allowed.
+# Variant defined in Pychess discord and previously playable with Chessboi bot.
+[racingchess:chess]
+flagPiece = k
+flagRegionWhite = *8
+flagRegionBlack = *1
+flagMove = true
+checking = false
+
+# Backrank
+# The objective of the game is to reach the last rank with any of your pieces. Credits to Procyon for the definition
+# Variant defined in Pychess discord and previously playable with Chessboi bot.
+[backrank:chess]
+king = -
+commoner = k
+castlingKingPiece = k
+extinctionValue = loss
+extinctionPieceTypes = k
+extinctionPseudoRoyal = true
+flagPiece = k
+promotionPieceTypes = -
+promotedPieceType = q:k r:k b:k n:k p:k
+mandatoryPiecePromotion = true
+flagRegionWhite = *8
+flagRegionBlack = *1
+`

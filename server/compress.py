@@ -66,6 +66,10 @@ V2C = {
     "atomar": "%",
     "legan": "&",
     "coregal": "\'",
+    "racingchess": "(",
+    "backrank": ")",
+    "pocketknight": "€",
+    "karouk": "‚",
 }
 C2V = {v: k for k, v in V2C.items()}
 
