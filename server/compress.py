@@ -19,7 +19,6 @@ V2C = {
     "makruk": "m",
     "placement": "p",
     "dragon": "R",
-    "grasshopperking": "Y",
     "seirawan": "s",
     "shogi": "g",
     "minishogi": "a",
@@ -59,6 +58,7 @@ V2C = {
     "spartan": "N",
     "kingofthehill": "B",
     "3check": "X",
+    "grasshopperking": "Y",
     "torpedo": "!",
     "kinglet": "\"",
     "extinction": "#",
@@ -141,7 +141,7 @@ def encode_move_standard(move):
 
 
 def get_encode_method(variant):
-    if variant in ("kyotoshogi", "chennis"):
+    if variant in ("kyotoshogi", "chennis", "gethenian"):
         return encode_move_flipping
     elif variant == "duck":
         return encode_move_duck
