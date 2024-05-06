@@ -71,6 +71,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     spartan: { pieceCSS: ["spartan0", "disguised"] },
     mansindam: { pieceCSS: ["mansindam2", "mansindam1", "mansindam3", "mansindam4", "disguised"] },
     gethenian: { pieceCSS: ["gethenian0", "gethenian1", "disguised"] },
+    shatranj: { pieceCSS: ["shatranj0", "disguised"] },
 };
 
 export interface Variant {
@@ -885,6 +886,15 @@ export const VARIANTS: Record<string, Variant> = {
         rules: { enPassant: true },
     }),
 
+    shatranj: variant({
+        name: "shatranj", displayName: "shatranj", tooltip: "Ancient Arabian and Persian form of Chess.",
+        startFen: "rnbkqbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBKQBNR w - - 0 1",
+        icon: "🐘",
+        boardFamily: "makruk8x8", pieceFamily: "shatranj",
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
+        promotion: { type: "regular", order: ["q"] },
+    }),
+
     grasshopperking: variant({
         name: "grasshopperking", displayName: "grasshopper king", tooltip: "Kings move as grasshoppers.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1146,7 +1156,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     sea:      { variants: [ "karouk", "makhouse", ] },
     shogi:    { variants: [ ] },
     xiangqi:  { variants: [ ] },
-    fairy:    { variants: [ "grasshopperking", ] },
+    fairy:    { variants: [ "grasshopperking", "shatranj", ] },
     army:     { variants: [ "gethenian", ] },
     other:    { variants: [ "jesonmor", ] },
 };

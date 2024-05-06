@@ -73,6 +73,7 @@ V2C = {
     "makhouse": "ƒ",
     "jesonmor": "„",
     "gethenian": "…",
+    "shatranj": "†",
 }
 C2V = {v: k for k, v in V2C.items()}
 

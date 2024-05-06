@@ -542,3 +542,10 @@ label.piece.piece0.spartan {
 label.piece.piece1.spartan {
     background-image: url('images/pieces/disguised/b.svg');
 }
+
+label.piece.piece0.shatranj {
+    background-image: url('images/pieces/green/wN.svg');
+}
+label.piece.piece1.shatranj {
+    background-image: url('images/pieces/disguised/b.svg');
+}
