@@ -1,0 +1,36 @@
+.nightrider piece.p-piece.white {
+    background-image: url('../../images/pieces/green/wP.svg');
+}
+.nightrider piece.b-piece.white {
+    background-image: url('../../images/pieces/green/wB.svg');
+}
+.nightrider piece.n-piece.white {
+    background-image: url('../../images/pieces/green/wN_r.svg');
+}
+.nightrider piece.r-piece.white {
+    background-image: url('../../images/pieces/green/wR.svg');
+}
+.nightrider piece.q-piece.white {
+    background-image: url('../../images/pieces/green/wQ.svg');
+}
+.nightrider piece.k-piece.white {
+    background-image: url('../../images/pieces/green/wK.svg');
+}
+.nightrider piece.p-piece.black {
+    background-image: url('../../images/pieces/green/bP.svg');
+}
+.nightrider piece.b-piece.black {
+    background-image: url('../../images/pieces/green/bB.svg');
+}
+.nightrider piece.n-piece.black {
+    background-image: url('../../images/pieces/green/bN_r.svg');
+}
+.nightrider piece.r-piece.black {
+    background-image: url('../../images/pieces/green/bR.svg');
+}
+.nightrider piece.q-piece.black {
+    background-image: url('../../images/pieces/green/bQ.svg');
+}
+.nightrider piece.k-piece.black {
+    background-image: url('../../images/pieces/green/bK.svg');
+}

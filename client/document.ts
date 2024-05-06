@@ -112,6 +112,8 @@ export function changePieceCSS(assetUrl: string, family: string, cssFile: string
         case "grasshopperking": cssLinkIndex += 28; break;
         case "gethenian": cssLinkIndex += 29; break;
         case "shatranj": cssLinkIndex += 30; break;
+        case "grasshopper": cssLinkIndex += 31; break;
+        case "nightrider": cssLinkIndex += 32; break;
         default: throw "Unknown piece family " + family;
     }
     let newUrl = `${assetUrl}/piece-css/${family}/${cssFile}.css`;

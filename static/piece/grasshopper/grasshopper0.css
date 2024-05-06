@@ -1,0 +1,42 @@
+.grasshopper piece.p-piece.white {
+    background-image: url('../../images/pieces/green/wP.svg');
+}
+.grasshopper piece.b-piece.white {
+    background-image: url('../../images/pieces/green/wB.svg');
+}
+.grasshopper piece.n-piece.white {
+    background-image: url('../../images/pieces/green/wN.svg');
+}
+.grasshopper piece.r-piece.white {
+    background-image: url('../../images/pieces/green/wR.svg');
+}
+.grasshopper piece.q-piece.white {
+    background-image: url('../../images/pieces/green/wQ.svg');
+}
+.grasshopper piece.g-piece.white {
+    background-image: url('../../images/pieces/green/wQ_r.svg');
+}
+.grasshopper piece.k-piece.white {
+    background-image: url('../../images/pieces/green/wK.svg');
+}
+.grasshopper piece.p-piece.black {
+    background-image: url('../../images/pieces/green/bP.svg');
+}
+.grasshopper piece.b-piece.black {
+    background-image: url('../../images/pieces/green/bB.svg');
+}
+.grasshopper piece.n-piece.black {
+    background-image: url('../../images/pieces/green/bN.svg');
+}
+.grasshopper piece.r-piece.black {
+    background-image: url('../../images/pieces/green/bR.svg');
+}
+.grasshopper piece.q-piece.black {
+    background-image: url('../../images/pieces/green/bQ.svg');
+}
+.grasshopper piece.g-piece.black {
+    background-image: url('../../images/pieces/green/bQ_r.svg');
+}
+.grasshopper piece.k-piece.black {
+    background-image: url('../../images/pieces/green/bK.svg');
+}

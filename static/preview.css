@@ -549,3 +549,17 @@ label.piece.piece0.shatranj {
 label.piece.piece1.shatranj {
     background-image: url('images/pieces/disguised/b.svg');
 }
+
+label.piece.piece0.nightrider {
+    background-image: url('images/pieces/green/wN_r.svg');
+}
+label.piece.piece1.nightrider {
+    background-image: url('images/pieces/disguised/b.svg');
+}
+
+label.piece.piece0.grasshopper {
+    background-image: url('images/pieces/green/wQ_r.svg');
+}
+label.piece.piece1.grasshopper {
+    background-image: url('images/pieces/disguised/b.svg');
+}

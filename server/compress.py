@@ -74,6 +74,8 @@ V2C = {
     "jesonmor": "„",
     "gethenian": "…",
     "shatranj": "†",
+    "grasshopper": "‡",
+    "nightrider": "ˆ",
 }
 C2V = {v: k for k, v in V2C.items()}
 

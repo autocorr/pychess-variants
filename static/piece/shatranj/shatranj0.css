@@ -34,7 +34,7 @@
 .shatranj piece.q-piece.black {
     background-image: url('../../images/pieces/shogun/cburnett/blue/bF.svg');
 }
-.shatranj piece.m-piece.promoted.black {
+.shatranj piece.q-piece.promoted.black {
     background-image: url('../../images/pieces/green/bF.svg');
 }
 .shatranj piece.k-piece.black {

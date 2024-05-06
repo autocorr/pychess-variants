@@ -72,6 +72,8 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     mansindam: { pieceCSS: ["mansindam2", "mansindam1", "mansindam3", "mansindam4", "disguised"] },
     gethenian: { pieceCSS: ["gethenian0", "gethenian1", "disguised"] },
     shatranj: { pieceCSS: ["shatranj0", "disguised"] },
+    grasshopper: { pieceCSS: ["grasshopper0", "disguised"] },
+    nightrider: { pieceCSS: ["nightrider0", "disguised"] },
 };
 
 export interface Variant {
@@ -475,7 +477,7 @@ export const VARIANTS: Record<string, Variant> = {
     }),
 
     'racingchess': variant({
-        name: "racingchess", displayName: "racingchess", tooltip: "Cross to win, no checks.",
+        name: "racingchess", displayName: "racing chess", tooltip: "Cross to win, no checks.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
         chess960: true, icon: "🔃", icon960: "🔃",
         boardFamily: "standard8x8", pieceFamily: "standard",
@@ -912,6 +914,23 @@ export const VARIANTS: Record<string, Variant> = {
         },
     }),
 
+    nightrider: variant({
+        name: "nightrider", tooltip: "Knights are replaced by Nightriders.",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        chess960: true, icon: "🌠", icon960: "🌠",
+        boardFamily: "standard8x8", pieceFamily: "nightrider",
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
+        rules: { enPassant: true },
+    }),
+
+    grasshopper: variant({
+        name: "grasshopper", tooltip: "Chess with added row of Grasshoppers.",
+        startFen: "rnbqkbnr/gggggggg/pppppppp/8/8/PPPPPPPP/GGGGGGGG/RNBQKBNR w KQkq - 0 1",
+        icon: "🦗",
+        boardFamily: "standard8x8", pieceFamily: "grasshopper",
+        pieceRow: ["k", "q", "r", "b", "n", "p", "g"],
+    }),
+
     orda: variant({
         name: "orda", tooltip: "Asymmetric variant where one army has pieces that move like knights but capture differently.",
         startFen: "lhaykahl/8/pppppppp/8/8/8/PPPPPPPP/RNBQKBNR w KQ - 0 1",
@@ -1149,6 +1168,25 @@ export const noPuzzleVariants = [
     "shinobi",
     "shinobiplus",
     "cannonshogi",
+    // new alternates
+    "atomar",
+    "backrank",
+    "berolian",
+    "chess",
+    "coregal",
+    "extinction",
+    "gethenian",
+    "grasshopper",
+    "jesonmor",
+    "karouk",
+    "kinglet",
+    "legan",
+    "makhouse",
+    "nightrider",
+    "pocketknight",
+    "racingchess",
+    "shatranj",
+    "torpedo",
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
@@ -1156,7 +1194,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     sea:      { variants: [ "karouk", "makhouse", ] },
     shogi:    { variants: [ ] },
     xiangqi:  { variants: [ ] },
-    fairy:    { variants: [ "grasshopperking", "shatranj", ] },
+    fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "shatranj", ] },
     army:     { variants: [ "gethenian", ] },
     other:    { variants: [ "jesonmor", ] },
 };
