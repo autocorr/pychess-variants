@@ -72,6 +72,7 @@ MONTHLY_VARIANTS = (
     "jesonmor",
     "karouk",
     "kinglet",
+    "knightmate",
     "legan",
     "makhouse",
     "nightrider",

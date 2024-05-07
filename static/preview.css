@@ -563,3 +563,10 @@ label.piece.piece0.grasshopper {
 label.piece.piece1.grasshopper {
     background-image: url('images/pieces/disguised/b.svg');
 }
+
+label.piece.piece0.knightmate {
+    background-image: url('images/pieces/green/wN.svg');
+}
+label.piece.piece1.knightmate {
+    background-image: url('images/pieces/disguised/b.svg');
+}

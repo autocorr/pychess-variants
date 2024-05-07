@@ -1,0 +1,36 @@
+.knightmate piece.p-piece.white {
+    background-image: url('../../images/pieces/green/wP.svg');
+}
+.knightmate piece.b-piece.white {
+    background-image: url('../../images/pieces/green/wB.svg');
+}
+.knightmate piece.m-piece.white {
+    background-image: url('../../images/pieces/green/wCommoner.svg');
+}
+.knightmate piece.r-piece.white {
+    background-image: url('../../images/pieces/green/wR.svg');
+}
+.knightmate piece.q-piece.white {
+    background-image: url('../../images/pieces/green/wQ.svg');
+}
+.knightmate piece.k-piece.white {
+    background-image: url('../../images/pieces/green/wN.svg');
+}
+.knightmate piece.p-piece.black {
+    background-image: url('../../images/pieces/green/bP.svg');
+}
+.knightmate piece.b-piece.black {
+    background-image: url('../../images/pieces/green/bB.svg');
+}
+.knightmate piece.m-piece.black {
+    background-image: url('../../images/pieces/green/bCommoner.svg');
+}
+.knightmate piece.r-piece.black {
+    background-image: url('../../images/pieces/green/bR.svg');
+}
+.knightmate piece.q-piece.black {
+    background-image: url('../../images/pieces/green/bQ.svg');
+}
+.knightmate piece.k-piece.black {
+    background-image: url('../../images/pieces/green/bN.svg');
+}

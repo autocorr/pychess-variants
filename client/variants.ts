@@ -74,6 +74,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     shatranj: { pieceCSS: ["shatranj0", "disguised"] },
     grasshopper: { pieceCSS: ["grasshopper0", "disguised"] },
     nightrider: { pieceCSS: ["nightrider0", "disguised"] },
+    knightmate: { pieceCSS: ["knightmate0", "disguised"] }
 };
 
 export interface Variant {
@@ -506,6 +507,15 @@ export const VARIANTS: Record<string, Variant> = {
             '': "",
             'No castle': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR[nN] w - - 0 1'
         },
+    }),
+
+    knightmate: variant({
+        name: "knightmate", tooltip: "King moves as a Knight with King-like guards.",
+        startFen: "rmbqkbmr/pppppppp/8/8/8/8/PPPPPPPP/RMBQKBMR w KQkq - 0 1",
+        icon: "🪖",
+        boardFamily: "standard8x8", pieceFamily: "knightmate",
+        pieceRow: ["k", "q", "r", "b", "m", "p"],
+        rules: { enPassant: true },
     }),
 
     duck: variant({
@@ -1180,6 +1190,7 @@ export const noPuzzleVariants = [
     "jesonmor",
     "karouk",
     "kinglet",
+    "knightmate",
     "legan",
     "makhouse",
     "nightrider",
@@ -1190,7 +1201,7 @@ export const noPuzzleVariants = [
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "chess", "atomar", "backrank", "berolina", "coregal", "extinction", "kinglet", "legan", "pocketknight", "racingchess", "torpedo", ] },
+    standard: { variants: [ "chess", "atomar", "backrank", "berolina", "coregal", "extinction", "kinglet", "knightmate", "legan", "pocketknight", "racingchess", "torpedo", ] },
     sea:      { variants: [ "karouk", "makhouse", ] },
     shogi:    { variants: [ ] },
     xiangqi:  { variants: [ ] },
