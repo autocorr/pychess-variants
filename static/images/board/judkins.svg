@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   viewBox="0 0 312 360"
+   id="svg17"
+   sodipodi:docname="judkins.svg"
+   width="312"
+   height="360"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview19"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.3783333"
+     inkscape:cx="-8.7061669"
+     inkscape:cy="222.73277"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg17" />
+  <defs
+     id="defs5">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#grid"
+       id="pattern1334"
+       patternTransform="scale(0.9988887)" />
+    <pattern
+       id="grid"
+       width="52"
+       height="60"
+       patternUnits="userSpaceOnUse">
+      <rect
+         width="52"
+         height="60"
+         style="fill:#FDD775;stroke-width:2;stroke:black"
+         id="rect2" />
+    </pattern>
+  </defs>
+  <rect
+     width="312"
+     height="360"
+     fill="url(#grid)"
+     id="rect7"
+     style="fill:url(#pattern1334);stroke:none;stroke-width:1.2;stroke-dasharray:none"
+     x="0"
+     y="0" />
+  <circle
+     cx="156"
+     cy="180"
+     id="circle9"
+     style="stroke-width:1.20001"
+     r="4.8000002" />
+</svg>

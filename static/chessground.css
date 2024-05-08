@@ -32,6 +32,13 @@
 .cg-wrap.cg-448-516.mini {
   width: 224px;
 }
+/* 6x6 */
+.cg-wrap.cg-312 {
+    padding-bottom: calc(420 * 100% / 364);
+}
+.cg-wrap.cg-312.mini {
+  width: 208px;
+}
 /* 5x6 */
 .cg-wrap.cg-260-360 {
     padding-bottom: calc(540 * 100% / 390);
@@ -136,6 +143,10 @@ cg-board square {
   width: 20%;
   height: 16.66%;
 }
+.cg-312 cg-board square{
+  width: 16.66%;
+  height: 16.66%;
+}
 .cg-260 cg-board square{
   width: 20%;
   height: 20%;
@@ -227,6 +238,10 @@ cg-board square.current-premove {
 }
 .cg-wrap.cg-260-360 piece {
   width: 20%;
+  height: 16.66%;
+}
+.cg-wrap.cg-312 piece {
+  width: 16.66%;
   height: 16.66%;
 }
 .cg-wrap.cg-260 piece {

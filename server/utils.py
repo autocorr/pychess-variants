@@ -327,7 +327,7 @@ async def import_game(request):
     if initial_fen or new_game.chess960:
         document["if"] = new_game.initial_fen
 
-    if variant.endswith("shogi") or variant in ("dobutsu", "gorogoro", "gorogoroplus"):
+    if variant.endswith("shogi") or variant in ("dobutsu", "gorogoro", "gorogoroplus", "judkins"):
         document["uci"] = 1
 
     wrating = data.get("WhiteElo")

@@ -70,6 +70,7 @@ MONTHLY_VARIANTS = (
     "grasshopper",
     "grasshopperking",
     "jesonmor",
+    "judkins",
     "karouk",
     "kinglet",
     "knightmate",

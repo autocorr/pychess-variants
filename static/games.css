@@ -49,7 +49,7 @@ minigame .name {
     padding-top: 4px;
 }
 
-minigame.smaller-text.dobutsu, minigame.smaller-text.shogi5x5, minigame.smaller-text.shogi5x6 {
+minigame.smaller-text.dobutsu, minigame.smaller-text.shogi5x5, minigame.smaller-text.shogi5x6, minigame.shogi6x6 {
     font-size: 0.7em;
 }
 minigame.smaller-text.shogi7x7 {

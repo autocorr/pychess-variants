@@ -38,6 +38,7 @@ export const BOARD_FAMILIES: Record<string, BoardFamily> = {
     chak9x9:{ dimensions: { width: 9, height: 9 }, cg: "cg-540", boardCSS: ["StandardChakBoard.svg", "ColoredChakBoard.svg", "ChakArt.jpg"] },
     chennis7x7:{ dimensions: { width: 7, height: 7 }, cg: "cg-448", boardCSS: ["WimbledonBoard.svg", "FrenchOpenBoard.svg", "USOpenBoard.svg"] },
     gethenian7x7:{ dimensions: { width: 7, height: 7 }, cg: "cg-448", boardCSS: ["7x7blue.svg"] },
+    shogi6x6: { dimensions: { width: 6, height: 6 }, cg: "cg-312", boardCSS: ["judkins.svg"] },
 };
 
 export const PIECE_FAMILIES: Record<string, PieceFamily> = {
@@ -654,6 +655,19 @@ export const VARIANTS: Record<string, Variant> = {
         ui: { pieceSound: "shogi" },
     }),
 
+    judkins: variant({
+        name: "judkins", displayName: "Judkins", tooltip: "6x6 Shogi similar to Minishogi except with a knight.",
+        startFen: "rbnsgk/5p/6/6/P5/KGSNBR[-] w 0 1",
+        icon: "6️⃣",
+        boardFamily: "shogi6x6", pieceFamily: "shogi",
+        colors: { first: "Black", second: "White" },
+        pieceRow: ["k", "g", "r", "b", "s", "n", "p"],
+        pocket: { roles: ["p", "n", "s", "g", "b", "r"], captureToHand: true },
+        promotion: { type: "shogi", roles: ["p", "n", "s", "r", "b"] },
+        rules: { defaultTimeControl: "byoyomi", noDrawOffer: true },
+        ui: { pieceSound: "shogi" },
+    }),
+
     kyotoshogi: variant({
         name: "kyotoshogi", displayName: "kyoto shogi", tooltip: "A wild Shogi variant on a 5x5 board where pieces flip into a different piece after each move.",
         startFen: "p+nks+l/5/5/5/+LSK+NP[-] w 0 1",
@@ -1188,6 +1202,7 @@ export const noPuzzleVariants = [
     "gethenian",
     "grasshopper",
     "jesonmor",
+    "judkins",
     "karouk",
     "kinglet",
     "knightmate",
@@ -1203,7 +1218,7 @@ export const noPuzzleVariants = [
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     standard: { variants: [ "chess", "atomar", "backrank", "berolina", "coregal", "extinction", "kinglet", "knightmate", "legan", "pocketknight", "racingchess", "torpedo", ] },
     sea:      { variants: [ "karouk", "makhouse", ] },
-    shogi:    { variants: [ ] },
+    shogi:    { variants: [ "judkins", ] },
     xiangqi:  { variants: [ ] },
     fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "shatranj", ] },
     army:     { variants: [ "gethenian", ] },

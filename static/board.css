@@ -58,3 +58,6 @@
 .standard9x9 cg-board {
     background-image: url('images/board/9x9brown.svg');
 }
+.shogi6x6 cg-board {
+    background-image: url('images/board/judkins.svg');
+}

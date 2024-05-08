@@ -64,6 +64,7 @@ INVALID_PAWN_DROP_MATE = (
     ("P@", "gorogoro"),
     ("P@", "gorogoroplus"),
     ("S@", "torishogi"),
+    ("P@", "judkins"),
 )
 
 
