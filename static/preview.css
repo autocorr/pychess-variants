@@ -34,10 +34,10 @@ label.piece.piece3.ataxx {
 }
 
 label.piece.piece0.standard {
-    background-image: url('images/pieces/merida/wN.svg');
+    background-image: url('images/pieces/green/wN.svg');
 }
 label.piece.piece1.standard {
-    background-image: url('images/pieces/green/wN.svg');
+    background-image: url('images/pieces/merida/wN.svg');
 }
 label.piece.piece2.standard {
     background-image: url('images/pieces/alpha/wN.svg');
@@ -568,5 +568,12 @@ label.piece.piece0.knightmate {
     background-image: url('images/pieces/green/wN.svg');
 }
 label.piece.piece1.knightmate {
+    background-image: url('images/pieces/disguised/b.svg');
+}
+
+label.piece.piece0.omega10 {
+    background-image: url('images/pieces/green/wN.svg');
+}
+label.piece.piece1.omega10 {
     background-image: url('images/pieces/disguised/b.svg');
 }

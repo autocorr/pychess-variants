@@ -351,4 +351,30 @@ extinctionValue = loss
 extinctionPieceTypes = kq
 extinctionPseudoRoyal = true
 stalemateValue = loss
+
+[omega10]
+maxRank = 10
+maxFile = 10
+king = k
+queen = q
+knight = n
+rook = r
+bishop = b
+pawn = p
+customPiece1 = c:DAW
+customPiece2 = w:CF
+startFen = crnbqkbnrc/pppppppppp/10/10/10/10/10/10/PPPPPPPPPP/CRNBQKBNRC[WWww] w KQkq - 0 1
+castlingKingsideFile = h
+castlingQueensideFile = d
+doubleStepRegionWhite = *2
+doubleStepRegionBlack = *9
+tripleStepRegionWhite = *2
+tripleStepRegionBlack = *9
+promotionRegionWhite = *10
+promotionRegionBlack = *1
+promotionPawnTypes = p
+promotionPieceTypes = qnrbcw
+pieceDrops = true
+whiteDropRegion = a1 a3 c1 h1 j1 j3
+blackDropRegion = a10 a8 c10 h10 j10 j8
 `

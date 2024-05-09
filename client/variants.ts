@@ -20,7 +20,7 @@ export interface PieceFamily {
 export const BOARD_FAMILIES: Record<string, BoardFamily> = {
     ataxx7x7: { dimensions: { width: 7, height: 7 }, cg: "cg-448", boardCSS: ["ataxx.svg", "ataxx.png"] },
     standard8x8: { dimensions: { width: 8, height: 8 }, cg: "cg-512", boardCSS: ["8x8brown.svg", "8x8blue.svg", "8x8green.svg", "8x8maple.jpg", "8x8olive.jpg", "8x8santa.png", "8x8wood2.jpg", "8x8wood4.jpg", "8x8ic.svg", "8x8purple.svg"] },
-    standard9x9: { dimensions: { width: 9, height: 9 }, cg: "cg-540", boardCSS: ["9x9mansindam.svg", "9x9brown.svg", "9x9blue.svg", "9x9green.svg", "9x9maple.jpg", "9x9olive.jpg"] },
+    standard9x9: { dimensions: { width: 9, height: 9 }, cg: "cg-540", boardCSS: ["9x9brown.svg", "9x9mansindam.svg", "9x9blue.svg", "9x9green.svg", "9x9maple.jpg", "9x9olive.jpg"] },
     standard10x8: { dimensions: { width: 10, height: 8 }, cg: "cg-640", boardCSS: ["10x8brown.svg", "10x8blue.svg", "10x8green.svg", "10x8maple.jpg", "10x8olive.jpg"] },
     standard10x10: { dimensions: { width: 10, height: 10 }, cg: "cg-640-640", boardCSS: ["10x10brown.svg", "10x10blue.svg", "10x10green.svg", "10x10maple.jpg", "10x10olive.jpg"] },
     grand10x10: { dimensions: { width: 10, height: 10}, cg: "cg-640-640", boardCSS: ["Grandboard.svg", "10x10brown.svg", "10x10blue.svg", "10x10green.svg", "10x10maple.jpg", "10x10mapleGrand.png"] },
@@ -43,7 +43,7 @@ export const BOARD_FAMILIES: Record<string, BoardFamily> = {
 
 export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     ataxx: { pieceCSS: ["disguised", "virus", "zombie", "cat-dog"] },
-    standard: { pieceCSS: ["standard", "green", "alpha", "chess_kaneo", "santa", "maestro", "dubrovny", "disguised", "atopdown"] },
+    standard: { pieceCSS: ["green", "standard", "alpha", "chess_kaneo", "santa", "maestro", "dubrovny", "disguised", "atopdown"] },
     capa: { pieceCSS: ["capa0", "capa1", "capa2", "capa3", "capa4", "capa5", "disguised"] },
     dragon: { pieceCSS: ["dragon1", "dragon0", "dragon2", "disguised"] },
     seirawan: { pieceCSS: ["seir1", "seir0", "seir2", "seir3", "seir4", "seir5", "disguised"] },
@@ -75,7 +75,8 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     shatranj: { pieceCSS: ["shatranj0", "disguised"] },
     grasshopper: { pieceCSS: ["grasshopper0", "disguised"] },
     nightrider: { pieceCSS: ["nightrider0", "disguised"] },
-    knightmate: { pieceCSS: ["knightmate0", "disguised"] }
+    knightmate: { pieceCSS: ["knightmate0", "disguised"] },
+    omega10: { pieceCSS: ["omega0", "disguised"] },
 };
 
 export interface Variant {
@@ -892,6 +893,17 @@ export const VARIANTS: Record<string, Variant> = {
         },
     }),
 
+    'omega10': variant({
+        name: "omega10", tooltip: "Omega Chess variant without the corner squares.",
+        startFen: "crnbqkbnrc/pppppppppp/10/10/10/10/10/10/PPPPPPPPPP/CRNBQKBNRC[WWww] w KQkq - 0 1",
+        icon: "Ω",
+        boardFamily: "standard10x10", pieceFamily: "omega10",
+        pieceRow: ["k", "q", "c", "w", "r", "b", "n", "p"],
+        promotion: { type: "regular", order: ["q", "n", "c", "w", "r", "b"] },
+        pocket: { roles: ["w"], captureToHand: true },
+        rules: { enPassant: true },
+    }),
+
     shogun: variant({
         name: "shogun", tooltip: "Pieces promote and can be dropped, similar to Shogi.",
         startFen: "rnb+fkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNB+FKBNR w KQkq - 0 1",
@@ -1209,6 +1221,7 @@ export const noPuzzleVariants = [
     "legan",
     "makhouse",
     "nightrider",
+    "omega10",
     "pocketknight",
     "racingchess",
     "shatranj",
@@ -1220,7 +1233,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     sea:      { variants: [ "karouk", "makhouse", ] },
     shogi:    { variants: [ "judkins", ] },
     xiangqi:  { variants: [ ] },
-    fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "shatranj", ] },
+    fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "shatranj", ] },
     army:     { variants: [ "gethenian", ] },
     other:    { variants: [ "jesonmor", ] },
 };

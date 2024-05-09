@@ -77,6 +77,7 @@ MONTHLY_VARIANTS = (
     "legan",
     "makhouse",
     "nightrider",
+    "omega10",
     "pocketknight",
     "racingchess",
     "shatranj",
