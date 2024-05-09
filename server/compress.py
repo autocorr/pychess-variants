@@ -115,8 +115,9 @@ for piece in "FM":
 
 # More droppable pieces
 #   The variant that uses these pieces (cannonshogi) was added after chennis
-#   so these letters need to be here to be backward compatible
-PIECES = "UI"
+#   so these letters need to be here to be backward compatible. The letter
+#   'W' was added for `omega10` Wizard.
+PIECES = "UIW"
 m2c_len = len(M2C) + 34
 for piece in PIECES:
     M2C["%s@" % piece] = m2c_len
