@@ -507,7 +507,9 @@ export const VARIANTS: Record<string, Variant> = {
         rules: { enPassant: true },
         alternateStart: {
             '': "",
-            'No castle': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR[nN] w - - 0 1'
+            'White Handicap': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR[n] w - - 0 1',
+            'Black Handicap': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR[N] w - - 0 1',
+            'No castle': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR[nN] w - - 0 1',
         },
     }),
 
