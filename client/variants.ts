@@ -19,6 +19,7 @@ export interface PieceFamily {
 
 export const BOARD_FAMILIES: Record<string, BoardFamily> = {
     ataxx7x7: { dimensions: { width: 7, height: 7 }, cg: "cg-448", boardCSS: ["ataxx.svg", "ataxx.png"] },
+    standard7x7: { dimensions: { width: 7, height: 7 }, cg: "cg-448", boardCSS: ["7x7blue.svg"] },
     standard8x8: { dimensions: { width: 8, height: 8 }, cg: "cg-512", boardCSS: ["8x8brown.svg", "8x8blue.svg", "8x8green.svg", "8x8maple.jpg", "8x8olive.jpg", "8x8santa.png", "8x8wood2.jpg", "8x8wood4.jpg", "8x8ic.svg", "8x8purple.svg"] },
     standard9x9: { dimensions: { width: 9, height: 9 }, cg: "cg-540", boardCSS: ["9x9brown.svg", "9x9mansindam.svg", "9x9blue.svg", "9x9green.svg", "9x9maple.jpg", "9x9olive.jpg"] },
     standard10x8: { dimensions: { width: 10, height: 8 }, cg: "cg-640", boardCSS: ["10x8brown.svg", "10x8blue.svg", "10x8green.svg", "10x8maple.jpg", "10x8olive.jpg"] },
@@ -35,9 +36,8 @@ export const BOARD_FAMILIES: Record<string, BoardFamily> = {
     xiangqi7x7: { dimensions: { width: 7, height: 7 }, cg: "cg-448", boardCSS: ["minixiangqi.svg", "minixiangqiw.png", "minixqlg.svg"] },
     janggi9x10: { dimensions: { width: 9, height: 10 }, cg: "cg-576-640", boardCSS: ["JanggiBrown.svg", "JanggiPaper.png", "JanggiWood.png", "JanggiDark.svg", "JanggiWoodDark.svg", "JanggiStone.svg"] },
     shogun8x8: { dimensions: { width: 8, height: 8 }, cg: "cg-512", boardCSS: ["ShogunPlain.svg", "ShogunMaple.png", "ShogunMaple2.png", "ShogunBlue.svg", "8x8brown.svg", "8x8maple.jpg"] },
-    chak9x9:{ dimensions: { width: 9, height: 9 }, cg: "cg-540", boardCSS: ["StandardChakBoard.svg", "ColoredChakBoard.svg", "ChakArt.jpg"] },
-    chennis7x7:{ dimensions: { width: 7, height: 7 }, cg: "cg-448", boardCSS: ["WimbledonBoard.svg", "FrenchOpenBoard.svg", "USOpenBoard.svg"] },
-    gethenian7x7:{ dimensions: { width: 7, height: 7 }, cg: "cg-448", boardCSS: ["7x7blue.svg"] },
+    chak9x9: { dimensions: { width: 9, height: 9 }, cg: "cg-540", boardCSS: ["StandardChakBoard.svg", "ColoredChakBoard.svg", "ChakArt.jpg"] },
+    chennis7x7: { dimensions: { width: 7, height: 7 }, cg: "cg-448", boardCSS: ["WimbledonBoard.svg", "FrenchOpenBoard.svg", "USOpenBoard.svg"] },
     shogi6x6: { dimensions: { width: 6, height: 6 }, cg: "cg-312", boardCSS: ["judkins.svg"] },
 };
 
@@ -520,6 +520,18 @@ export const VARIANTS: Record<string, Variant> = {
         boardFamily: "standard8x8", pieceFamily: "knightmate",
         pieceRow: ["k", "q", "r", "b", "m", "p"],
         rules: { enPassant: true },
+    }),
+
+    dragonfly: variant({
+        name: "dragonfly", displayName: "Dragonfly", tooltip: "Simplified Crazyhouse without special pawn promotion rules.",
+        startFen: "rbbknnr/ppppppp/7/7/7/PPPPPPP/RBBKNNR[] w - - 0 1",
+        icon: "🍃",
+        boardFamily: "standard7x7", pieceFamily: "standard",
+        pieceRow: ["k", "r", "b", "n", "p"],
+        pocket: {
+            roles: ["p", "n", "b", "r"],
+            captureToHand: true,
+        },
     }),
 
     duck: variant({
@@ -1134,7 +1146,7 @@ export const VARIANTS: Record<string, Variant> = {
         name: "gethenian", tooltip: "Pieces alternate between left- and right-hand forms with each move.",
         startFen: "2ikb2/2mnm2/7/7/7/2MNM2/2B+KI2[] w - - 0 1",
         icon: "✋",
-        boardFamily: "gethenian7x7", pieceFamily: "gethenian",
+        boardFamily: "standard7x7", pieceFamily: "gethenian",
         pieceRow: ["k", "b", "i", "n", "m"],
         pocket: { roles: ["n", "b", "i", "m"], captureToHand: true },
         promotion: { type: "shogi", roles: ["k", "b", "i", "n", "m"] },
@@ -1212,6 +1224,7 @@ export const noPuzzleVariants = [
     "berolian",
     "chess",
     "coregal",
+    "dragonfly",
     "extinction",
     "gethenian",
     "grasshopper",
@@ -1231,7 +1244,7 @@ export const noPuzzleVariants = [
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "chess", "atomar", "backrank", "berolina", "coregal", "extinction", "kinglet", "knightmate", "legan", "pocketknight", "racingchess", "torpedo", ] },
+    standard: { variants: [ "chess", "atomar", "backrank", "berolina", "coregal", "dragonfly", "extinction", "kinglet", "knightmate", "legan", "pocketknight", "racingchess", "torpedo", ] },
     sea:      { variants: [ "karouk", "makhouse", ] },
     shogi:    { variants: [ "judkins", ] },
     xiangqi:  { variants: [ ] },

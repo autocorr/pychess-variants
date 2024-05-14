@@ -66,6 +66,7 @@ MONTHLY_VARIANTS = (
     "backrank",
     "berolina",
     "coregal",
+    "dragonfly",
     "extinction",
     "grasshopper",
     "grasshopperking",
