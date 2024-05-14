@@ -529,7 +529,7 @@ export const VARIANTS: Record<string, Variant> = {
         boardFamily: "standard7x7", pieceFamily: "standard",
         pieceRow: ["k", "r", "b", "n", "p"],
         pocket: {
-            roles: ["p", "n", "b", "r"],
+            roles: ["n", "b", "r"],
             captureToHand: true,
         },
     }),
