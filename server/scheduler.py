@@ -83,6 +83,7 @@ MONTHLY_VARIANTS = (
     "racingchess",
     "shatranj",
     "torpedo",
+    "whaleshogi",
 )
 
 # Old MONTHLY tournaments, needed to create translated tourney names

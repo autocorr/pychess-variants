@@ -393,4 +393,36 @@ doubleStep = false
 dropNoDoubled = p
 dropNoDoubledCount = 0
 startFen = rbbknnr/ppppppp/7/7/7/PPPPPPP/RBBKNNR[] w KQkq - 0 1
+
+[whaleshogi]
+maxRank = 6
+maxFile = 6
+king = k
+shogiPawn = d
+customPiece1 = h:FbW
+customPiece2 = g:fRbB
+customPiece3 = p:lrW
+customPiece4 = w:RF
+customPiece5 = n:fDlrbW
+customPiece6 = b:fFfbW
+customPiece7 = o:fWbB
+startFen = hgk+wnb/dddddd/6/6/DDDDDD/HGK+WNB[-] w - - 0 1
+pieceDrops = true
+capturesToHand = true
+promotionPieceTypes = -
+promotedPieceType = w:p d:o
+promotionRegionWhite = *6
+promotionRegionBlack = *1
+doubleStep = false
+castling = false
+dropNoDoubled = d
+dropNoDoubledCount = 2
+immobilityIllegal = true
+shogiPawnDropMateIllegal = true
+perpetualCheckIllegal = true
+nFoldRule = 4
+nMoveRule = 0
+nFoldValue = loss
+nFoldValueAbsolute = true
+stalemateValue = loss
 `

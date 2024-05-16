@@ -577,3 +577,10 @@ label.piece.piece0.omega10 {
 label.piece.piece1.omega10 {
     background-image: url('images/pieces/disguised/b.svg');
 }
+
+label.piece.piece0.whaleshogi {
+    background-image: url('images/pieces/whale/letters/0W.svg');
+}
+label.piece.piece1.whaleshogi {
+    background-image: url('images/pieces/disguised/shogi-ally.svg');
+}

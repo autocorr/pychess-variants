@@ -196,6 +196,7 @@ VARIANTS = (
     "shatranj",
     "torpedo",
     "torpedo960",
+    "whaleshogi",
 )
 
 VARIANT_ICONS = {
@@ -291,6 +292,7 @@ VARIANT_ICONS = {
     "shatranj": "🐘",
     "torpedo": "🏄",
     "torpedo960": "🏄",
+    "whaleshogi": "🐋",
 }
 
 VARIANT_960_TO_PGN = {
@@ -411,6 +413,7 @@ CATEGORIES = {
         "torishogi",
         "cannonshogi",
         "judkins",
+        "whaleshogi",
     ),
     "xiangqi": (
         "xiangqi",
@@ -593,6 +596,7 @@ TRANSLATED_VARIANT_NAMES = {
     "shatranj": _("Shatranj"),
     "torpedo": _("Torpedo"),
     "torpedo960": _("Torpedo 960"),
+    "whaleshogi": _("Whale Shogi"),
 }
 
 del _

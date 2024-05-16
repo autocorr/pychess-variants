@@ -29,6 +29,7 @@ export const BOARD_FAMILIES: Record<string, BoardFamily> = {
     sittuyin8x8: { dimensions: { width: 8, height: 8 }, cg: "cg-512", boardCSS: ["sittuyin2.svg", "sittuyin.svg", "sittuyin.jpg", "sittuyingreen.svg", "sittuyinGrainBrown.svg", "sittuyinWood.png"] },
     shogi9x9: { dimensions: { width: 9, height: 9 }, cg: "cg-576", boardCSS: ["shogi.svg", "Shogiban1.png", "Shogiban2.png", "shogic.svg", "ShogiMaple.png", 'ShogiGrayTexture.png', "ShogiSpace1.svg", "dobutsu.png", "ShogiOak.png"] },
     shogi7x7: { dimensions: { width: 7, height: 7 }, cg: "cg-448-516", boardCSS: ["ToriPlain.svg", "ToriWood.svg", "ToriDaySky.svg", "ToriNightSky.svg"] },
+    shogi6x6: { dimensions: { width: 6, height: 6 }, cg: "cg-312", boardCSS: ["judkins.svg"] },
     shogi5x5: { dimensions: { width: 5, height: 5 }, cg: "cg-260", boardCSS: ["minishogi.svg", "MiniboardWood1.png", "MiniboardWood2.png", "MinishogiDobutsu.svg", "MinishogiDobutsu2.svg"] },
     shogi5x6: { dimensions: { width: 5, height: 6 }, cg: "cg-260-360", boardCSS: ["gorogoro.svg", "gorogoroboard.svg", "gorogoro2.svg", "GorogoroWood.png"] },
     shogi3x4: { dimensions: { width: 3, height: 4 }, cg: "cg-156", boardCSS: ["doubutsuboard.svg", "dobutsu3x4.svg"] },
@@ -38,7 +39,6 @@ export const BOARD_FAMILIES: Record<string, BoardFamily> = {
     shogun8x8: { dimensions: { width: 8, height: 8 }, cg: "cg-512", boardCSS: ["ShogunPlain.svg", "ShogunMaple.png", "ShogunMaple2.png", "ShogunBlue.svg", "8x8brown.svg", "8x8maple.jpg"] },
     chak9x9: { dimensions: { width: 9, height: 9 }, cg: "cg-540", boardCSS: ["StandardChakBoard.svg", "ColoredChakBoard.svg", "ChakArt.jpg"] },
     chennis7x7: { dimensions: { width: 7, height: 7 }, cg: "cg-448", boardCSS: ["WimbledonBoard.svg", "FrenchOpenBoard.svg", "USOpenBoard.svg"] },
-    shogi6x6: { dimensions: { width: 6, height: 6 }, cg: "cg-312", boardCSS: ["judkins.svg"] },
 };
 
 export const PIECE_FAMILIES: Record<string, PieceFamily> = {
@@ -77,6 +77,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     nightrider: { pieceCSS: ["nightrider0", "disguised"] },
     knightmate: { pieceCSS: ["knightmate0", "disguised"] },
     omega10: { pieceCSS: ["omega0", "disguised"] },
+    whaleshogi: { pieceCSS: ["whale0", "disguised"] },
 };
 
 export interface Variant {
@@ -683,6 +684,19 @@ export const VARIANTS: Record<string, Variant> = {
         ui: { pieceSound: "shogi" },
     }),
 
+    whaleshogi: variant({
+        name: "whaleshogi", displayName: "Whale", tooltip: "6x6 Shogi with whale-theme pieces.",
+        startFen: "hgk+wnb/dddddd/6/6/DDDDDD/HGK+WNB[-] w - - 0 1",
+        icon: "🐋",
+        boardFamily: "shogi6x6", pieceFamily: "whaleshogi",
+        colors: { first: "Black", second: "White" },
+        pieceRow: ["k", "h", "g", "n", "b", "p", "w", "d"],
+        pocket: { roles: ["d", "b", "h", "n", "g", "w"], captureToHand: true },
+        promotion: { type: "regular", roles: ["d", "w"] },
+        rules: { defaultTimeControl: "byoyomi", noDrawOffer: true },
+        ui: { pieceSound: "shogi" },
+    }),
+
     kyotoshogi: variant({
         name: "kyotoshogi", displayName: "kyoto shogi", tooltip: "A wild Shogi variant on a 5x5 board where pieces flip into a different piece after each move.",
         startFen: "p+nks+l/5/5/5/+LSK+NP[-] w 0 1",
@@ -1241,12 +1255,13 @@ export const noPuzzleVariants = [
     "racingchess",
     "shatranj",
     "torpedo",
+    "whaleshogi",
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     standard: { variants: [ "chess", "atomar", "backrank", "berolina", "coregal", "dragonfly", "extinction", "kinglet", "knightmate", "legan", "pocketknight", "racingchess", "torpedo", ] },
     sea:      { variants: [ "karouk", "makhouse", ] },
-    shogi:    { variants: [ "judkins", ] },
+    shogi:    { variants: [ "judkins", "whaleshogi", ] },
     xiangqi:  { variants: [ ] },
     fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "shatranj", ] },
     army:     { variants: [ "gethenian", ] },
