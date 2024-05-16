@@ -27,6 +27,7 @@ export const BOARD_FAMILIES: Record<string, BoardFamily> = {
     grand10x10: { dimensions: { width: 10, height: 10}, cg: "cg-640-640", boardCSS: ["Grandboard.svg", "10x10brown.svg", "10x10blue.svg", "10x10green.svg", "10x10maple.jpg", "10x10mapleGrand.png"] },
     makruk8x8: { dimensions: { width: 8, height: 8 }, cg: "cg-512", boardCSS: ["makruk2.svg", "makruk.svg", "makrukWhite.svg", "makruk.jpg", "makrukWood.png"] },
     sittuyin8x8: { dimensions: { width: 8, height: 8 }, cg: "cg-512", boardCSS: ["sittuyin2.svg", "sittuyin.svg", "sittuyin.jpg", "sittuyingreen.svg", "sittuyinGrainBrown.svg", "sittuyinWood.png"] },
+    shogi9x9point: { dimensions: { width: 9, height: 9 }, cg: "cg-576", boardCSS: ["CetusBoard.svg"] },
     shogi9x9: { dimensions: { width: 9, height: 9 }, cg: "cg-576", boardCSS: ["shogi.svg", "Shogiban1.png", "Shogiban2.png", "shogic.svg", "ShogiMaple.png", 'ShogiGrayTexture.png', "ShogiSpace1.svg", "dobutsu.png", "ShogiOak.png"] },
     shogi7x7: { dimensions: { width: 7, height: 7 }, cg: "cg-448-516", boardCSS: ["ToriPlain.svg", "ToriWood.svg", "ToriDaySky.svg", "ToriNightSky.svg"] },
     shogi6x6: { dimensions: { width: 6, height: 6 }, cg: "cg-312", boardCSS: ["judkins.svg"] },
@@ -78,6 +79,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     knightmate: { pieceCSS: ["knightmate0", "disguised"] },
     omega10: { pieceCSS: ["omega0", "disguised"] },
     whaleshogi: { pieceCSS: ["whale0", "disguised"] },
+    cetus: { pieceCSS: ["cetus0", "disguised"] },
 };
 
 export interface Variant {
@@ -1214,6 +1216,17 @@ export const VARIANTS: Record<string, Variant> = {
         pieceRow: ["n"],
         ui: { boardMark: 'kingofthehill' },
     }),
+
+    cetus: variant({
+        name: "cetus", tooltip: _("Connect 5 whales in a straight line."),
+        startFen: "9/9/9/1b7/9/9/9/2B6/9[PPNHSDOppnnhhssdo] w - - 0 1",
+        icon: "🐳",
+        boardFamily: "shogi9x9", pieceFamily: "cetus",
+        colors: { first: "Black", second: "White" },
+        pieceRow: ["b", "p", "n", "h", "s", "d", "o", "k"],
+        pocket: { roles: ["n", "h", "s", "d", "o"], captureToHand: true },
+        ui: { pieceSound: "shogi" },
+    }),
 };
 
 export const variants = Object.keys(VARIANTS);
@@ -1236,6 +1249,7 @@ export const noPuzzleVariants = [
     "atomar",
     "backrank",
     "berolian",
+    "cetus",
     "chess",
     "coregal",
     "dragonfly",
@@ -1265,7 +1279,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     xiangqi:  { variants: [ ] },
     fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "shatranj", ] },
     army:     { variants: [ "gethenian", ] },
-    other:    { variants: [ "jesonmor", ] },
+    other:    { variants: [ "cetus", "jesonmor", ] },
 };
 
 function variantGroupLabel(group: string): string {

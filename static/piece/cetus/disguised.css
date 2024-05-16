@@ -1,0 +1,6 @@
+.cetus piece.white {
+    background-image: url('../../images/pieces/disguised/w.svg');
+}
+.cetus piece.black {
+    background-image: url('../../images/pieces/disguised/b.svg');
+}

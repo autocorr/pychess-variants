@@ -169,6 +169,7 @@ VARIANTS = (
     "backrank960",
     "berolina",
     "berolina960",
+    "cetus",
     "coregal",
     "coregal960",
     "dragonfly",
@@ -265,6 +266,7 @@ VARIANT_ICONS = {
     "backrank960": "☝️",
     "berolina": "🥨",
     "berolina960": "🥨",
+    "cetus": "🐳",
     "coregal": "🧑‍🤝‍🧑",
     "coregal960": "🧑‍🤝‍🧑",
     "dragonfly": "🍃",
@@ -423,6 +425,7 @@ CATEGORIES = {
     ),
     "other": (
         "ataxx",
+        "cetus",
         "jesonmor",
     ),
 }
@@ -569,6 +572,7 @@ TRANSLATED_VARIANT_NAMES = {
     "backrank960": _("Backrank 960"),
     "berolina": _("Berolina"),
     "berolina960": _("Berolina 960"),
+    "cetus": _("Cetus"),
     "coregal": _("Coregal"),
     "coregal960": _("Coregal 960"),
     "dragonfly": _("Dragonfly"),

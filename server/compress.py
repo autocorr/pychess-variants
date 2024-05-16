@@ -81,6 +81,7 @@ V2C = {
     "omega10": "‹",
     "dragonfly": "Œ",
     "whaleshogi": "Ž",
+    "cetus": "‘",
 }
 C2V = {v: k for k, v in V2C.items()}
 
@@ -119,7 +120,7 @@ for piece in "FM":
 #   The variant that uses these pieces (cannonshogi) was added after chennis
 #   so these letters need to be here to be backward compatible. The letter
 #   'W' was added for `omega10` Wizard.
-PIECES = "UIW"
+PIECES = "UIWO"
 m2c_len = len(M2C) + 34
 for piece in PIECES:
     M2C["%s@" % piece] = m2c_len

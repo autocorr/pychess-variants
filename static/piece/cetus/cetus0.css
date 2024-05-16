@@ -1,0 +1,49 @@
+.cetus piece.b-piece.white {
+    background-image: url('../../images/pieces/cetus/ct_gr/GBlueWhale.svg');
+}
+.cetus piece.p-piece.white {
+    background-image: url('../../images/pieces/cetus/ct_gr/GPorpoise.svg');
+}
+.cetus piece.n-piece.white {
+    background-image: url('../../images/pieces/cetus/ct_gr/GNarwhal.svg');
+}
+.cetus piece.h-piece.white {
+    background-image: url('../../images/pieces/cetus/ct_gr/GHumpback.svg');
+}
+.cetus piece.s-piece.white {
+    background-image: url('../../images/pieces/cetus/ct_gr/GSperm.svg');
+}
+.cetus piece.d-piece.white {
+    background-image: url('../../images/pieces/cetus/ct_gr/GDolphin.svg');
+}
+.cetus piece.o-piece.white {
+    background-image: url('../../images/pieces/cetus/ct_gr/GOrca_H.svg');
+}
+.cetus piece.po-piece.white {
+    background-image: url('../../images/pieces/cetus/ct_gr/GOrca_V.svg');
+}
+
+.cetus piece.b-piece.black {
+    background-image: url('../../images/pieces/cetus/ct_gr/RBlueWhale.svg');
+}
+.cetus piece.p-piece.black {
+    background-image: url('../../images/pieces/cetus/ct_gr/RPorpoise.svg');
+}
+.cetus piece.n-piece.black {
+    background-image: url('../../images/pieces/cetus/ct_gr/RNarwhal.svg');
+}
+.cetus piece.h-piece.black {
+    background-image: url('../../images/pieces/cetus/ct_gr/RHumpback.svg');
+}
+.cetus piece.s-piece.black {
+    background-image: url('../../images/pieces/cetus/ct_gr/RSperm.svg');
+}
+.cetus piece.d-piece.black {
+    background-image: url('../../images/pieces/cetus/ct_gr/RDolphin.svg');
+}
+.cetus piece.o-piece.black {
+    background-image: url('../../images/pieces/cetus/ct_gr/ROrca_V.svg');
+}
+.cetus piece.po-piece.black {
+    background-image: url('../../images/pieces/cetus/ct_gr/ROrca_H.svg');
+}

@@ -65,6 +65,7 @@ MONTHLY_VARIANTS = (
     "atomar",
     "backrank",
     "berolina",
+    "cetus",
     "coregal",
     "dragonfly",
     "extinction",
