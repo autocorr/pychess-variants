@@ -1223,8 +1223,8 @@ export const VARIANTS: Record<string, Variant> = {
         icon: "🐳",
         boardFamily: "shogi9x9", pieceFamily: "cetus",
         colors: { first: "Black", second: "White" },
-        pieceRow: ["b", "p", "n", "h", "s", "d", "o", "k"],
-        pocket: { roles: ["n", "h", "s", "d", "o"], captureToHand: true },
+        pieceRow: ["b", "p", "n", "h", "s", "d", "o", "+o"],
+        pocket: { roles: ["p", "n", "h", "s", "d", "o"], captureToHand: true },
         ui: { pieceSound: "shogi" },
     }),
 };

@@ -42,8 +42,8 @@
     background-image: url('../../images/pieces/cetus/ct_gr/RDolphin.svg');
 }
 .cetus piece.o-piece.black {
-    background-image: url('../../images/pieces/cetus/ct_gr/ROrca_V.svg');
+    background-image: url('../../images/pieces/cetus/ct_gr/ROrca_H.svg');
 }
 .cetus piece.po-piece.black {
-    background-image: url('../../images/pieces/cetus/ct_gr/ROrca_H.svg');
+    background-image: url('../../images/pieces/cetus/ct_gr/ROrca_V.svg');
 }
