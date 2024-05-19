@@ -163,6 +163,8 @@ VARIANTS = (
     "spartan",
     "ataxx",
     # Alternates
+    "antichess",
+    "antichess960",
     "atomar",
     "atomar960",
     "backrank",
@@ -260,6 +262,8 @@ VARIANT_ICONS = {
     "3check": "☰",
     "3check960": "☷",
     # Alternates
+    "antichess": "🙃",
+    "antichess960": "🙃",
     "atomar": "🤯",
     "atomar960": "🤯",
     "backrank": "☝️",
@@ -313,6 +317,7 @@ VARIANT_960_TO_PGN = {
     "placement": "Placement",
     "grand": "Grand",
     # Alternates
+    "antichess": "Antichess",
     "atomar": "Atomar",
     "backrank": "Backrank",
     "berolina": "Berolina",
@@ -340,6 +345,8 @@ CATEGORIES = {
         "3check",
         "3check960",
         "duck",
+        "antichess",
+        "antichess960",
         "atomar",
         "atomar960",
         "backrank",
@@ -566,6 +573,8 @@ TRANSLATED_VARIANT_NAMES = {
     "3check960": _("Three check 960"),
     "mansindam": _("Mansindam"),
     # Alternates
+    "antichess": _("Antichess"),
+    "antichess960": _("Antichess 960"),
     "atomar": _("Atomar"),
     "atomar960": _("Atomar 960"),
     "backrank": _("Backrank"),

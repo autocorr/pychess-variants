@@ -82,6 +82,7 @@ V2C = {
     "dragonfly": "Œ",
     "whaleshogi": "Ž",
     "cetus": "‘",
+    "antichess": "’",
 }
 C2V = {v: k for k, v in V2C.items()}
 

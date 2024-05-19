@@ -537,6 +537,15 @@ export const VARIANTS: Record<string, Variant> = {
         },
     }),
 
+    antichess: variant({
+        name: "antichess", tooltip: "Lose all your pieces to win.",
+        startFen: "rmbqkbmr/pppppppp/8/8/8/8/PPPPPPPP/RMBQKBMR w KQkq - 0 1",
+        chess960: true, icon: "🙃", icon960: "🙃",
+        boardFamily: "standard8x8", pieceFamily: "standard",
+        pieceRow: ["k", "q", "r", "b", "m", "p"],
+        rules: { enPassant: true },
+    }),
+
     duck: variant({
         name: "duck", tooltip: "The duck must be moved to a new square after every turn.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1246,6 +1255,7 @@ export const noPuzzleVariants = [
     "shinobiplus",
     "cannonshogi",
     // new alternates
+    "antichess",
     "atomar",
     "backrank",
     "berolian",
@@ -1273,7 +1283,7 @@ export const noPuzzleVariants = [
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "chess", "atomar", "backrank", "berolina", "coregal", "dragonfly", "extinction", "kinglet", "knightmate", "legan", "pocketknight", "racingchess", "torpedo", ] },
+    standard: { variants: [ "chess", "antichess", "atomar", "backrank", "berolina", "coregal", "dragonfly", "extinction", "kinglet", "knightmate", "legan", "pocketknight", "racingchess", "torpedo", ] },
     sea:      { variants: [ "karouk", "makhouse", ] },
     shogi:    { variants: [ "judkins", "whaleshogi", ] },
     xiangqi:  { variants: [ ] },
