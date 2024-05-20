@@ -67,6 +67,7 @@ MONTHLY_VARIANTS = (
     "backrank",
     "berolina",
     "cetus",
+    "coffeehouse",
     "coregal",
     "dragonfly",
     "extinction",
