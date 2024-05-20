@@ -71,6 +71,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     chak: { pieceCSS: ["chak0", "chak1", "disguised"] },
     chennis: { pieceCSS: ["chennis0", "chennis1", "chennis2", "chennis3", "chennis4", "disguised"] },
     spartan: { pieceCSS: ["spartan0", "disguised"] },
+    spartanmirror: { pieceCSS: ["spartanmirror0", "disguised"] },
     mansindam: { pieceCSS: ["mansindam2", "mansindam1", "mansindam3", "mansindam4", "disguised"] },
     gethenian: { pieceCSS: ["gethenian0", "gethenian1", "disguised"] },
     shatranj: { pieceCSS: ["shatranj0", "disguised"] },
@@ -1179,6 +1180,14 @@ export const VARIANTS: Record<string, Variant> = {
         pieceRow: { white: ["k", "q", "r", "b", "n", "p"], black: ["k", "g", "w", "l", "c", "h"] },
     }),
 
+    spartanmirror: variant({
+        name: "spartanmirror", displayName: "spartan mirror", tooltip: "Symmetric Spartans vs. Spartans variant.",
+        startFen: "lgkcckwl/hhhhhhhh/8/8/8/8/hhhhhhhh/LGKCCKWL w - - 0 1",
+        icon: "⍺",
+        boardFamily: "standard8x8", pieceFamily: "spartanmirror",
+        pieceRow: ["k", "g", "w", "l", "c", "h"],
+    }),
+
     mansindam: variant({
         name: "mansindam", tooltip: "A variant that combines the Shogi's drop rule with strong pieces.",
         startFen: "rnbakqcnm/9/ppppppppp/9/9/9/PPPPPPPPP/9/MNCQKABNR[] w - - 0 1",
@@ -1302,6 +1311,7 @@ export const noPuzzleVariants = [
     "pocketknight",
     "racingchess",
     "shatranj",
+    "spartanmirror",
     "torpedo",
     "whaleshogi",
 ]
@@ -1312,7 +1322,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     shogi:    { variants: [ "judkins", "whaleshogi", ] },
     xiangqi:  { variants: [ ] },
     fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "shatranj", ] },
-    army:     { variants: [ "gethenian", ] },
+    army:     { variants: [ "gethenian", "spartanmirror" ] },
     other:    { variants: [ "cetus", "jesonmor", ] },
 };
 

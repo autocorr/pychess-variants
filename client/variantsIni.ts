@@ -456,4 +456,10 @@ mustCapture = true
 [kamikazerooks:chess]
 extinctionValue = win
 extinctionPieceTypes = r
+
+[spartanmirror:spartan]
+startFen = lgkcckwl/hhhhhhhh/8/8/8/8/HHHHHHHH/LGKCCKWL w - - 0 1
+promotionPawnTypes = h
+promotionPieceTypes = kgwlc
+nMoveRuleTypes = h
 `

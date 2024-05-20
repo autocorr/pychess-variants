@@ -584,3 +584,11 @@ label.piece.piece0.whaleshogi {
 label.piece.piece1.whaleshogi {
     background-image: url('images/pieces/disguised/shogi-ally.svg');
 }
+
+label.piece.piece0.spartanmirror {
+    background-image: url('images/pieces/spartan/bK.svg');
+}
+label.piece.piece1.spartanmirror {
+    background-image: url('images/pieces/disguised/b.svg');
+}
+

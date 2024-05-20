@@ -1,0 +1,36 @@
+.spartanmirror piece.h-piece.white {
+    background-image: url('../../images/pieces/spartan/wP.svg');
+}
+.spartanmirror piece.l-piece.white {
+    background-image: url('../../images/pieces/spartan/wLieutenant.svg');
+}
+.spartanmirror piece.w-piece.white {
+    background-image: url('../../images/pieces/spartan/wWarlord.svg');
+}
+.spartanmirror piece.g-piece.white {
+    background-image: url('../../images/pieces/spartan/wGeneral.svg');
+}
+.spartanmirror piece.c-piece.white {
+    background-image: url('../../images/pieces/spartan/wCaptain.svg');
+}
+.spartanmirror piece.k-piece.white {
+    background-image: url('../../images/pieces/spartan/wK.svg');
+}
+.spartanmirror piece.h-piece.black {
+    background-image: url('../../images/pieces/spartan/bP.svg');
+}
+.spartanmirror piece.l-piece.black {
+    background-image: url('../../images/pieces/spartan/bLieutenant.svg');
+}
+.spartanmirror piece.w-piece.black {
+    background-image: url('../../images/pieces/spartan/bWarlord.svg');
+}
+.spartanmirror piece.g-piece.black {
+    background-image: url('../../images/pieces/spartan/bGeneral.svg');
+}
+.spartanmirror piece.c-piece.black {
+    background-image: url('../../images/pieces/spartan/bCaptain.svg');
+}
+.spartanmirror piece.k-piece.black {
+    background-image: url('../../images/pieces/spartan/bK.svg');
+}
