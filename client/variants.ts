@@ -66,6 +66,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     synochess: { pieceCSS: ["synochess0", "synochess1", "synochess2", "synochess3", "synochess4", "synochess5", "disguised"] },
     hoppel: { pieceCSS: ["hoppel0", "hoppel1", "hoppel2", "disguised"] },
     shinobi: { pieceCSS: ["shinobi0", "shinobi1", "disguised"] },
+    shinobimirror: { pieceCSS: ["shinobimirror0", "disguised"] },
     empire: { pieceCSS: ["empire0", "empire1", "disguised"] },
     ordamirror: { pieceCSS: ["ordamirror0", "ordamirror1", "disguised"] },
     chak: { pieceCSS: ["chak0", "chak1", "disguised"] },
@@ -1110,6 +1111,27 @@ export const VARIANTS: Record<string, Variant> = {
         },
     }),
 
+    shinobiplusmirror: variant({
+        name: "shinobiplusmirror", displayName: "shinobi+ mirror", tooltip: "Symmetric Clan vs Clan.",
+        startFen: "4k3/pppppppp/8/8/8/8/PPPPPPPP/4K3[JDFCLHMjdfclhm] w - - 0 1",
+        icon: "🐢",
+        boardFamily: "standard8x8", pieceFamily: "shinobimirror",
+        colors: { first: "Pink", second: "Black" },
+        pieceRow: ["k", "f", "d", "j", "l", "h", "m", "p"],
+        pocket: { roles: ["l", "h", "m", "d", "j", "f", "c"], captureToHand: false },
+        promotion: { type: "shogi", roles: ["p", "l", "h", "m"] },
+        rules: { enPassant: true },
+        ui: { boardMark: 'campmate' },
+        material: {
+            equivalences: {
+                'pl-piece': 'r-piece',
+                'ph-piece': 'n-piece',
+                'pm-piece': 'b-piece',
+                'pp-piece': 'c-piece',
+            },
+        },
+    }),
+
     empire: variant({
         name: "empire", tooltip: "Asymmetric variant where one army has pieces that move like queens but capture as usual.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/PPPSSPPP/8/TECDKCET w kq - 0 1",
@@ -1206,6 +1228,7 @@ export const VARIANTS: Record<string, Variant> = {
         pieceRow: ["k", "b", "i", "n", "m"],
         pocket: { roles: ["n", "b", "i", "m"], captureToHand: true },
         promotion: { type: "shogi", roles: ["k", "b", "i", "n", "m"] },
+        kingRoles: ["k", "+k"],
     }),
 
     // We support the functionality to import/store/analyze some variants
@@ -1311,6 +1334,7 @@ export const noPuzzleVariants = [
     "pocketknight",
     "racingchess",
     "shatranj",
+    "shinobiplusmirror",
     "spartanmirror",
     "torpedo",
     "whaleshogi",
@@ -1322,7 +1346,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     shogi:    { variants: [ "judkins", "whaleshogi", ] },
     xiangqi:  { variants: [ ] },
     fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "shatranj", ] },
-    army:     { variants: [ "gethenian", "spartanmirror" ] },
+    army:     { variants: [ "gethenian", "shinobiplusmirror", "spartanmirror" ] },
     other:    { variants: [ "cetus", "jesonmor", ] },
 };
 

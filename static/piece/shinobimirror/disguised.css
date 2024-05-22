@@ -1,0 +1,6 @@
+.shinobimirror piece.white {
+    background-image: url('../../images/pieces/disguised/p.svg');
+}
+.shinobimirror piece.black {
+    background-image: url('../../images/pieces/disguised/b.svg');
+}

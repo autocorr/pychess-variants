@@ -1,0 +1,79 @@
+.shinobimirror piece.p-piece.white {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/wP.svg');
+}
+.shinobimirror piece.l-piece.white {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/wL.svg');
+}
+.shinobimirror piece.h-piece.white {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/wH.svg');
+}
+.shinobimirror piece.c-piece.white {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/wC.svg');
+}
+.shinobimirror piece.k-piece.white {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/wK.svg');
+}
+.shinobimirror piece.m-piece.white {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/wM.svg');
+}
+.shinobimirror piece.d-piece.white {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/wD.svg');
+}
+.shinobimirror piece.j-piece.white {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/wJ.svg');
+}
+.shinobimirror piece.f-piece.white {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/wF.svg');
+}
+.shinobimirror piece.pp-piece.white {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/wC.svg');
+}
+.shinobimirror piece.pl-piece.white {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/wR.svg');
+}
+.shinobimirror piece.ph-piece.white {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/wN.svg');
+}
+.shinobimirror piece.pm-piece.white {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/wB.svg');
+}
+
+.shinobimirror piece.p-piece.black {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/bP.svg');
+}
+.shinobimirror piece.l-piece.black {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/bL.svg');
+}
+.shinobimirror piece.h-piece.black {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/bH.svg');
+}
+.shinobimirror piece.c-piece.black {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/bC.svg');
+}
+.shinobimirror piece.k-piece.black {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/bK.svg');
+}
+.shinobimirror piece.m-piece.black {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/bM.svg');
+}
+.shinobimirror piece.d-piece.black {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/bD.svg');
+}
+.shinobimirror piece.j-piece.black {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/bJ.svg');
+}
+.shinobimirror piece.f-piece.black {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/bF.svg');
+}
+.shinobimirror piece.pp-piece.black {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/bC.svg');
+}
+.shinobimirror piece.pl-piece.black {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/bR.svg');
+}
+.shinobimirror piece.ph-piece.black {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/bN.svg');
+}
+.shinobimirror piece.pm-piece.black {
+    background-image: url('../../images/pieces/shinobi/cburnett_mirror/bB.svg');
+}

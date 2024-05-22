@@ -86,6 +86,7 @@ V2C = {
     "coffeehouse": "“",
     "kamikazerooks": "”",
     "spartanmirror": "•",
+    "shinobiplusmirror": "–",
 }
 C2V = {v: k for k, v in V2C.items()}
 

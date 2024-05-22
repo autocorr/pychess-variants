@@ -86,6 +86,7 @@ MONTHLY_VARIANTS = (
     "pocketknight",
     "racingchess",
     "shatranj",
+    "shinobiplusmirror",
     "spartanmirror",
     "torpedo",
     "whaleshogi",
