@@ -68,6 +68,7 @@ MONTHLY_VARIANTS = (
     "berolina",
     "cetus",
     "coffeehouse",
+    "coffeeshogi",
     "coffeethreecheck",
     "coregal",
     "dragonfly",

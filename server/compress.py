@@ -88,6 +88,7 @@ V2C = {
     "spartanmirror": "•",
     "shinobiplusmirror": "–",
     "coffeethreecheck": "—",
+    "coffeeshogi": "˜",
 }
 C2V = {v: k for k, v in V2C.items()}
 

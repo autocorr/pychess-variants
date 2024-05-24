@@ -693,6 +693,19 @@ export const VARIANTS: Record<string, Variant> = {
         },
     }),
 
+    coffeeshogi: variant({
+        name: "coffeeshogi", displayName: "coffee shogi", tooltip: "Shogi with mandatory capture.",
+        startFen: "lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL[-] w 0 1",
+        icon: "K",
+        boardFamily: "shogi9x9", pieceFamily: "shogi",
+        colors: { first: "Black", second: "White" },
+        pieceRow: ["k", "g", "r", "b", "s", "n", "l", "p"],
+        pocket: { roles: ["p", "l", "n", "s", "g", "b", "r"], captureToHand: true },
+        promotion: { type: "shogi", roles: ["p", "l", "n", "s", "r", "b"] },
+        rules: { defaultTimeControl: "byoyomi", noDrawOffer: true },
+        ui: { pieceSound: "shogi" },
+    }),
+
     cannonshogi: variant({
         name: "cannonshogi", displayName: "cannon shogi", tooltip: _("Shogi with Chinese and Korean cannons"),
         startFen: "lnsgkgsnl/1rci1uab1/p1p1p1p1p/9/9/9/P1P1P1P1P/1BAU1ICR1/LNSGKGSNL[-] w 0 1",
@@ -1330,6 +1343,7 @@ export const noPuzzleVariants = [
     "cetus",
     "chess",
     "coffeehouse",
+    "coffeeshogi",
     "coffeethreecheck",
     "coregal",
     "dragonfly",
@@ -1358,7 +1372,7 @@ export const noPuzzleVariants = [
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     standard: { variants: [ "chess", "antichess", "atomar", "backrank", "berolina", "coffeehouse", "coffeethreecheck", "coregal", "dragonfly", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "pocketknight", "racingchess", "torpedo", ] },
     sea:      { variants: [ "karouk", "makhouse", ] },
-    shogi:    { variants: [ "judkins", "whaleshogi", ] },
+    shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", ] },
     xiangqi:  { variants: [ ] },
     fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "shatranj", ] },
     army:     { variants: [ "gethenian", "shinobiplusmirror", "spartanmirror" ] },
