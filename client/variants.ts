@@ -541,11 +541,24 @@ export const VARIANTS: Record<string, Variant> = {
 
     antichess: variant({
         name: "antichess", tooltip: "Lose all your pieces to win.",
-        startFen: "rmbqkbmr/pppppppp/8/8/8/8/PPPPPPPP/RMBQKBMR w KQkq - 0 1",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
         chess960: true, icon: "🙃", icon960: "🙃",
         boardFamily: "standard8x8", pieceFamily: "standard",
-        pieceRow: ["k", "q", "r", "b", "m", "p"],
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
         rules: { enPassant: true },
+    }),
+
+    coffeethreecheck: variant({
+        name: "coffeethreecheck", displayName: "coffee 3-check", tooltip: "Give check three times to win. Captures are mandatory.",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 3+3 0 1",
+        chess960: true, icon: "☕", icon960: "☕",
+        boardFamily: "standard8x8", pieceFamily: "standard",
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
+        rules: { enPassant: true },
+        alternateStart: {
+            '': "",
+            '5check': "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 5+5 0 1",
+        },
     }),
 
     coffeehouse: variant({
@@ -1206,6 +1219,7 @@ export const VARIANTS: Record<string, Variant> = {
         name: "spartanmirror", displayName: "spartan mirror", tooltip: "Symmetric Spartans vs. Spartans variant.",
         startFen: "lgkcckwl/hhhhhhhh/8/8/8/8/hhhhhhhh/LGKCCKWL w - - 0 1",
         icon: "⍺",
+        colors: { first: "Red", second: "Black" },
         boardFamily: "standard8x8", pieceFamily: "spartanmirror",
         pieceRow: ["k", "g", "w", "l", "c", "h"],
     }),
@@ -1316,6 +1330,7 @@ export const noPuzzleVariants = [
     "cetus",
     "chess",
     "coffeehouse",
+    "coffeethreecheck",
     "coregal",
     "dragonfly",
     "extinction",
@@ -1341,7 +1356,7 @@ export const noPuzzleVariants = [
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "chess", "antichess", "atomar", "backrank", "berolina", "coffeehouse", "coregal", "dragonfly", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "pocketknight", "racingchess", "torpedo", ] },
+    standard: { variants: [ "chess", "antichess", "atomar", "backrank", "berolina", "coffeehouse", "coffeethreecheck", "coregal", "dragonfly", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "pocketknight", "racingchess", "torpedo", ] },
     sea:      { variants: [ "karouk", "makhouse", ] },
     shogi:    { variants: [ "judkins", "whaleshogi", ] },
     xiangqi:  { variants: [ ] },
