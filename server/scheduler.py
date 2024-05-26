@@ -82,6 +82,7 @@ MONTHLY_VARIANTS = (
     "kinglet",
     "knightmate",
     "legan",
+    "losers",
     "makhouse",
     "nightrider",
     "omega10",
