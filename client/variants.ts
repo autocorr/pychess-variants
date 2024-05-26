@@ -481,6 +481,7 @@ export const VARIANTS: Record<string, Variant> = {
         chess960: true, icon: "🧑‍🤝‍🧑", icon960: "🧑‍🤝‍🧑",
         boardFamily: "standard8x8", pieceFamily: "standard",
         pieceRow: ["k", "q", "r", "b", "n", "p"],
+        kingRoles: ["k", "q"],
         rules: { enPassant: true },
     }),
 
