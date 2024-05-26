@@ -1023,6 +1023,19 @@ export const VARIANTS: Record<string, Variant> = {
         promotion: { type: "regular", order: ["q"] },
     }),
 
+    shatranjhouse: variant({
+        name: "shatranjhouse", displayName: "shatranj house", tooltip: "Shatranj with Crazyhouse-style captures and drops.",
+        startFen: "rnbkqbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBKQBNR[] w - - 0 1",
+        icon: "🐘",
+        boardFamily: "makruk8x8", pieceFamily: "shatranj",
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
+        pocket: {
+            roles: ["p", "q", "b", "n", "r"],
+            captureToHand: true,
+        },
+        promotion: { type: "regular", order: ["q"] },
+    }),
+
     grasshopperking: variant({
         name: "grasshopperking", displayName: "grasshopper king", tooltip: "Kings move as grasshoppers.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1364,6 +1377,7 @@ export const noPuzzleVariants = [
     "pocketknight",
     "racingchess",
     "shatranj",
+    "shatranjhouse",
     "shinobiplusmirror",
     "spartanmirror",
     "torpedo",
@@ -1375,7 +1389,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     sea:      { variants: [ "karouk", "makhouse", ] },
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", ] },
     xiangqi:  { variants: [ ] },
-    fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "shatranj", ] },
+    fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "shatranj", "shatranjhouse", ] },
     army:     { variants: [ "gethenian", "shinobiplusmirror", "spartanmirror" ] },
     other:    { variants: [ "cetus", "jesonmor", ] },
 };

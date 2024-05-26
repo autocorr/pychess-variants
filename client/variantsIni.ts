@@ -495,4 +495,12 @@ mustCapture = true
 
 [coffeeshogi:shogi]
 mustCapture = true
+
+[shatranjhouse:shatranj]
+startFen = rnbkqbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBKQBNR[] w - - 0 1
+pieceDrops = true
+capturesToHand = true
+firstRankPawnDrops = true
+promotionZonePawnDrops = true
+immobilityIllegal = true
 `
