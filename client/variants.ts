@@ -80,7 +80,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     nightrider: { pieceCSS: ["nightrider0", "disguised"] },
     knightmate: { pieceCSS: ["knightmate0", "disguised"] },
     omega10: { pieceCSS: ["omega0", "disguised"] },
-    whaleshogi: { pieceCSS: ["whale0", "disguised"] },
+    whaleshogi: { pieceCSS: ["whale0", "whale1", "disguised"] },
     cetus: { pieceCSS: ["cetus0", "disguised"] },
 };
 
@@ -761,7 +761,7 @@ export const VARIANTS: Record<string, Variant> = {
         icon: "🐋",
         boardFamily: "shogi6x6", pieceFamily: "whaleshogi",
         colors: { first: "Black", second: "White" },
-        pieceRow: ["k", "h", "g", "n", "b", "p", "w", "d"],
+        pieceRow: ["k", "h", "g", "n", "b", "+w", "w", "d"],
         pocket: { roles: ["d", "b", "h", "n", "g", "w"], captureToHand: true },
         promotion: { type: "regular", roles: ["d", "w"] },
         rules: { defaultTimeControl: "byoyomi", noDrawOffer: true },

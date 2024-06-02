@@ -1,54 +1,54 @@
 .whaleshogi .cg-wrap piece.k-piece.ally {
-    background-image: url('../../images/pieces/whale/letters/0W.svg');
+    background-image: url('../../images/pieces/whale/fcz/0_WHITE.svg');
 }
 .whaleshogi .cg-wrap piece.d-piece.ally {
-    background-image: url('../../images/pieces/whale/letters/0D.svg');
+    background-image: url('../../images/pieces/whale/fcz/0_DOLPHIN.svg');
 }
 .whaleshogi .cg-wrap piece.pd-piece.ally {
-    background-image: url('../../images/pieces/whale/letters/0DP.svg');
+    background-image: url('../../images/pieces/whale/fcz/0_DOLPHINPROMOTED.svg');
 }
 .whaleshogi .cg-wrap piece.b-piece.ally {
-    background-image: url('../../images/pieces/whale/letters/0B.svg');
+    background-image: url('../../images/pieces/whale/fcz/0_BLUE.svg');
 }
 .whaleshogi .cg-wrap piece.n-piece.ally {
-    background-image: url('../../images/pieces/whale/letters/0N.svg');
+    background-image: url('../../images/pieces/whale/fcz/0_NARWHAL.svg');
 }
 .whaleshogi .cg-wrap piece.h-piece.ally {
-    background-image: url('../../images/pieces/whale/letters/0H.svg');
+    background-image: url('../../images/pieces/whale/fcz/0_HUMPBACK.svg');
 }
 .whaleshogi .cg-wrap piece.g-piece.ally {
-    background-image: url('../../images/pieces/whale/letters/0G.svg');
+    background-image: url('../../images/pieces/whale/fcz/0_GREY.svg');
 }
 .whaleshogi .cg-wrap piece.w-piece.ally {
-    background-image: url('../../images/pieces/whale/letters/0K.svg');
+    background-image: url('../../images/pieces/whale/fcz/0_KILLER.svg');
 }
 .whaleshogi .cg-wrap piece.pw-piece.ally {
-    background-image: url('../../images/pieces/whale/letters/0P.svg');
+    background-image: url('../../images/pieces/whale/fcz/0_PORPOISE.svg');
 }
 .whaleshogi .cg-wrap piece.k-piece.enemy {
-    background-image: url('../../images/pieces/whale/letters/1W.svg');
+    background-image: url('../../images/pieces/whale/fcz/1_WHITE.svg');
 }
 .whaleshogi .cg-wrap piece.d-piece.enemy {
-    background-image: url('../../images/pieces/whale/letters/1D.svg');
+    background-image: url('../../images/pieces/whale/fcz/1_DOLPHIN.svg');
 }
 .whaleshogi .cg-wrap piece.pd-piece.enemy {
-    background-image: url('../../images/pieces/whale/letters/1DP.svg');
+    background-image: url('../../images/pieces/whale/fcz/1_DOLPHINPROMOTED.svg');
 }
 .whaleshogi .cg-wrap piece.b-piece.enemy {
-    background-image: url('../../images/pieces/whale/letters/1B.svg');
+    background-image: url('../../images/pieces/whale/fcz/1_BLUE.svg');
 }
 .whaleshogi .cg-wrap piece.n-piece.enemy {
-    background-image: url('../../images/pieces/whale/letters/1N.svg');
+    background-image: url('../../images/pieces/whale/fcz/1_NARWHAL.svg');
 }
 .whaleshogi .cg-wrap piece.h-piece.enemy {
-    background-image: url('../../images/pieces/whale/letters/1H.svg');
+    background-image: url('../../images/pieces/whale/fcz/1_HUMPBACK.svg');
 }
 .whaleshogi .cg-wrap piece.g-piece.enemy {
-    background-image: url('../../images/pieces/whale/letters/1G.svg');
+    background-image: url('../../images/pieces/whale/fcz/1_GREY.svg');
 }
 .whaleshogi .cg-wrap piece.w-piece.enemy {
-    background-image: url('../../images/pieces/whale/letters/1K.svg');
+    background-image: url('../../images/pieces/whale/fcz/1_KILLER.svg');
 }
 .whaleshogi .cg-wrap piece.pw-piece.enemy {
-    background-image: url('../../images/pieces/whale/letters/1P.svg');
+    background-image: url('../../images/pieces/whale/fcz/1_PORPOISE.svg');
 }

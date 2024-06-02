@@ -1,0 +1,54 @@
+.whaleshogi .cg-wrap piece.k-piece.ally {
+    background-image: url('../../images/pieces/whale/letters/0W.svg');
+}
+.whaleshogi .cg-wrap piece.d-piece.ally {
+    background-image: url('../../images/pieces/whale/letters/0D.svg');
+}
+.whaleshogi .cg-wrap piece.pd-piece.ally {
+    background-image: url('../../images/pieces/whale/letters/0DP.svg');
+}
+.whaleshogi .cg-wrap piece.b-piece.ally {
+    background-image: url('../../images/pieces/whale/letters/0B.svg');
+}
+.whaleshogi .cg-wrap piece.n-piece.ally {
+    background-image: url('../../images/pieces/whale/letters/0N.svg');
+}
+.whaleshogi .cg-wrap piece.h-piece.ally {
+    background-image: url('../../images/pieces/whale/letters/0H.svg');
+}
+.whaleshogi .cg-wrap piece.g-piece.ally {
+    background-image: url('../../images/pieces/whale/letters/0G.svg');
+}
+.whaleshogi .cg-wrap piece.w-piece.ally {
+    background-image: url('../../images/pieces/whale/letters/0K.svg');
+}
+.whaleshogi .cg-wrap piece.pw-piece.ally {
+    background-image: url('../../images/pieces/whale/letters/0P.svg');
+}
+.whaleshogi .cg-wrap piece.k-piece.enemy {
+    background-image: url('../../images/pieces/whale/letters/1W.svg');
+}
+.whaleshogi .cg-wrap piece.d-piece.enemy {
+    background-image: url('../../images/pieces/whale/letters/1D.svg');
+}
+.whaleshogi .cg-wrap piece.pd-piece.enemy {
+    background-image: url('../../images/pieces/whale/letters/1DP.svg');
+}
+.whaleshogi .cg-wrap piece.b-piece.enemy {
+    background-image: url('../../images/pieces/whale/letters/1B.svg');
+}
+.whaleshogi .cg-wrap piece.n-piece.enemy {
+    background-image: url('../../images/pieces/whale/letters/1N.svg');
+}
+.whaleshogi .cg-wrap piece.h-piece.enemy {
+    background-image: url('../../images/pieces/whale/letters/1H.svg');
+}
+.whaleshogi .cg-wrap piece.g-piece.enemy {
+    background-image: url('../../images/pieces/whale/letters/1G.svg');
+}
+.whaleshogi .cg-wrap piece.w-piece.enemy {
+    background-image: url('../../images/pieces/whale/letters/1K.svg');
+}
+.whaleshogi .cg-wrap piece.pw-piece.enemy {
+    background-image: url('../../images/pieces/whale/letters/1P.svg');
+}
