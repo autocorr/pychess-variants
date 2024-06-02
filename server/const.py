@@ -96,7 +96,7 @@ LOSERS = {
     "flag": FLAG,
 }
 
-GRANDS = ("xiangqi", "manchu", "grand", "grandhouse", "shako", "janggi", "omega10")
+GRANDS = ("xiangqi", "manchu", "grand", "grandhouse", "shako", "janggi", "omega10", "tencubed")
 
 CONSERVATIVE_CAPA_FEN = "arnbqkbnrc/pppppppppp/10/10/10/10/PPPPPPPPPP/ARNBQKBNRC w KQkq - 0 1"
 
@@ -208,6 +208,7 @@ VARIANTS = (
     "shatranjhouse",
     "shinobiplusmirror",
     "spartanmirror",
+    "tencubed",
     "torpedo",
     "torpedo960",
     "whaleshogi",
@@ -318,6 +319,7 @@ VARIANT_ICONS = {
     "shatranjhouse": "🐘",
     "shinobiplusmirror": "🐢",
     "spartanmirror": "⍺",
+    "tencubed": "📦",
     "torpedo": "🏄",
     "torpedo960": "🏄",
     "whaleshogi": "🐋",
@@ -425,6 +427,7 @@ CATEGORIES = {
         "omega10",
         "shatranj",
         "shatranjhouse",
+        "tencubed",
     ),
     "army": (
         "orda",
@@ -647,6 +650,7 @@ TRANSLATED_VARIANT_NAMES = {
     "nightrider": _("Nightrider"),
     "nightrider960": _("Nightrider 960"),
     "omega10": _("Omega10"),
+    "tencubed": _("Tencubed"),
     "pocketknight": _("Pocket Knight"),
     "pocketknight960": ("Pocket Knight 960"),
     "racingchess": _("Racing Chess"),

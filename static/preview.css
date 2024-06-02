@@ -605,3 +605,12 @@ label.piece.piece1.shinobimirror {
     background-image: url('images/pieces/disguised/p.svg');
 }
 
+label.piece.piece0.tencubed {
+    background-image: url('images/pieces/green/wC_alt.svg');
+}
+label.piece.piece1.tencubed {
+    background-image: url('images/pieces/green/wC.svg');
+}
+label.piece.piece2.tencubed {
+    background-image: url('images/pieces/disguised/p.svg');
+}

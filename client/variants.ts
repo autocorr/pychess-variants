@@ -82,6 +82,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     omega10: { pieceCSS: ["omega0", "disguised"] },
     whaleshogi: { pieceCSS: ["whale0", "whale1", "disguised"] },
     cetus: { pieceCSS: ["cetus0", "disguised"] },
+    tencubed: { pieceCSS: ["tencubed0", "tencubed1", "disguised"] },
 };
 
 export interface Variant {
@@ -1003,6 +1004,16 @@ export const VARIANTS: Record<string, Variant> = {
         rules: { enPassant: true },
     }),
 
+    tencubed: variant({
+        name: "tencubed", tooltip: "A 10x10 including the Wizard and Champion of Omega.",
+        startFen: "2cwamwc2/1rnbqkbnr1/pppppppppp/10/10/10/10/PPPPPPPPPP/1RNBQKBNR1/2CWAMWC2 w - - 0 1",
+        icon: "📦",
+        boardFamily: "standard10x10", pieceFamily: "tencubed",
+        pieceRow: ["k", "q", "a", "m", "w", "c", "r", "b", "n", "p"],
+        promotion: { type: "regular", order: ["q", "a", "m"] },
+        rules: { enPassant: true },
+    }),
+
     shogun: variant({
         name: "shogun", tooltip: "Pieces promote and can be dropped, similar to Shogi.",
         startFen: "rnb+fkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNB+FKBNR w KQkq - 0 1",
@@ -1394,6 +1405,7 @@ export const noPuzzleVariants = [
     "shatranjhouse",
     "shinobiplusmirror",
     "spartanmirror",
+    "tencubed",
     "torpedo",
     "whaleshogi",
 ]
@@ -1403,7 +1415,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     sea:      { variants: [ "karouk", "makhouse", ] },
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", ] },
     xiangqi:  { variants: [ ] },
-    fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "shatranj", "shatranjhouse", ] },
+    fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "shatranj", "shatranjhouse", "tencubed", ] },
     army:     { variants: [ "gethenian", "shinobiplusmirror", "spartanmirror" ] },
     other:    { variants: [ "cetus", "jesonmor", ] },
 };

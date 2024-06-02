@@ -1,0 +1,60 @@
+.tencubed piece.p-piece.white {
+    background-image: url('../../images/pieces/green/wP.svg');
+}
+.tencubed piece.b-piece.white {
+    background-image: url('../../images/pieces/green/wB.svg');
+}
+.tencubed piece.n-piece.white {
+    background-image: url('../../images/pieces/green/wN.svg');
+}
+.tencubed piece.r-piece.white {
+    background-image: url('../../images/pieces/green/wR.svg');
+}
+.tencubed piece.w-piece.white {
+    background-image: url('../../images/pieces/omega/cburnett/wW.svg');
+}
+.tencubed piece.c-piece.white {
+    background-image: url('../../images/pieces/omega/cburnett/wC_2.svg');
+}
+.tencubed piece.m-piece.white {
+    background-image: url('../../images/pieces/green/wC_alt.svg');
+}
+.tencubed piece.a-piece.white {
+    background-image: url('../../images/pieces/green/wA_alt.svg');
+}
+.tencubed piece.q-piece.white {
+    background-image: url('../../images/pieces/green/wQ.svg');
+}
+.tencubed piece.k-piece.white {
+    background-image: url('../../images/pieces/green/wK.svg');
+}
+.tencubed piece.p-piece.black {
+    background-image: url('../../images/pieces/green/bP.svg');
+}
+.tencubed piece.b-piece.black {
+    background-image: url('../../images/pieces/green/bB.svg');
+}
+.tencubed piece.n-piece.black {
+    background-image: url('../../images/pieces/green/bN.svg');
+}
+.tencubed piece.r-piece.black {
+    background-image: url('../../images/pieces/green/bR.svg');
+}
+.tencubed piece.w-piece.black {
+    background-image: url('../../images/pieces/omega/cburnett/bW.svg');
+}
+.tencubed piece.c-piece.black {
+    background-image: url('../../images/pieces/omega/cburnett/bC_2.svg');
+}
+.tencubed piece.m-piece.black {
+    background-image: url('../../images/pieces/green/bC_alt.svg');
+}
+.tencubed piece.a-piece.black {
+    background-image: url('../../images/pieces/green/bA_alt.svg');
+}
+.tencubed piece.q-piece.black {
+    background-image: url('../../images/pieces/green/bQ.svg');
+}
+.tencubed piece.k-piece.black {
+    background-image: url('../../images/pieces/green/bK.svg');
+}

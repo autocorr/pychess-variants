@@ -92,6 +92,7 @@ MONTHLY_VARIANTS = (
     "shatranjhouse",
     "shinobiplusmirror",
     "spartanmirror",
+    "tencubed",
     "torpedo",
     "whaleshogi",
 )
