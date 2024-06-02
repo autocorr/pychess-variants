@@ -650,7 +650,7 @@ TRANSLATED_VARIANT_NAMES = {
     "nightrider": _("Nightrider"),
     "nightrider960": _("Nightrider 960"),
     "omega10": _("Omega10"),
-    "tencubed": _("Tencubed"),
+    "tencubed": _("TenCubed"),
     "pocketknight": _("Pocket Knight"),
     "pocketknight960": ("Pocket Knight 960"),
     "racingchess": _("Racing Chess"),
