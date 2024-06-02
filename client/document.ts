@@ -121,6 +121,7 @@ export function changePieceCSS(assetUrl: string, family: string, cssFile: string
         case "spartanmirror": cssLinkIndex += 37; break;
         case "shinobimirror": cssLinkIndex += 38; break;
         case "tencubed": cssLinkIndex += 39; break;
+        case "wildebeest": cssLinkIndex += 40; break;
         default: throw "Unknown piece family " + family;
     }
     let newUrl = `${assetUrl}/piece-css/${family}/${cssFile}.css`;

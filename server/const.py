@@ -96,7 +96,8 @@ LOSERS = {
     "flag": FLAG,
 }
 
-GRANDS = ("xiangqi", "manchu", "grand", "grandhouse", "shako", "janggi", "omega10", "tencubed")
+GRANDS = ("xiangqi", "manchu", "grand", "grandhouse", "shako", "janggi",
+          "omega10", "tencubed", "wildebeest")
 
 CONSERVATIVE_CAPA_FEN = "arnbqkbnrc/pppppppppp/10/10/10/10/PPPPPPPPPP/ARNBQKBNRC w KQkq - 0 1"
 
@@ -212,6 +213,7 @@ VARIANTS = (
     "torpedo",
     "torpedo960",
     "whaleshogi",
+    "wildebeest",
 )
 
 VARIANT_ICONS = {
@@ -323,6 +325,7 @@ VARIANT_ICONS = {
     "torpedo": "🏄",
     "torpedo960": "🏄",
     "whaleshogi": "🐋",
+    "wildebeest": "🐃",
 }
 
 VARIANT_960_TO_PGN = {
@@ -428,6 +431,7 @@ CATEGORIES = {
         "shatranj",
         "shatranjhouse",
         "tencubed",
+        "wildebeest",
     ),
     "army": (
         "orda",
@@ -662,6 +666,7 @@ TRANSLATED_VARIANT_NAMES = {
     "torpedo": _("Torpedo"),
     "torpedo960": _("Torpedo 960"),
     "whaleshogi": _("Whale Shogi"),
+    "wildebeest": _("Wildebeest"),
 }
 
 del _

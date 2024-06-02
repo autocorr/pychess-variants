@@ -24,6 +24,7 @@ export const BOARD_FAMILIES: Record<string, BoardFamily> = {
     standard9x9: { dimensions: { width: 9, height: 9 }, cg: "cg-540", boardCSS: ["9x9brown.svg", "9x9mansindam.svg", "9x9blue.svg", "9x9green.svg", "9x9maple.jpg", "9x9olive.jpg"] },
     standard10x8: { dimensions: { width: 10, height: 8 }, cg: "cg-640", boardCSS: ["10x8brown.svg", "10x8blue.svg", "10x8green.svg", "10x8maple.jpg", "10x8olive.jpg"] },
     standard10x10: { dimensions: { width: 10, height: 10 }, cg: "cg-640-640", boardCSS: ["10x10brown.svg", "10x10blue.svg", "10x10green.svg", "10x10maple.jpg", "10x10olive.jpg"] },
+    standard11x10: { dimensions: { width: 11, height: 10 }, cg: "cg-704-640", boardCSS: ["11x10brown.svg"] },
     grand10x10: { dimensions: { width: 10, height: 10}, cg: "cg-640-640", boardCSS: ["Grandboard.svg", "10x10brown.svg", "10x10blue.svg", "10x10green.svg", "10x10maple.jpg", "10x10mapleGrand.png"] },
     makruk8x8: { dimensions: { width: 8, height: 8 }, cg: "cg-512", boardCSS: ["makruk2.svg", "makruk.svg", "makrukWhite.svg", "makruk.jpg", "makrukWood.png"] },
     sittuyin8x8: { dimensions: { width: 8, height: 8 }, cg: "cg-512", boardCSS: ["sittuyin2.svg", "sittuyin.svg", "sittuyin.jpg", "sittuyingreen.svg", "sittuyinGrainBrown.svg", "sittuyinWood.png"] },
@@ -83,6 +84,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     whaleshogi: { pieceCSS: ["whale0", "whale1", "disguised"] },
     cetus: { pieceCSS: ["cetus0", "disguised"] },
     tencubed: { pieceCSS: ["tencubed0", "tencubed1", "disguised"] },
+    wildebeest: { pieceCSS: ["wildebeest0", "disguised"] },
 };
 
 export interface Variant {
@@ -1014,6 +1016,21 @@ export const VARIANTS: Record<string, Variant> = {
         rules: { enPassant: true },
     }),
 
+    wildebeest: variant({
+        name: "wildebeest", tooltip: "An 11x10 variant with long leapers.",
+        startFen: "rnccwkqbbnr/ppppppppppp/11/11/11/11/11/11/PPPPPPPPPPP/RNBBQKWCCNR w KQkq - 0 1",
+        icon: "🐃",
+        boardFamily: "standard11x10", pieceFamily: "wildebeest",
+        pieceRow: ["k", "q", "r", "b", "w", "n", "c", "p"],
+        promotion: { type: "regular", order: ["q", "w"] },
+        rules: { enPassant: true },
+        alternateStart: {
+            '': '',
+            'Reflected': "rnbbqkwccnr/ppppppppppp/11/11/11/11/11/11/PPPPPPPPPPP/RNBBQKWCCNR w KQkq - 0 1",
+            'No Castling': "rnccwkqbbnr/ppppppppppp/11/11/11/11/11/11/PPPPPPPPPPP/RNBBQKWCCNR w - - 0 1",
+        },
+    }),
+
     shogun: variant({
         name: "shogun", tooltip: "Pieces promote and can be dropped, similar to Shogi.",
         startFen: "rnb+fkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNB+FKBNR w KQkq - 0 1",
@@ -1408,6 +1425,7 @@ export const noPuzzleVariants = [
     "tencubed",
     "torpedo",
     "whaleshogi",
+    "wildebeest",
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
@@ -1415,7 +1433,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     sea:      { variants: [ "karouk", "makhouse", ] },
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", ] },
     xiangqi:  { variants: [ ] },
-    fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "shatranj", "shatranjhouse", "tencubed", ] },
+    fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "shatranj", "shatranjhouse", "tencubed", "wildebeest", ] },
     army:     { variants: [ "gethenian", "shinobiplusmirror", "spartanmirror" ] },
     other:    { variants: [ "cetus", "jesonmor", ] },
 };

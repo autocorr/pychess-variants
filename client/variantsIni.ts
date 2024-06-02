@@ -503,4 +503,20 @@ capturesToHand = true
 firstRankPawnDrops = true
 promotionZonePawnDrops = true
 immobilityIllegal = true
+
+[wildebeest:chess]
+maxRank = 10
+maxFile = k
+customPiece1 = c:C
+customPiece2 = w:NC
+doubleStepRegionWhite = *2 *3
+doubleStepRegionBlack = *9 *8
+tripleStepRegionWhite = *2
+tripleStepRegionBlack = *9
+startFen = rnccwkqbbnr/ppppppppppp/11/11/11/11/11/11/PPPPPPPPPPP/RNBBQKWCCNR w KQkq - 0 1
+promotionPieceTypes = qw
+promotionRegionWhite = *9 *10
+promotionRegionBlack = *2 *1
+mandatoryPawnPromotion = false
+castling = false
 `
