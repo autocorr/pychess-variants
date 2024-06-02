@@ -558,9 +558,12 @@ label.piece.piece1.nightrider {
 }
 
 label.piece.piece0.grasshopper {
-    background-image: url('images/pieces/green/wQ_r.svg');
+    background-image: url('images/pieces/green/wGH.svg');
 }
 label.piece.piece1.grasshopper {
+    background-image: url('images/pieces/green/wQ_r.svg');
+}
+label.piece.piece2.grasshopper {
     background-image: url('images/pieces/disguised/b.svg');
 }
 

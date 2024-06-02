@@ -76,7 +76,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     mansindam: { pieceCSS: ["mansindam2", "mansindam1", "mansindam3", "mansindam4", "disguised"] },
     gethenian: { pieceCSS: ["gethenian0", "gethenian1", "disguised"] },
     shatranj: { pieceCSS: ["shatranj0", "disguised"] },
-    grasshopper: { pieceCSS: ["grasshopper0", "disguised"] },
+    grasshopper: { pieceCSS: ["grasshopper0", "grasshopper1", "disguised"] },
     nightrider: { pieceCSS: ["nightrider0", "disguised"] },
     knightmate: { pieceCSS: ["knightmate0", "disguised"] },
     omega10: { pieceCSS: ["omega0", "disguised"] },

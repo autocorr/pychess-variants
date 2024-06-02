@@ -14,7 +14,7 @@
     background-image: url('../../images/pieces/green/wQ.svg');
 }
 .grasshopper piece.g-piece.white {
-    background-image: url('../../images/pieces/green/wGH.svg');
+    background-image: url('../../images/pieces/green/wQ_r.svg');
 }
 .grasshopper piece.k-piece.white {
     background-image: url('../../images/pieces/green/wK.svg');
@@ -35,7 +35,7 @@
     background-image: url('../../images/pieces/green/bQ.svg');
 }
 .grasshopper piece.g-piece.black {
-    background-image: url('../../images/pieces/green/bGH.svg');
+    background-image: url('../../images/pieces/green/bQ_r.svg');
 }
 .grasshopper piece.k-piece.black {
     background-image: url('../../images/pieces/green/bK.svg');
