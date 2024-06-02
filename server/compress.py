@@ -122,8 +122,10 @@ for piece in PIECES:
     M2C["%s@" % piece] = m2c_len
     m2c_len += 1
 
-# Chennis drop moves can start with extra "+" as well (P and S are already added above for Kyoto Shogi)
-for piece in "FM":
+# Chennis drop moves can start with extra "+" as well (P and S are already
+# added above for Kyoto Shogi)
+# - 'B' and 'I' were added for Gethenian
+for piece in "FMBI":
     M2C["+%s" % piece] = m2c_len
     m2c_len += 1
 
@@ -141,6 +143,7 @@ C2M = {v: k for k, v in M2C.items()}
 
 
 def encode_move_flipping(move):
+    print(f"-- move: {move}")
     return (
         chr(M2C[move[0:2]]) + chr(M2C[move[3:5]]) + "@"
         if move[0] == "+"
