@@ -615,16 +615,17 @@ label.piece.piece2.tencubed {
     background-image: url('images/pieces/disguised/p.svg');
 }
 
-label.piece.piece0.wildebeest0 {
+label.piece.piece0.wildebeest {
     background-image: url('images/pieces/alfaerie/wcamel.svg');
 }
-label.piece.piece1.wildebeest1 {
+label.piece.piece1.wildebeest {
     background-image: url('images/pieces/disguised/p.svg');
 }
 
-label.piece.piece0.reformedcourier0 {
+label.piece.piece0.reformedcourier {
     background-image: url('images/pieces/green/wB.svg');
 }
-label.piece.piece1.reformedcourier1 {
+label.piece.piece1.reformedcourier {
     background-image: url('images/pieces/disguised/p.svg');
 }
+
