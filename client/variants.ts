@@ -25,6 +25,7 @@ export const BOARD_FAMILIES: Record<string, BoardFamily> = {
     standard10x8: { dimensions: { width: 10, height: 8 }, cg: "cg-640", boardCSS: ["10x8brown.svg", "10x8blue.svg", "10x8green.svg", "10x8maple.jpg", "10x8olive.jpg"] },
     standard10x10: { dimensions: { width: 10, height: 10 }, cg: "cg-640-640", boardCSS: ["10x10brown.svg", "10x10blue.svg", "10x10green.svg", "10x10maple.jpg", "10x10olive.jpg"] },
     standard11x10: { dimensions: { width: 11, height: 10 }, cg: "cg-704-640", boardCSS: ["11x10brown.svg"] },
+    standard12x8: { dimensions: { width: 12, height: 8 }, cg: "cg-768-512", boardCSS: ["12x8brown.svg"] },
     grand10x10: { dimensions: { width: 10, height: 10}, cg: "cg-640-640", boardCSS: ["Grandboard.svg", "10x10brown.svg", "10x10blue.svg", "10x10green.svg", "10x10maple.jpg", "10x10mapleGrand.png"] },
     makruk8x8: { dimensions: { width: 8, height: 8 }, cg: "cg-512", boardCSS: ["makruk2.svg", "makruk.svg", "makrukWhite.svg", "makruk.jpg", "makrukWood.png"] },
     sittuyin8x8: { dimensions: { width: 8, height: 8 }, cg: "cg-512", boardCSS: ["sittuyin2.svg", "sittuyin.svg", "sittuyin.jpg", "sittuyingreen.svg", "sittuyinGrainBrown.svg", "sittuyinWood.png"] },
@@ -85,6 +86,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     cetus: { pieceCSS: ["cetus0", "disguised"] },
     tencubed: { pieceCSS: ["tencubed0", "tencubed1", "disguised"] },
     wildebeest: { pieceCSS: ["wildebeest0", "disguised"] },
+    reformedcourier: { pieceCSS: ["reformedcourier0", "disguised"] },
 };
 
 export interface Variant {
@@ -1027,8 +1029,19 @@ export const VARIANTS: Record<string, Variant> = {
         alternateStart: {
             '': '',
             'Reflected': "rnbbqkwccnr/ppppppppppp/11/11/11/11/11/11/PPPPPPPPPPP/RNBBQKWCCNR w KQkq - 0 1",
+            'Symmetric Camel': "rnbcwkqcbnr/ppppppppppp/11/11/11/11/11/11/PPPPPPPPPPP/RNBCQKWCBNR w KQkq - 0 1",
             'No Castling': "rnccwkqbbnr/ppppppppppp/11/11/11/11/11/11/PPPPPPPPPPP/RNBBQKWCCNR w - - 0 1",
         },
+    }),
+
+    reformedcourier: variant({
+        name: "reformedcourier", displayName: "reformed courier", tooltip: "Reformed version of Albers's Courier-Spiel.",
+        startFen: "rnabmqkdbanr/pppppppppppp/12/12/12/12/PPPPPPPPPPPP/RNABMQKDBANR w KQkq - 0 1",
+        icon: "✉️",
+        boardFamily: "standard12x8", pieceFamily: "reformedcourier",
+        pieceRow: ["k", "r", "n", "a", "b", "m", "q", "d", "p"],
+        promotion: { type: "regular", order: ["q", "r", "d", "b", "n", "m", "a"] },
+        rules: { enPassant: true },
     }),
 
     shogun: variant({
@@ -1418,6 +1431,7 @@ export const noPuzzleVariants = [
     "omega10",
     "pocketknight",
     "racingchess",
+    "reformedcourier",
     "shatranj",
     "shatranjhouse",
     "shinobiplusmirror",
@@ -1433,7 +1447,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     sea:      { variants: [ "karouk", "makhouse", ] },
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", ] },
     xiangqi:  { variants: [ ] },
-    fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "shatranj", "shatranjhouse", "tencubed", "wildebeest", ] },
+    fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "reformedcourier", "shatranj", "shatranjhouse", "tencubed", "wildebeest", ] },
     army:     { variants: [ "gethenian", "shinobiplusmirror", "spartanmirror" ] },
     other:    { variants: [ "cetus", "jesonmor", ] },
 };

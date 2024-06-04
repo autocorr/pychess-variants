@@ -1,0 +1,55 @@
+.reformedcourier piece.p-piece.white {
+    background-image: url('../../images/pieces/green/wP.svg');
+}
+.reformedcourier piece.b-piece.white {
+    background-image: url('../../images/pieces/green/wB.svg');
+}
+.reformedcourier piece.n-piece.white {
+    background-image: url('../../images/pieces/green/wN.svg');
+}
+.reformedcourier piece.r-piece.white {
+    background-image: url('../../images/pieces/green/wR.svg');
+}
+.reformedcourier piece.q-piece.white {
+    background-image: url('../../images/pieces/green/wQ.svg');
+}
+.reformedcourier piece.k-piece.white {
+    background-image: url('../../images/pieces/green/wK.svg');
+}
+.reformedcourier piece.p-piece.black {
+    background-image: url('../../images/pieces/green/bP.svg');
+}
+.reformedcourier piece.b-piece.black {
+    background-image: url('../../images/pieces/green/bB.svg');
+}
+.reformedcourier piece.n-piece.black {
+    background-image: url('../../images/pieces/green/bN.svg');
+}
+.reformedcourier piece.r-piece.black {
+    background-image: url('../../images/pieces/green/bR.svg');
+}
+.reformedcourier piece.q-piece.black {
+    background-image: url('../../images/pieces/green/bQ.svg');
+}
+.reformedcourier piece.k-piece.black {
+    background-image: url('../../images/pieces/green/bK.svg');
+}
+
+.reformedcourier piece.a-piece.white {
+    background-image: url('../../images/pieces/spartan/wLieutenant_white.svg');
+}
+.reformedcourier piece.m-piece.white {
+    background-image: url('../../images/pieces/spartan/wCaptain_white.svg');
+}
+.reformedcourier piece.d-piece.white {
+    background-image: url('../../images/pieces/chennis/wNM_gray.svg');
+}
+.reformedcourier piece.a-piece.black {
+    background-image: url('../../images/pieces/spartan/bLieutenant.svg');
+}
+.reformedcourier piece.m-piece.black {
+    background-image: url('../../images/pieces/spartan/bCaptain_white.svg');
+}
+.reformedcourier piece.d-piece.black {
+    background-image: url('../../images/pieces/chennis/bNM_gray.svg');
+}

@@ -97,7 +97,7 @@ LOSERS = {
 }
 
 GRANDS = ("xiangqi", "manchu", "grand", "grandhouse", "shako", "janggi",
-          "omega10", "tencubed", "wildebeest")
+          "omega10", "tencubed", "wildebeest", "reformedcourier")
 
 CONSERVATIVE_CAPA_FEN = "arnbqkbnrc/pppppppppp/10/10/10/10/PPPPPPPPPP/ARNBQKBNRC w KQkq - 0 1"
 
@@ -205,6 +205,7 @@ VARIANTS = (
     "pocketknight960",
     "racingchess",
     "racingchess960",
+    "reformedcourier",
     "shatranj",
     "shatranjhouse",
     "shinobiplusmirror",
@@ -317,6 +318,7 @@ VARIANT_ICONS = {
     "pocketknight960": "🐴",
     "racingchess": "🔃",
     "racingchess960": "🔃",
+    "reformedcourier": "✉️",
     "shatranj": "🐘",
     "shatranjhouse": "🐘",
     "shinobiplusmirror": "🐢",
@@ -428,6 +430,7 @@ CATEGORIES = {
         "nightrider",
         "nightrider960",
         "omega10",
+        "reformedcourier",
         "shatranj",
         "shatranjhouse",
         "tencubed",
@@ -659,6 +662,7 @@ TRANSLATED_VARIANT_NAMES = {
     "pocketknight960": ("Pocket Knight 960"),
     "racingchess": _("Racing Chess"),
     "racingchess960": _("Racing Chess 960"),
+    "reformedcourier": _("Reformed Courier-Spiel"),
     "shatranj": _("Shatranj"),
     "shatranjhouse": _("Shatranj House"),
     "shinobiplusmirror": _("Shinobi+ Mirror"),

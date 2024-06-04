@@ -518,5 +518,36 @@ promotionPieceTypes = qw
 promotionRegionWhite = *9 *10
 promotionRegionBlack = *2 *1
 mandatoryPawnPromotion = false
-castling = false
+castling = true
+castlingKingsideFile = i
+castlingQueensideFile = c
+
+[reformedcourier]
+maxRank = 8
+maxFile = 12
+king = k
+pawn = p
+rook = r
+knight = n
+bishop = b
+queen = q
+centaur = d
+customPiece1 = a:AF
+customPiece2 = m:DK
+startFen = rnabmqkdbanr/pppppppppppp/12/12/12/12/PPPPPPPPPPPP/RNABMQKDBANR w KQkq - 0 1
+doubleStepRegionWhite = *2
+doubleStepRegionBlack = *7
+promotionPawnTypes = p
+promotionRegionWhite = *8
+promotionRegionBlack = *1
+promotionPieceTypes = rnbqdam
+castling = true
+castlingKingsideFile = k
+castlingQueensideFile = c
+extinctionValue = loss
+extinctionClaim = true
+extinctionPieceTypes = *
+extinctionPieceCount = 1
+extinctionOpponentPieceCount = 2
+stalemateValue = loss
 `

@@ -13,6 +13,9 @@
 .standard11x10 cg-board {
     background-image: url('images/board/11x10brown.svg');
 }
+.standard12x8 cg-board {
+    background-image: url('images/board/12x8brown.svg');
+}
 .grand10x10 cg-board {
     background-image: url('images/board/Grandboard.svg');
 }

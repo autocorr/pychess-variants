@@ -88,6 +88,7 @@ MONTHLY_VARIANTS = (
     "omega10",
     "pocketknight",
     "racingchess",
+    "reformedcourier",
     "shatranj",
     "shatranjhouse",
     "shinobiplusmirror",

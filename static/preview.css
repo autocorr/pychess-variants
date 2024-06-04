@@ -621,3 +621,10 @@ label.piece.piece0.wildebeest0 {
 label.piece.piece1.wildebeest1 {
     background-image: url('images/pieces/disguised/p.svg');
 }
+
+label.piece.piece0.reformedcourier0 {
+    background-image: url('images/pieces/green/wB.svg');
+}
+label.piece.piece1.reformedcourier1 {
+    background-image: url('images/pieces/disguised/p.svg');
+}
