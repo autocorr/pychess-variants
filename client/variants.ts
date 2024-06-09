@@ -87,6 +87,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     tencubed: { pieceCSS: ["tencubed0", "tencubed1", "disguised"] },
     wildebeest: { pieceCSS: ["wildebeest0", "disguised"] },
     reformedcourier: { pieceCSS: ["reformedcourier0", "disguised"] },
+    paradigm: { pieceCSS: ["paradigm0", "paradigm1", "paradigm2", "paradigm3", "disguised"] },
 };
 
 export interface Variant {
@@ -1326,6 +1327,15 @@ export const VARIANTS: Record<string, Variant> = {
         kingRoles: ["k", "+k"],
     }),
 
+    paradigm30: variant({
+        name: "paradigm30", tooltip: "Paradigm Chess 30",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        icon: "🐲",
+        boardFamily: "standard8x8", pieceFamily: "paradigm",
+        pieceRow: ["k", "q", "r", "n", "b", "p"],
+	    rules: { enPassant: true },
+    }),
+
     // We support the functionality to import/store/analyze some variants
     // but don't want to add them to leaderboard page
     embassy: variant({
@@ -1447,7 +1457,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     sea:      { variants: [ "karouk", "makhouse", ] },
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", ] },
     xiangqi:  { variants: [ ] },
-    fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "reformedcourier", "shatranj", "shatranjhouse", "tencubed", "wildebeest", ] },
+    fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "reformedcourier", "shatranj", "shatranjhouse", "tencubed", "wildebeest", "paradigm30",] },
     army:     { variants: [ "gethenian", "shinobiplusmirror", "spartanmirror" ] },
     other:    { variants: [ "cetus", "jesonmor", ] },
 };

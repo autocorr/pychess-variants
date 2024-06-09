@@ -550,4 +550,7 @@ extinctionPieceTypes = *
 extinctionPieceCount = 1
 extinctionOpponentPieceCount = 2
 stalemateValue = loss
+
+[paradigm30:paradigm]
+chess960 = false
 `

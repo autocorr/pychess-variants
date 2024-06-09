@@ -94,6 +94,7 @@ V2C = {
     "tencubed": "›",
     "wildebeest": "œ",
     "reformedcourier": "ž",
+    "paradigm30": "Ř",
 }
 C2V = {v: k for k, v in V2C.items()}
 

@@ -215,6 +215,7 @@ VARIANTS = (
     "torpedo960",
     "whaleshogi",
     "wildebeest",
+    "paradigm30",
 )
 
 VARIANT_ICONS = {
@@ -328,6 +329,7 @@ VARIANT_ICONS = {
     "torpedo960": "🏄",
     "whaleshogi": "🐋",
     "wildebeest": "🐃",
+    "paradigm30": "🐲",
 }
 
 VARIANT_960_TO_PGN = {
