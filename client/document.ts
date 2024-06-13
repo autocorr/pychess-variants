@@ -123,6 +123,7 @@ export function changePieceCSS(assetUrl: string, family: string, cssFile: string
         case "tencubed": cssLinkIndex += 39; break;
         case "wildebeest": cssLinkIndex += 40; break;
         case "reformedcourier": cssLinkIndex += 41; break;
+        case "paradigm": cssLinkIndex += 42; break;
         default: throw "Unknown piece family " + family;
     }
     let newUrl = `${assetUrl}/piece-css/${family}/${cssFile}.css`;
