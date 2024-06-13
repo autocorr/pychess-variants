@@ -1328,12 +1328,12 @@ export const VARIANTS: Record<string, Variant> = {
     }),
 
     paradigm30: variant({
-        name: "paradigm30", tooltip: "Paradigm Chess 30",
+        name: "paradigm30", tooltip: "Bishop has the added moves of a Xiangqi Horse and start is taken from 30 positions.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
         icon: "🐲",
         boardFamily: "standard8x8", pieceFamily: "paradigm",
         pieceRow: ["k", "q", "r", "n", "b", "p"],
-	    rules: { enPassant: true },
+        rules: { enPassant: true },
     }),
 
     // We support the functionality to import/store/analyze some variants
@@ -1439,6 +1439,7 @@ export const noPuzzleVariants = [
     "makhouse",
     "nightrider",
     "omega10",
+    "paradigm30",
     "pocketknight",
     "racingchess",
     "reformedcourier",
@@ -1457,7 +1458,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     sea:      { variants: [ "karouk", "makhouse", ] },
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", ] },
     xiangqi:  { variants: [ ] },
-    fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "reformedcourier", "shatranj", "shatranjhouse", "tencubed", "wildebeest", "paradigm30",] },
+    fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "paradigm30", "reformedcourier", "shatranj", "shatranjhouse", "tencubed", "wildebeest", ] },
     army:     { variants: [ "gethenian", "shinobiplusmirror", "spartanmirror" ] },
     other:    { variants: [ "cetus", "jesonmor", ] },
 };
