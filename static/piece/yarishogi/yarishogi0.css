@@ -1,0 +1,61 @@
+.yarishogi piece.p-piece.ally {
+    background-image: url('../../images/pieces/yarishogi/fcz/0_Pawn.svg');
+}
+.yarishogi piece.pp-piece.ally {
+    background-image: url('../../images/pieces/yarishogi/fcz/0_YariSilver.svg');
+}
+.yarishogi piece.b-piece.ally {
+    background-image: url('../../images/pieces/yarishogi/fcz/0_YariBishop.svg');
+}
+.yarishogi piece.pb-piece.ally {
+    background-image: url('../../images/pieces/yarishogi/fcz/0_YariGoldBishop.svg');
+}
+.yarishogi piece.n-piece.ally {
+    background-image: url('../../images/pieces/yarishogi/fcz/0_YariKnight.svg');
+}
+.yarishogi piece.pn-piece.ally {
+    background-image: url('../../images/pieces/yarishogi/fcz/0_YariGoldKnight.svg');
+}
+.yarishogi piece.r-piece.ally {
+    background-image: url('../../images/pieces/yarishogi/fcz/0_YariRook.svg');
+}
+.yarishogi piece.pr-piece.ally {
+    background-image: url('../../images/pieces/yarishogi/fcz/0_Rook.svg');
+}
+.yarishogi piece.k-piece.white.ally {
+    background-image: url('../../images/pieces/yarishogi/fcz/0_JewelKing.svg');
+}
+.yarishogi piece.k-piece.black.ally {
+    background-image: url('../../images/pieces/yarishogi/fcz/0_King.svg');
+}
+
+.yarishogi piece.p-piece.enemy {
+    background-image: url('../../images/pieces/yarishogi/fcz/1_Pawn.svg');
+}
+.yarishogi piece.pp-piece.enemy {
+    background-image: url('../../images/pieces/yarishogi/fcz/1_YariSilver.svg');
+}
+.yarishogi piece.b-piece.enemy {
+    background-image: url('../../images/pieces/yarishogi/fcz/1_YariBishop.svg');
+}
+.yarishogi piece.pb-piece.enemy {
+    background-image: url('../../images/pieces/yarishogi/fcz/1_YariGoldBishop.svg');
+}
+.yarishogi piece.n-piece.enemy {
+    background-image: url('../../images/pieces/yarishogi/fcz/1_YariKnight.svg');
+}
+.yarishogi piece.pn-piece.enemy {
+    background-image: url('../../images/pieces/yarishogi/fcz/1_YariGoldKnight.svg');
+}
+.yarishogi piece.r-piece.enemy {
+    background-image: url('../../images/pieces/yarishogi/fcz/1_YariRook.svg');
+}
+.yarishogi piece.pr-piece.enemy {
+    background-image: url('../../images/pieces/yarishogi/fcz/1_Rook.svg');
+}
+.yarishogi piece.k-piece.white.enemy {
+    background-image: url('../../images/pieces/yarishogi/fcz/1_JewelKing.svg');
+}
+.yarishogi piece.k-piece.black.enemy {
+    background-image: url('../../images/pieces/yarishogi/fcz/1_King.svg');
+}

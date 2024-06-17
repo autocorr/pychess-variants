@@ -31,10 +31,11 @@ export const BOARD_FAMILIES: Record<string, BoardFamily> = {
     sittuyin8x8: { dimensions: { width: 8, height: 8 }, cg: "cg-512", boardCSS: ["sittuyin2.svg", "sittuyin.svg", "sittuyin.jpg", "sittuyingreen.svg", "sittuyinGrainBrown.svg", "sittuyinWood.png"] },
     shogi9x9point: { dimensions: { width: 9, height: 9 }, cg: "cg-576", boardCSS: ["CetusBoard.svg"] },
     shogi9x9: { dimensions: { width: 9, height: 9 }, cg: "cg-576", boardCSS: ["shogi.svg", "Shogiban1.png", "Shogiban2.png", "shogic.svg", "ShogiMaple.png", 'ShogiGrayTexture.png', "ShogiSpace1.svg", "dobutsu.png", "ShogiOak.png"] },
+    shogi7x9: { dimensions: { width: 7, height: 9 }, cg: "cg-448-576", boardCSS: ["7x9shogi.svg"] },
     shogi7x7: { dimensions: { width: 7, height: 7 }, cg: "cg-448-516", boardCSS: ["ToriPlain.svg", "ToriWood.svg", "ToriDaySky.svg", "ToriNightSky.svg"] },
     shogi6x6: { dimensions: { width: 6, height: 6 }, cg: "cg-312", boardCSS: ["judkins.svg"] },
-    shogi5x5: { dimensions: { width: 5, height: 5 }, cg: "cg-260", boardCSS: ["minishogi.svg", "MiniboardWood1.png", "MiniboardWood2.png", "MinishogiDobutsu.svg", "MinishogiDobutsu2.svg"] },
     shogi5x6: { dimensions: { width: 5, height: 6 }, cg: "cg-260-360", boardCSS: ["gorogoro.svg", "gorogoroboard.svg", "gorogoro2.svg", "GorogoroWood.png"] },
+    shogi5x5: { dimensions: { width: 5, height: 5 }, cg: "cg-260", boardCSS: ["minishogi.svg", "MiniboardWood1.png", "MiniboardWood2.png", "MinishogiDobutsu.svg", "MinishogiDobutsu2.svg"] },
     shogi3x4: { dimensions: { width: 3, height: 4 }, cg: "cg-156", boardCSS: ["doubutsuboard.svg", "dobutsu3x4.svg"] },
     xiangqi9x10: { dimensions: { width: 9, height: 10 }, cg: "cg-576-640", boardCSS: ["xiangqi.svg", "xiangqic.svg", "xiangqiCTexture.png", "xiangqiPaper.png", "xiangqiWood.png", "xiangqiDark.svg", "xiangqiWikimedia.svg", "xiangqiLightWood.png", "xiangqiSand.svg"] },
     xiangqi7x7: { dimensions: { width: 7, height: 7 }, cg: "cg-448", boardCSS: ["minixiangqi.svg", "minixiangqiw.png", "minixqlg.svg"] },
@@ -88,6 +89,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     wildebeest: { pieceCSS: ["wildebeest0", "disguised"] },
     reformedcourier: { pieceCSS: ["reformedcourier0", "disguised"] },
     paradigm: { pieceCSS: ["paradigm0", "paradigm1", "paradigm2", "paradigm3", "disguised"] },
+    yarishogi: { pieceCSS: ["yarishogi0", "disguised"] },
 };
 
 export interface Variant {
@@ -579,7 +581,7 @@ export const VARIANTS: Record<string, Variant> = {
 
     coffeehouse: variant({
         name: "coffeehouse", tooltip: "Crazyhouse with mandatory captures.",
-        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR[] w KQkq - 0 1",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR[-] w KQkq - 0 1",
         chess960: true, icon: "☕", icon960: "☕",
         boardFamily: "standard8x8", pieceFamily: "standard",
         pieceRow: ["k", "q", "r", "b", "n", "p"],
@@ -770,6 +772,19 @@ export const VARIANTS: Record<string, Variant> = {
         pieceRow: ["k", "h", "g", "n", "b", "+w", "w", "d"],
         pocket: { roles: ["d", "b", "h", "n", "g", "w"], captureToHand: true },
         promotion: { type: "regular", roles: ["d", "w"] },
+        rules: { defaultTimeControl: "byoyomi", noDrawOffer: true },
+        ui: { pieceSound: "shogi" },
+    }),
+
+    yarishogi: variant({
+        name: "yarishogi", displayName: "Yari", tooltip: "7x9 Shogi with Lance-like piece movements.",
+        startFen: "rnnkbbr/7/ppppppp/7/7/7/PPPPPPP/7/RBBKNNR[-] w 0 1",
+        icon: "🆙",
+        boardFamily: "shogi7x9", pieceFamily: "yarishogi",
+        colors: { first: "Black", second: "White" },
+        pieceRow: ["k", "r", "n", "b", "p", "g", "s", "l"],
+        pocket: { roles: ["p", "b", "n", "r"], captureToHand: true },
+        promotion: { type: "shogi", roles: ["p", "r", "n", "b", "p"] },
         rules: { defaultTimeControl: "byoyomi", noDrawOffer: true },
         ui: { pieceSound: "shogi" },
     }),
@@ -1451,12 +1466,13 @@ export const noPuzzleVariants = [
     "torpedo",
     "whaleshogi",
     "wildebeest",
+    "yarishogi",
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     standard: { variants: [ "chess", "antichess", "atomar", "backrank", "berolina", "coffeehouse", "coffeethreecheck", "coregal", "dragonfly", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "losers", "pocketknight", "racingchess", "torpedo", ] },
     sea:      { variants: [ "karouk", "makhouse", ] },
-    shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", ] },
+    shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", "yarishogi", ] },
     xiangqi:  { variants: [ ] },
     fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "paradigm30", "reformedcourier", "shatranj", "shatranjhouse", "tencubed", "wildebeest", ] },
     army:     { variants: [ "gethenian", "shinobiplusmirror", "spartanmirror" ] },

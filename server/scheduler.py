@@ -97,6 +97,7 @@ MONTHLY_VARIANTS = (
     "torpedo",
     "whaleshogi",
     "wildebeest",
+    "yarishogi",
 )
 
 # Old MONTHLY tournaments, needed to create translated tourney names
