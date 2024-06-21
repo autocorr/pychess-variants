@@ -86,6 +86,7 @@ MONTHLY_VARIANTS = (
     "makhouse",
     "nightrider",
     "omega10",
+    "pawnsideways",
     "pocketknight",
     "racingchess",
     "reformedcourier",

@@ -438,6 +438,15 @@ export const VARIANTS: Record<string, Variant> = {
         rules: { enPassant: true },
     }),
 
+    pawnsideways: variant({
+        name: "pawnsideways", tooltip: "Pawns can also move sideways.",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        chess960: true, icon: "↔️", icon960: "↔️",
+        boardFamily: "standard8x8", pieceFamily: "standard",
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
+        rules: { enPassant: true },
+    }),
+
     'kinglet': variant({
         name: "kinglet", displayName: "kinglet", tooltip: "Capture all of the pawns to win.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -477,7 +486,7 @@ export const VARIANTS: Record<string, Variant> = {
     'legan': variant({
         name: "legan", displayName: "legan", tooltip: "Diagonally oriented variant from 1912.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-        chess960: true, icon: "↖️", icon960: "↖️",
+        icon: "↖️", icon960: "↖️",
         boardFamily: "standard8x8", pieceFamily: "standard",
         pieceRow: ["k", "q", "r", "b", "n", "p"],
         rules: { enPassant: true },
@@ -1455,6 +1464,7 @@ export const noPuzzleVariants = [
     "nightrider",
     "omega10",
     "paradigm30",
+    "pawnsideways",
     "pocketknight",
     "racingchess",
     "reformedcourier",
@@ -1470,7 +1480,7 @@ export const noPuzzleVariants = [
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "chess", "antichess", "atomar", "backrank", "berolina", "coffeehouse", "coffeethreecheck", "coregal", "dragonfly", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "losers", "pocketknight", "racingchess", "torpedo", ] },
+    standard: { variants: [ "chess", "antichess", "atomar", "backrank", "berolina", "coffeehouse", "coffeethreecheck", "coregal", "dragonfly", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "losers", "pawnsideways", "pocketknight", "racingchess", "torpedo", ] },
     sea:      { variants: [ "karouk", "makhouse", ] },
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", "yarishogi", ] },
     xiangqi:  { variants: [ ] },

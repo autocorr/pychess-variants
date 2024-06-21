@@ -96,6 +96,7 @@ V2C = {
     "reformedcourier": "ž",
     "paradigm30": "Ř",
     "yarishogi": "Ÿ",
+    "pawnsideways": "¡",
 }
 C2V = {v: k for k, v in V2C.items()}
 
