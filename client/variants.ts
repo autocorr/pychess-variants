@@ -90,6 +90,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     reformedcourier: { pieceCSS: ["reformedcourier0", "disguised"] },
     paradigm: { pieceCSS: ["paradigm0", "paradigm1", "paradigm2", "paradigm3", "disguised"] },
     yarishogi: { pieceCSS: ["yarishogi0", "disguised"] },
+    schism: { pieceCSS: ["schism0", "disguised"] },
 };
 
 export interface Variant {
@@ -1374,6 +1375,14 @@ export const VARIANTS: Record<string, Variant> = {
         pieceRow: ["k", "g", "w", "l", "c", "h"],
     }),
 
+    schism: variant({
+        name: "schism", tooltip: _("Asymmetric variant with Byzantine/Eastern Army."),
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/MMMVVAAA/TCZEKZCT w kq - 0 1",
+        icon: "🪓",
+        boardFamily: "standard8x8", pieceFamily: "schism",
+        pieceRow: { white: ["t", "v", "a", "m", "c", "e", "k", "z", "+t", "+v", "+a", "+m"], black: ["k", "q", "r", "b", "n", "p"] },
+    }),
+
     mansindam: variant({
         name: "mansindam", tooltip: "A variant that combines the Shogi's drop rule with strong pieces.",
         startFen: "rnbakqcnm/9/ppppppppp/9/9/9/PPPPPPPPP/9/MNCQKABNR[] w - - 0 1",
@@ -1516,6 +1525,7 @@ export const noPuzzleVariants = [
     "pocketknight",
     "racingchess",
     "reformedcourier",
+    "schism",
     "shatranj",
     "shatranjhouse",
     "shinobiplusmirror",
@@ -1533,7 +1543,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", "yarishogi", ] },
     xiangqi:  { variants: [ ] },
     fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "paradigm30", "reformedcourier", "shatranj", "shatranjhouse", "tencubed", "wildebeest", ] },
-    army:     { variants: [ "gethenian", "shinobiplusmirror", "spartanmirror" ] },
+    army:     { variants: [ "gethenian", "schism", "shinobiplusmirror", "spartanmirror" ] },
     other:    { variants: [ "cetus", "jesonmor", ] },
 };
 

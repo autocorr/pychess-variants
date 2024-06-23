@@ -651,3 +651,10 @@ label.piece.piece0.yarishogi {
 label.piece.piece1.yarishogi {
     background-image: url('images/pieces/disguised/shogi-ally.svg');
 }
+
+label.piece.piece0.schism {
+    background-image: url('images/pieces/schism/wK.svg');
+}
+label.piece.piece1.schism {
+    background-image: url('images/pieces/disguised/w.svg');
+}
