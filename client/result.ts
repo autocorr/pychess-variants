@@ -98,15 +98,18 @@ export function result(variant: Variant, status: number, result: string) {
                     text = _('Altar mate');
                     break;
                 case 'atomic':
+                case 'maktomic':
                     text = _('Explosion of king');
                     break;
                 case 'kingofthehill':
+                case 'makhill':
                     text = _('King in the center');
                     break;
                 case 'jesonmor':
                     text = _('Knight in the center');
                     break;
                 case '3check':
+                case 'mak3check':
                     text = _('Three checks');
                     break;
                 case 'duck':

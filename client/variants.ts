@@ -629,7 +629,7 @@ export const VARIANTS: Record<string, Variant> = {
         ui: { counting: "makruk", showPromoted: true },
     }),
 
-    'makhouse': variant({
+    makhouse: variant({
         name: "makhouse", displayName: "makruk house", tooltip: "Thai Chess with captures to hand and drops.",
         startFen: "rnsmksnr/8/pppppppp/8/8/PPPPPPPP/8/RNSKMSNR[] w - - 0 1",
         icon: "Q",
@@ -641,6 +641,50 @@ export const VARIANTS: Record<string, Variant> = {
         },
         promotion: { type: "regular", order: ["m"] },
         ui: { counting: "makruk", showPromoted: true },
+    }),
+
+    antimak: variant({
+        name: "antimak", displayName: "antimakruk", tooltip: "Thai Chess but with mandatory capture and the aim to lose all your pieces.",
+        startFen: "rnsmksnr/8/pppppppp/8/8/PPPPPPPP/8/RNSKMSNR[] w - - 0 1",
+        icon: "Q",
+        boardFamily: "makruk8x8", pieceFamily: "makruk",
+        pieceRow: ["k", "s", "m", "n", "r", "p", "m~" as cg.Letter],
+        promotion: { type: "regular", order: ["m"] },
+        ui: { counting: "makruk", showPromoted: true },
+    }),
+
+    makhill: variant({
+        name: "makhill", displayName: "makruk hill", tooltip: "Thai Chess but can also win by moving one's King to one of central four squares.",
+        startFen: "rnsmksnr/8/pppppppp/8/8/PPPPPPPP/8/RNSKMSNR[] w - - 0 1",
+        icon: "Q",
+        boardFamily: "makruk8x8", pieceFamily: "makruk",
+        pieceRow: ["k", "s", "m", "n", "r", "p", "m~" as cg.Letter],
+        promotion: { type: "regular", order: ["m"] },
+        ui: { counting: "makruk", showPromoted: true, boardMark: "kingofthehill" },
+    }),
+
+    maktomic: variant({
+        name: "maktomic", displayName: "makruk atomic", tooltip: "Thai Chess with exploding pieces.",
+        startFen: "rnsmksnr/8/pppppppp/8/8/PPPPPPPP/8/RNSKMSNR[] w - - 0 1",
+        icon: "Q",
+        boardFamily: "makruk8x8", pieceFamily: "makruk",
+        pieceRow: ["k", "s", "m", "n", "r", "p", "m~" as cg.Letter],
+        promotion: { type: "regular", order: ["m"] },
+        ui: { counting: "makruk", showPromoted: true },
+    }),
+
+    mak3check: variant({
+        name: "mak3check", displayName: "makruk 3-check", tooltip: "Thai Chess but can also win by giving three checks.",
+        startFen: "rnsmksnr/8/pppppppp/8/8/PPPPPPPP/8/RNSKMSNR w - - 3+3 0 1",
+        icon: "Q",
+        boardFamily: "makruk8x8", pieceFamily: "makruk",
+        pieceRow: ["k", "s", "m", "n", "r", "p", "m~" as cg.Letter],
+        promotion: { type: "regular", order: ["m"] },
+        ui: { counting: "makruk", showPromoted: true },
+        alternateStart: {
+            '': "",
+            '5check': "rnsmksnr/8/pppppppp/8/8/PPPPPPPP/8/RNSKMSNR w - - 5+5 0 1",
+        },
     }),
 
     makpong: variant({
@@ -1439,6 +1483,7 @@ export const noPuzzleVariants = [
     "cannonshogi",
     // new alternates
     "antichess",
+    "antimak",
     "atomar",
     "backrank",
     "berolian",
@@ -1460,7 +1505,10 @@ export const noPuzzleVariants = [
     "knightmate",
     "legan",
     "losers",
+    "mak3check",
+    "makhill",
     "makhouse",
+    "maktomic",
     "nightrider",
     "omega10",
     "paradigm30",
@@ -1481,7 +1529,7 @@ export const noPuzzleVariants = [
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     standard: { variants: [ "chess", "antichess", "atomar", "backrank", "berolina", "coffeehouse", "coffeethreecheck", "coregal", "dragonfly", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "losers", "pawnsideways", "pocketknight", "racingchess", "torpedo", ] },
-    sea:      { variants: [ "karouk", "makhouse", ] },
+    sea:      { variants: [ "antimak", "karouk", "mak3check", "maktomic", "makhill", "makhouse" ] },
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", "yarishogi", ] },
     xiangqi:  { variants: [ ] },
     fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "paradigm30", "reformedcourier", "shatranj", "shatranjhouse", "tencubed", "wildebeest", ] },

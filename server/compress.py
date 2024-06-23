@@ -97,6 +97,10 @@ V2C = {
     "paradigm30": "Ř",
     "yarishogi": "Ÿ",
     "pawnsideways": "¡",
+    "antimak": "¢",
+    "makhill": "£",
+    "maktomic": "¤",
+    "mak3check": "¥",
 }
 C2V = {v: k for k, v in V2C.items()}
 
