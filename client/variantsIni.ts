@@ -561,6 +561,7 @@ mustCapture = true
 stalemateValue = win
 extinctionValue = win
 extinctionPieceTypes = *
+countingRule = none
 
 [makhill:makruk]
 flagPiece = k

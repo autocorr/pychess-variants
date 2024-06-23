@@ -650,7 +650,7 @@ export const VARIANTS: Record<string, Variant> = {
         boardFamily: "makruk8x8", pieceFamily: "makruk",
         pieceRow: ["k", "s", "m", "n", "r", "p", "m~" as cg.Letter],
         promotion: { type: "regular", order: ["m"] },
-        ui: { counting: "makruk", showPromoted: true },
+        ui: { showPromoted: true },
     }),
 
     makhill: variant({
