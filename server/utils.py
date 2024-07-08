@@ -709,7 +709,7 @@ def sanitize_fen(variant, initial_fen, chess960):
         return True, initial_fen
 
     sf_validate = sf.validate_fen(initial_fen, variant, chess960)
-    if sf_validate != sf.FEN_OK and variant != "duck":
+    if sf_validate != sf.FEN_OK and variant not in ("duck", "atomicduck"):
         return False, ""
 
     # Initial_fen needs validation to prevent segfaulting in pyffish

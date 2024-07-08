@@ -614,4 +614,34 @@ piecePromotionOnCapture = true
 promotedPieceType = t:g v:w a:y m:f
 mobilityRegionWhiteCustomPiece7 = *1 *2 *3 *4 *5 *6 *7
 startFen = rnbqkbnr/pppppppp/8/8/8/8/MMMVVAAA/TCZEKZCT w kq - 0 1
+
+# Hybrid variant of Duck and Atomic
+[atomicduck:atomic]
+wallingRule = duck
+stalemateValue = win
+
+# Hybrid variant of atomic and giveaway
+[atomicgiveaway:giveaway]
+blastOnCapture = true
+castling = false
+extinctionOpponentPieceCount = 1
+
+# Hybrid variant of Atomar and Crazyhouse
+[atomarhouse:atomar]
+dropChecks = false
+pieceDrops = true
+capturesToHand = true
+pocketSize = 6
+castling = false
+
+# Modified version of variant defined on LiAtomic.
+[epicatomic:atomic]
+maxRank = 8
+maxFile = 10
+startFen = rnnbqkbnnr/pppppppppp/10/10/10/10/PPPPPPPPPP/RNNBQKBNNR w KQkq - 0 1
+castlingKingsideFile = i
+castlingQueensideFile = c
+promotionPieceTypes = b
+promotionRegionWhite = *8
+promotionRegionBlack = *1
 `

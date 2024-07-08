@@ -98,7 +98,7 @@ export function validFen(variant: Variant, fen: string): boolean {
     let good = startPlacement + 
         ((variantName === "orda") ? "Hq" : "") +
         ((variantName === "dobutsu") ? "Hh" : "") +
-        ((variantName === "duck" || variantName === "ataxx") ? "*" : "") +
+        ((variantName === "duck" || variantName === "atomicduck" || variantName === "ataxx") ? "*" : "") +
         "~+0123456789[]-";
     const alien = (element: string) => !good.includes(element);
     if (placement.split('').some(alien)) return false;

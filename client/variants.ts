@@ -620,6 +620,15 @@ export const VARIANTS: Record<string, Variant> = {
         rules: { enPassant: true, duck: true },
     }),
 
+    atomicduck: variant({
+        name: "atomicduck", displayName: "atomic duck", tooltip: "Hybrid of Atomic and Duck Chess.",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        icon: "🦆",
+        boardFamily: "standard8x8", pieceFamily: "standard",
+        pieceRow: { white: ["k", "q", "r", "b", "n", "p", "*"], black: ["k", "q", "r", "b", "n", "p"] },
+        rules: { enPassant: true, duck: true },
+    }),
+
     makruk: variant({
         name: "makruk", tooltip: "Thai Chess. A game closely resembling the original Chaturanga. Similar to Chess but with a different queen and bishop.",
         startFen: "rnsmksnr/8/pppppppp/8/8/PPPPPPPP/8/RNSKMSNR w - - 0 1",
@@ -1494,6 +1503,7 @@ export const noPuzzleVariants = [
     "antichess",
     "antimak",
     "atomar",
+    "atomicduck",
     "backrank",
     "berolian",
     "cetus",
@@ -1538,7 +1548,7 @@ export const noPuzzleVariants = [
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "chess", "antichess", "atomar", "backrank", "berolina", "coffeehouse", "coffeethreecheck", "coregal", "dragonfly", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "losers", "pawnsideways", "pocketknight", "racingchess", "torpedo", ] },
+    standard: { variants: [ "chess", "antichess", "atomar", "atomicduck", "backrank", "berolina", "coffeehouse", "coffeethreecheck", "coregal", "dragonfly", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "losers", "pawnsideways", "pocketknight", "racingchess", "torpedo", ] },
     sea:      { variants: [ "antimak", "karouk", "mak3check", "maktomic", "makhill", "makhouse" ] },
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", "yarishogi", ] },
     xiangqi:  { variants: [ ] },

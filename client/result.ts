@@ -99,6 +99,7 @@ export function result(variant: Variant, status: number, result: string) {
                     break;
                 case 'atomic':
                 case 'maktomic':
+                case 'atomicduck':
                     text = _('Explosion of king');
                     break;
                 case 'kingofthehill':
