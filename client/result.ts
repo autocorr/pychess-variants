@@ -117,7 +117,7 @@ export function result(variant: Variant, status: number, result: string) {
                     text = _('King captured');
                     break;
                 default:
-                    text = _('Point counting');
+                    text = _('Variant ending');
                     break;
             }
             break;

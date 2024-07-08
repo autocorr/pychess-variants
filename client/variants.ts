@@ -484,6 +484,19 @@ export const VARIANTS: Record<string, Variant> = {
         rules: { enPassant: true },
     }),
 
+    atomarhouse: variant({
+        name: "atomarhouse", tooltip: "Hybrid variant of Atomar and Crazyhouse.",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR[] w KQkq - 0 1",
+        chess960: true, icon: "🤯", icon960: "🤯",
+        boardFamily: "standard8x8", pieceFamily: "standard",
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
+        pocket: {
+            roles: ["p", "n", "b", "r", "q"],
+            captureToHand: true,
+        },
+        rules: { enPassant: true },
+    }),
+
     'legan': variant({
         name: "legan", displayName: "legan", tooltip: "Diagonally oriented variant from 1912.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -569,6 +582,15 @@ export const VARIANTS: Record<string, Variant> = {
 
     losers: variant({
         name: "losers", displayName: "loser's chess", tooltip: "Chess with mandatory capture. Win by checkamte or baring the opposing King.",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        chess960: true, icon: "👎", icon960: "👎",
+        boardFamily: "standard8x8", pieceFamily: "standard",
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
+        rules: { enPassant: true },
+    }),
+
+    atomicgiveaway: variant({
+        name: "atomicgiveaway", displayName: "atomic giveaway", tooltip: "Hybrid variant of Atomic and Giveaway Chess.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
         chess960: true, icon: "👎", icon960: "👎",
         boardFamily: "standard8x8", pieceFamily: "standard",
@@ -1503,7 +1525,9 @@ export const noPuzzleVariants = [
     "antichess",
     "antimak",
     "atomar",
+    "atomarhouse",
     "atomicduck",
+    "atomicgiveaway",
     "backrank",
     "berolian",
     "cetus",
@@ -1548,7 +1572,7 @@ export const noPuzzleVariants = [
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "chess", "antichess", "atomar", "atomicduck", "backrank", "berolina", "coffeehouse", "coffeethreecheck", "coregal", "dragonfly", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "losers", "pawnsideways", "pocketknight", "racingchess", "torpedo", ] },
+    standard: { variants: [ "chess", "antichess", "atomar", "atomarhouse", "atomicduck", "atomicgiveaway", "backrank", "berolina", "coffeehouse", "coffeethreecheck", "coregal", "dragonfly", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "losers", "pawnsideways", "pocketknight", "racingchess", "torpedo", ] },
     sea:      { variants: [ "antimak", "karouk", "mak3check", "maktomic", "makhill", "makhouse" ] },
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", "yarishogi", ] },
     xiangqi:  { variants: [ ] },

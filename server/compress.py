@@ -103,6 +103,8 @@ V2C = {
     "maktomic": "¤",
     "mak3check": "¥",
     "atomicduck": "¦",
+    "atomicgiveaway": "§",
+    "atomarhouse": "¨",
 }
 C2V = {v: k for k, v in V2C.items()}
 
