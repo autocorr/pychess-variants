@@ -626,10 +626,10 @@ export const VARIANTS: Record<string, Variant> = {
 
     kamikazerooks: variant({
         name: "kamikazerooks", displayName: "Kamikaze Rooks", tooltip: "Checkmate the opponent or lose both Rooks to win.",
-        startFen: "rmbqkbmr/pppppppp/8/8/8/8/PPPPPPPP/RMBQKBMR w KQkq - 0 1",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
         icon: "🏰",
         boardFamily: "standard8x8", pieceFamily: "standard",
-        pieceRow: ["k", "q", "r", "b", "m", "p"],
+        pieceRow: ["k", "q", "r", "b", "p"],
         rules: { enPassant: true },
     }),
 
