@@ -105,6 +105,7 @@ V2C = {
     "atomicduck": "¦",
     "atomicgiveaway": "§",
     "atomarhouse": "¨",
+    "petrified": "©",
 }
 C2V = {v: k for k, v in V2C.items()}
 
