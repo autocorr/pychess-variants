@@ -106,6 +106,7 @@ V2C = {
     "atomicgiveaway": "§",
     "atomarhouse": "¨",
     "petrified": "©",
+    "joust": "ª",
 }
 C2V = {v: k for k, v in V2C.items()}
 
@@ -180,7 +181,7 @@ def encode_move_standard(move):
 def get_encode_method(variant):
     if variant in ("kyotoshogi", "chennis", "gethenian"):
         return encode_move_flipping
-    elif variant in ("duck", "atomicduck"):
+    elif variant in ("duck", "atomicduck", "joust"):
         return encode_move_duck
     else:
         return encode_move_standard
@@ -210,9 +211,9 @@ def decode_move_standard(move):
 
 
 def get_decode_method(variant):
-    if variant in ("kyotoshogi", "chennis"):
+    if variant in ("kyotoshogi", "chennis", "gethenian"):
         return decode_move_flipping
-    elif variant == "duck":
+    elif variant in ("duck", "atomicduck", "joust"):
         return decode_move_duck
     else:
         return decode_move_standard

@@ -194,6 +194,7 @@ VARIANTS = (
     "grasshopperking",
     "grasshopperking960",
     "jesonmor",
+    "joust",
     "judkins",
     "kamikazerooks",
     "karouk",
@@ -324,6 +325,7 @@ VARIANT_ICONS = {
     "grasshopperking": "🦗",
     "grasshopperking960": "🦗",
     "jesonmor": "🏇",
+    "joust": "🦄",
     "judkins": "6️⃣",
     "kamikazerooks": "🏰",
     "karouk": "!",
@@ -533,6 +535,7 @@ CATEGORIES = {
         "ataxx",
         "cetus",
         "jesonmor",
+        "joust",
     ),
 }
 
@@ -703,6 +706,7 @@ TRANSLATED_VARIANT_NAMES = {
     "grasshopperking": _("Grasshopper King"),
     "grasshopperking960": _("Grasshopper King 960"),
     "jesonmor": _("Jeson Mor"),
+    "joust": _("Joust"),
     "judkins": _("Judkins Shogi"),
     "kamikazerooks": _("Kamikaze Rooks"),
     "karouk": _("Kar Ouk"),

@@ -392,6 +392,10 @@ export abstract class GameController extends ChessgroundController implements Ch
             this.sendMove('P@', dest, '');
             return;
         }
+        if (this.variant.name === 'joust') {
+            this.sendMove(orig, dest, ',' + dest + orig);
+            return;
+        }
         this.preaction = meta.premove;
         const pieces = this.chessground.state.boardState.pieces;
         let moved = pieces.get(dest);

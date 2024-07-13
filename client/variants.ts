@@ -1502,6 +1502,14 @@ export const VARIANTS: Record<string, Variant> = {
         ui: { boardMark: 'kingofthehill' },
     }),
 
+    joust: variant({
+        name: "joust", tooltip: "Every knight move creates a stone.",
+        startFen: "8/8/8/4n3/3N4/8/8/8 w - - 0 1",
+        icon: "🦄",
+        boardFamily: "standard8x8", pieceFamily: "standard",
+        pieceRow: { white: ["n", "*"], black: ["n"] },
+    }),
+
     cetus: variant({
         name: "cetus", tooltip: _("Connect 5 whales in a straight line."),
         startFen: "9/9/9/1b7/9/9/9/2B6/9[PPNHSDOppnnhhssdo] w - - 0 1",
@@ -1550,6 +1558,7 @@ export const noPuzzleVariants = [
     "gethenian",
     "grasshopper",
     "jesonmor",
+    "joust",
     "judkins",
     "kamikazerooks",
     "karouk",
@@ -1588,7 +1597,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     xiangqi:  { variants: [ ] },
     fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "paradigm30", "reformedcourier", "shatranj", "shatranjhouse", "tencubed", "wildebeest", ] },
     army:     { variants: [ "gethenian", "schism", "shinobiplusmirror", "spartanmirror" ] },
-    other:    { variants: [ "cetus", "jesonmor", ] },
+    other:    { variants: [ "cetus", "jesonmor", "joust", ] },
 };
 
 function variantGroupLabel(group: string): string {
