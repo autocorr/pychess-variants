@@ -2,6 +2,7 @@ from __future__ import annotations
 
 # -*- coding: utf-8 -*-
 from ataxx import ATAXX_FENS
+from joust import JOUST_FENS
 from const import CATEGORIES
 
 import logging
@@ -66,7 +67,7 @@ class FairyBoard:
         self.initial_fen = (
             initial_fen
             if initial_fen
-            else FairyBoard.start_fen(variant, chess960 or variant == "ataxx", disabled_fen)
+            else FairyBoard.start_fen(variant, chess960 or variant in ("ataxx", "joust"), disabled_fen)
         )
         self.move_stack: list[str] = []
         self.ply = 0
@@ -234,6 +235,8 @@ class FairyBoard:
 
         if variant == "ataxx":
             return random.choice(ATAXX_FENS)
+        elif variant == "joust":
+            return random.choice(JOUST_FENS)
 
         castl = ""
         capa = variant in ("capablanca", "capahouse")

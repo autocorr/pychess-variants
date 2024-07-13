@@ -85,6 +85,7 @@ export function validFen(variant: Variant, fen: string): boolean {
     }
     const variantName = variant.name;
     const startfen = variant.startFen;
+    console.log(fen);
     const start = startfen.split(' ');
     console.log(start);
     const parts = fen.split(' ');
@@ -108,7 +109,6 @@ export function validFen(variant: Variant, fen: string): boolean {
     // Brackets paired
     if (lc(placement, '[', false) !== lc(placement, ']', false)) return false;
 
-
     // Check with chessgroundx's parsing
     const dimensions = variant.board.dimensions;
     const width = dimensions.width;
@@ -126,8 +126,8 @@ export function validFen(variant: Variant, fen: string): boolean {
     // Starting colors
     if (parts[1] !== 'b' && parts[1] !== 'w') return false;
 
-    // ataxx has no kings at all
-    if (variantName === 'ataxx') return true;
+    // ataxx and joust have no kings at all
+    if (variantName === 'ataxx' || variantName === 'joust') return true;
 
     // Touching kings
     if (variantName !== 'atomic' && touchingKings(boardState.pieces)) return false;

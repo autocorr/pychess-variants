@@ -187,7 +187,7 @@ class Game:
         self.usi_format = False
 
         # Ataxx is not default or 960, just random
-        self.random_only = self.variant == "ataxx"
+        self.random_only = self.variant in ("ataxx", "joust")
 
         # Calculate the start of manual counting
         count_started = 0

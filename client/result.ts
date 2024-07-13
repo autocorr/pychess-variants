@@ -56,7 +56,14 @@ export function result(variant: Variant, status: number, result: string) {
             text = _('%1 resigned', (result === '1-0') ? second : first);
             break;
         case 3:
-            text = _('Stalemate');
+            switch (variantName) {
+                case 'joust':
+                    text = _('Knight trapped');
+                    break;
+                default:
+                    text = _('Stalemate');
+                    break;
+            }
             break;
         case 4:
             text = _('Time out');

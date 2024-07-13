@@ -1503,7 +1503,7 @@ export const VARIANTS: Record<string, Variant> = {
     }),
 
     joust: variant({
-        name: "joust", tooltip: "Every knight move creates a stone.",
+        name: "joust", tooltip: "Trap your opponent when every move creates a stone.",
         startFen: "8/8/8/4n3/3N4/8/8/8 w - - 0 1",
         icon: "🦄",
         boardFamily: "standard8x8", pieceFamily: "standard",
