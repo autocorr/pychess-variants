@@ -127,7 +127,13 @@ export function validFen(variant: Variant, fen: string): boolean {
     if (parts[1] !== 'b' && parts[1] !== 'w') return false;
 
     // ataxx and joust have no kings at all
-    if (variantName === 'ataxx' || variantName === 'joust') return true;
+    switch (variantName) {
+        case 'ataxx':
+        case 'joust':
+        case 'anticapablanca':
+        case 'antichess':
+            return true;
+    }
 
     // Touching kings
     if (variantName !== 'atomic' && touchingKings(boardState.pieces)) return false;

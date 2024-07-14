@@ -61,13 +61,13 @@ label.piece.piece8.standard {
     background-image: url('images/pieces/atopdown/wn.svg');
 }
 label.piece.piece0.capa {
-    background-image: url('images/pieces/merida/wA.svg');
+    background-image: url('images/pieces/green/wA.svg');
 }
 label.piece.piece1.capa {
-    background-image: url('images/pieces/merida/wH.svg');
+    background-image: url('images/pieces/merida/wA.svg');
 }
 label.piece.piece2.capa {
-    background-image: url('images/pieces/green/wA.svg');
+    background-image: url('images/pieces/merida/wH.svg');
 }
 label.piece.piece3.capa {
     background-image: url('images/pieces/merida/wAr.svg');

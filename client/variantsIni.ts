@@ -644,4 +644,16 @@ castlingQueensideFile = c
 promotionPieceTypes = b
 promotionRegionWhite = *8
 promotionRegionBlack = *1
+
+# Hybrid variant of Antichess and Capablanca
+[anticapablanca:capablanca]
+king = -
+commoner = k
+startFen = rnabqkbcnr/pppppppppp/10/10/10/10/PPPPPPPPPP/RNABQKBCNR w - - 0 1
+mustCapture = true
+stalemateValue = win
+extinctionValue = win
+extinctionPieceTypes = *
+extinctionPseudoRoyal = false
+castling = false
 `

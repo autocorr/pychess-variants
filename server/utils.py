@@ -709,7 +709,7 @@ def sanitize_fen(variant, initial_fen, chess960):
         return True, initial_fen
 
     sf_validate = sf.validate_fen(initial_fen, variant, chess960)
-    if sf_validate != sf.FEN_OK and variant not in ("duck", "atomicduck", "joust"):
+    if sf_validate != sf.FEN_OK and variant not in ("duck", "atomicduck", "joust", "anticapablanca"):
         return False, ""
 
     # Initial_fen needs validation to prevent segfaulting in pyffish
@@ -758,7 +758,7 @@ def sanitize_fen(variant, initial_fen, chess960):
     invalid3 = len(init) > 1 and init[1] not in "bw"
 
     # ataxx has no kings at all
-    if variant in ("ataxx", "joust"):
+    if variant in ("ataxx", "joust", "anticapablanca", "antichess"):
         return True, sanitized_fen
 
     # Castling rights (and piece virginity) check

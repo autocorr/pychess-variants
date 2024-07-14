@@ -48,7 +48,7 @@ export const BOARD_FAMILIES: Record<string, BoardFamily> = {
 export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     ataxx: { pieceCSS: ["disguised", "virus", "zombie", "cat-dog"] },
     standard: { pieceCSS: ["green", "standard", "alpha", "chess_kaneo", "santa", "maestro", "dubrovny", "disguised", "atopdown"] },
-    capa: { pieceCSS: ["capa0", "capa1", "capa2", "capa3", "capa4", "capa5", "disguised"] },
+    capa: { pieceCSS: ["capa2", "capa0", "capa1", "capa3", "capa4", "capa5", "disguised"] },
     dragon: { pieceCSS: ["dragon1", "dragon0", "dragon2", "disguised"] },
     seirawan: { pieceCSS: ["seir1", "seir0", "seir2", "seir3", "seir4", "seir5", "disguised"] },
     grasshopperking: { pieceCSS: ["grasshopperking0", "disguised"] },
@@ -1043,6 +1043,24 @@ export const VARIANTS: Record<string, Variant> = {
         },
     }),
 
+    anticapablanca: variant({
+        name: "anticapablanca", tooltip: "Antichess rules for Capablanca.",
+        startFen: "rnabqkbcnr/pppppppppp/10/10/10/10/PPPPPPPPPP/RNABQKBCNR w - - 0 1",
+        chess960: true, icon: "P", icon960: ",",
+        boardFamily: "standard10x8", pieceFamily: "capa",
+        pieceRow: ["k", "q", "c", "a", "r", "b", "n", "p"],
+        rules: { enPassant: true },
+        alternateStart: {
+            '': '',
+            'Bird': 'rnbcqkabnr/pppppppppp/10/10/10/10/PPPPPPPPPP/RNBCQKABNR w KQkq - 0 1',
+            'Carrera': 'ranbqkbncr/pppppppppp/10/10/10/10/PPPPPPPPPP/RANBQKBNCR w KQkq - 0 1',
+            'Conservative': 'arnbqkbnrc/pppppppppp/10/10/10/10/PPPPPPPPPP/ARNBQKBNRC w KQkq - 0 1',
+            'Embassy': 'rnbqkcabnr/pppppppppp/10/10/10/10/PPPPPPPPPP/RNBQKCABNR w KQkq - 0 1',
+            'Gothic': 'rnbqckabnr/pppppppppp/10/10/10/10/PPPPPPPPPP/RNBQCKABNR w KQkq - 0 1',
+            'Schoolbook': 'rqnbakbncr/pppppppppp/10/10/10/10/PPPPPPPPPP/RQNBAKBNCR w KQkq - 0 1',
+        },
+    }),
+
     dragon: variant({
         name: "dragon", displayName: "dragon chess", tooltip: "The dragon can be dropped to the base rank.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR[Dd] w KQkq - 0 1",
@@ -1539,6 +1557,7 @@ export const noPuzzleVariants = [
     "shinobiplus",
     "cannonshogi",
     // new alternates
+    "anticapablanca",
     "antichess",
     "antimak",
     "atomar",
@@ -1595,7 +1614,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     sea:      { variants: [ "antimak", "karouk", "mak3check", "maktomic", "makhill", "makhouse" ] },
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", "yarishogi", ] },
     xiangqi:  { variants: [ ] },
-    fairy:    { variants: [ "grasshopper", "grasshopperking", "nightrider", "omega10", "paradigm30", "reformedcourier", "shatranj", "shatranjhouse", "tencubed", "wildebeest", ] },
+    fairy:    { variants: [ "anticapablanca", "grasshopper", "grasshopperking", "nightrider", "omega10", "paradigm30", "reformedcourier", "shatranj", "shatranjhouse", "tencubed", "wildebeest", ] },
     army:     { variants: [ "gethenian", "schism", "shinobiplusmirror", "spartanmirror" ] },
     other:    { variants: [ "cetus", "jesonmor", "joust", ] },
 };

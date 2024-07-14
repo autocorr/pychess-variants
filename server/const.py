@@ -164,6 +164,8 @@ VARIANTS = (
     "spartan",
     "ataxx",
     # Alternates
+    "anticapablanca",
+    "anticapablanca960",
     "antichess",
     "antichess960",
     "antimak",
@@ -295,6 +297,8 @@ VARIANT_ICONS = {
     "3check": "☰",
     "3check960": "☷",
     # Alternates
+    "anticapablanca": "P",
+    "anticapablanca960": "P",
     "antichess": "🙃",
     "antichess960": "🙃",
     "antimak": "Q",
@@ -380,6 +384,7 @@ VARIANT_960_TO_PGN = {
     "placement": "Placement",
     "grand": "Grand",
     # Alternates
+    "anticapablanca": "Anticapablanca",
     "antichess": "Antichess",
     "atomar": "Atomar",
     "atomarhouse": "Atomarhouse",
@@ -471,6 +476,8 @@ CATEGORIES = {
         "shogun",
         "hoppelpoppel",
         "mansindam",
+        "anticapablanca",
+        "anticapablanca960",
         "grasshopper",
         "grasshopperking",
         "grasshopperking960",
@@ -676,6 +683,8 @@ TRANSLATED_VARIANT_NAMES = {
     "3check960": _("Three check 960"),
     "mansindam": _("Mansindam"),
     # Alternates
+    "anticapablanca": _("Anticapablanca"),
+    "anticapablanca960": _("Anticapablanca 960"),
     "antichess": _("Antichess"),
     "antichess960": _("Antichess 960"),
     "antimak": _("Antimakruk"),

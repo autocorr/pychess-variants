@@ -239,7 +239,7 @@ class FairyBoard:
             return random.choice(JOUST_FENS)
 
         castl = ""
-        capa = variant in ("capablanca", "capahouse")
+        capa = variant in ("capablanca", "capahouse", "anticapablanca")
         seirawan = variant in ("seirawan", "shouse")
         para = variant == "paradigm30"
 
