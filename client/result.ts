@@ -93,6 +93,7 @@ export function result(variant: Variant, status: number, result: string) {
             switch (variantName) {
                 case 'orda':
                 case 'khans':
+		case 'khansmirror':
                 case 'synochess':
                 case 'dobutsu':
                 case 'shinobi':

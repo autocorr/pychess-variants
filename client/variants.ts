@@ -91,6 +91,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     paradigm: { pieceCSS: ["paradigm0", "paradigm1", "paradigm2", "paradigm3", "disguised"] },
     yarishogi: { pieceCSS: ["yarishogi0", "disguised"] },
     schism: { pieceCSS: ["schism0", "disguised"] },
+    khansmirror: { pieceCSS: ["khansmirror0", "disguised"] },
 };
 
 export interface Variant {
@@ -1314,6 +1315,17 @@ export const VARIANTS: Record<string, Variant> = {
         ui: { boardMark: 'campmate' },
     }),
 
+    khansmirror: variant({
+        name: "khansmirror", displayName: "khans mirror", tooltip: "Mirror variant of Khan's Chess.",
+        startFen: "lhatkahl/ssssssss/8/8/8/8/SSSSSSSS/LHATKAHL w - - 0 1",
+        icon: "🐎",
+        boardFamily: "standard8x8", pieceFamily: "khansmirror",
+        colors: { first: "White", second: "Gold" },
+        pieceRow: ["k", "t", "l", "a", "h", "s"],
+        promotion: { type: "regular" },
+        ui: { boardMark: 'campmate' },
+    }),
+
     synochess: variant({
         name: "synochess", tooltip: "Asymmetric East vs. West variant which pits the western Chess army against a Xiangqi and Janggi-styled army.",
         startFen: "rneakenr/8/1c4c1/1ss2ss1/8/8/PPPPPPPP/RNBQKBNR[ss] w KQ - 0 1",
@@ -1624,6 +1636,7 @@ export const noPuzzleVariants = [
     "judkins",
     "kamikazerooks",
     "karouk",
+    "khansmirror",
     "kinglet",
     "knightmate",
     "legan",
@@ -1658,7 +1671,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", "yarishogi", ] },
     xiangqi:  { variants: [ ] },
     fairy:    { variants: [ "anticapablanca", "grasshopper", "grasshopperking", "nightrider", "omega10", "paradigm30", "reformedcourier", "shatranj", "shatranjhouse", "tencubed", "wildebeest", ] },
-    army:     { variants: [ "gethenian", "schism", "shinobiplusmirror", "spartanmirror" ] },
+    army:     { variants: [ "gethenian", "khansmirror", "schism", "shinobiplusmirror", "spartanmirror" ] },
     other:    { variants: [ "cetus", "jesonmor", "joust", ] },
 };
 

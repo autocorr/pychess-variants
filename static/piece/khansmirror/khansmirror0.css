@@ -1,0 +1,37 @@
+.khansmirror piece.a-piece.black {
+    background-image: url('../../images/pieces/orda/cburnett/bA.svg');
+}
+.khansmirror piece.h-piece.black {
+    background-image: url('../../images/pieces/orda/cburnett/bH.svg');
+}
+.khansmirror piece.l-piece.black {
+    background-image: url('../../images/pieces/orda/cburnett/bL.svg');
+}
+.khansmirror piece.k-piece.black {
+    background-image: url('../../images/pieces/orda/cburnett/bK.svg');
+}
+.khansmirror piece.t-piece.black {
+    background-image: url('../../images/pieces/orda/cburnett/bT_2.svg');
+}
+.khansmirror piece.s-piece.black {
+    background-image: url('../../images/pieces/orda/cburnett/bS_2.svg');
+}
+
+.khansmirror piece.a-piece.white {
+    background-image: url('../../images/pieces/orda/cburnett/wA.svg');
+}
+.khansmirror piece.h-piece.white {
+    background-image: url('../../images/pieces/orda/cburnett/wH.svg');
+}
+.khansmirror piece.l-piece.white {
+    background-image: url('../../images/pieces/orda/cburnett/wL.svg');
+}
+.khansmirror piece.k-piece.white {
+    background-image: url('../../images/pieces/orda/cburnett/wK.svg');
+}
+.khansmirror piece.t-piece.white {
+    background-image: url('../../images/pieces/orda/cburnett/wT_2.svg');
+}
+.khansmirror piece.s-piece.white {
+    background-image: url('../../images/pieces/orda/cburnett/wS_2.svg');
+}

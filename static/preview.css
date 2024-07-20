@@ -672,3 +672,11 @@ label.piece.piece0.schism {
 label.piece.piece1.schism {
     background-image: url('images/pieces/disguised/w.svg');
 }
+
+label.piece.piece0.khansmirror {
+    background-image: url('images/pieces/orda/cburnett/bT.svg');
+}
+label.piece.piece1.khansmirror {
+    background-image: url('images/pieces/disguised/g.svg');
+}
+

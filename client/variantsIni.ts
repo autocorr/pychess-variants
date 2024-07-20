@@ -282,7 +282,6 @@ flagRegionWhite = *9
 flagRegionBlack = *1
 immobilityIllegal = true
 
-<<<<<<< HEAD
 [grasshopperking:chess]
 king = k:gQ
 stalemateValue = loss
@@ -656,4 +655,20 @@ extinctionValue = win
 extinctionPieceTypes = *
 extinctionPseudoRoyal = false
 castling = false
+
+[khansmirror]
+king = k
+centaur = h
+knibis = a
+kniroo = l
+customPiece1 = t:mNcK
+customPiece2 = s:mfhNcfW
+promotionPawnTypes = s
+promotionPieceTypes = alht
+stalemateValue = loss
+nMoveRuleTypes = s
+flagPiece = k
+flagRegionWhite = *8
+flagRegionBlack = *1
+startFen = lhatkahl/ssssssss/8/8/8/8/SSSSSSSS/LHATKAHL w - - 0 1
 `
