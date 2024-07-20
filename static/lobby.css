@@ -7,7 +7,7 @@
     display: grid;
     grid-gap: 2vmin;
 }
-@media (max-width: 799px) and (orientation: portrait) {
+@media (max-width: 799px) {
     .lobby {
         grid-template-areas: 'table' 'app' 'vpanel' 'side' 'blog' 'utable' 'uleft' 'tv' 'puzzle';
     }
@@ -103,7 +103,7 @@
 }
 
 .mini .pocket.bottom {
-    border-radius: 3px 3px 0px 0px;
+    border-radius: 0px 0px 3px 3px;
     position: absolute;
     top: calc((100% / var(--ranks)) * (var(--ranks) + 1));
     margin: 0;

@@ -2,8 +2,6 @@ import * as cg from 'chessgroundx/types';
 import * as util from 'chessgroundx/util';
 import { read } from 'chessgroundx/fen';
 
-import { _ } from './i18n';
-
 import { Variant, variantGroups } from './variants';
 
 export const WHITE = 0;
@@ -87,9 +85,9 @@ export function validFen(variant: Variant, fen: string): boolean {
     const startfen = variant.startFen;
     console.log(fen);
     const start = startfen.split(' ');
-    console.log(start);
+    // console.log(start);
     const parts = fen.split(' ');
-    console.log(parts);
+    // console.log(parts);
     // Need starting color
     if (parts.length < 2) return false;
 
@@ -206,6 +204,12 @@ function touchingKings(pieces: cg.Pieces): boolean {
         }
     }
     return adjacent(wk, bk);
+}
+
+// turn color part of the FEN
+export function getTurnColor(fen: string): cg.Color {
+    const c = fen.split(" ")[1];
+    return c === "w" ? "white" : "black";
 }
 
 // pocket part of the FEN (including brackets)

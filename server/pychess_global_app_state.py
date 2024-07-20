@@ -53,7 +53,8 @@ from tournaments import translated_tournament_name, get_scheduled_tournaments, l
 from twitch import Twitch
 from user import User
 from users import Users, NotInDbUsers
-from utils import load_game, MyWebSocketResponse
+from utils import load_game
+from websocket_utils import MyWebSocketResponse
 from blogs import BLOGS
 from videos import VIDEOS
 from youtube import Youtube
@@ -269,7 +270,11 @@ class PychessGlobalAppState:
                             game.bplayer.correspondence_games.append(game)
                             game.stopwatch.restart(from_db=True)
                         else:
-                            game.stopwatch.restart()
+                            try:
+                                game.stopwatch.restart()
+                            except AttributeError:
+                                game.gameClocks.restart("a")
+                                game.gameClocks.restart("b")
                     except NotInDbUsers:
                         log.error("Failed toload game %s", doc["_id"])
 
@@ -283,6 +288,11 @@ class PychessGlobalAppState:
                     await self.db.blog.drop()
                 await self.db.blog.insert_many(BLOGS)
                 await self.db.blog.create_index("date")
+
+            if "fishnet" in db_collections:
+                cursor = self.db.fishnet.find()
+                async for doc in cursor:
+                    FISHNET_KEYS[doc["_id"]] = doc["name"]
 
         except Exception:
             print("Maybe mongodb is not running...")
@@ -348,6 +358,7 @@ class PychessGlobalAppState:
 
     def __init_fishnet_monitor(self) -> dict:
         result = {}
+        print(FISHNET_KEYS)
         for key in FISHNET_KEYS:
             result[FISHNET_KEYS[key]] = collections.deque([], 50)
         return result
