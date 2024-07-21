@@ -93,7 +93,7 @@ export function result(variant: Variant, status: number, result: string) {
             switch (variantName) {
                 case 'orda':
                 case 'khans':
-		case 'khansmirror':
+                case 'khansmirror':
                 case 'synochess':
                 case 'dobutsu':
                 case 'shinobi':
@@ -104,6 +104,9 @@ export function result(variant: Variant, status: number, result: string) {
                     break;
                 case 'chak':
                     text = _('Altar mate');
+                    break;
+                case 'shaolinking':
+                    text = _('Pawn mate');
                     break;
                 case 'atomic':
                 case 'atomicduck':

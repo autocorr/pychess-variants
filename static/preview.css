@@ -680,3 +680,10 @@ label.piece.piece1.khansmirror {
     background-image: url('images/pieces/disguised/g.svg');
 }
 
+label.piece.piece0.shaolinking {
+    background-image: url('images/pieces/green/wK_r.svg');
+}
+label.piece.piece1.shaolinking {
+    background-image: url('images/pieces/disguised/g.svg');
+}
+

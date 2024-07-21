@@ -92,6 +92,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     yarishogi: { pieceCSS: ["yarishogi0", "disguised"] },
     schism: { pieceCSS: ["schism0", "disguised"] },
     khansmirror: { pieceCSS: ["khansmirror0", "disguised"] },
+    shaolinking: { pieceCSS: ["shaolinking0", "disguised"] },
 };
 
 export interface Variant {
@@ -1284,6 +1285,21 @@ export const VARIANTS: Record<string, Variant> = {
         },
     }),
 
+    shaolinking: variant({
+        name: "shaolinking", displayName: "shaolin king", tooltip: "The King flips between roles when moved.",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        chess960: true, icon: "👊", icon960: "👊",
+        boardFamily: "standard8x8", pieceFamily: "shaolinking",
+        pieceRow: ["k", "+k", "q", "r", "b", "n", "p"],
+        rules: { enPassant: true },
+        kingRoles: ["k", "+k"],
+        material: {
+            equivalences: {
+                'pk-piece': 'k-piece',
+            },
+        },
+    }),
+
     nightrider: variant({
         name: "nightrider", tooltip: "Knights are replaced by Nightriders.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1524,6 +1540,11 @@ export const VARIANTS: Record<string, Variant> = {
         pocket: { roles: ["n", "b", "i", "m"], captureToHand: true },
         promotion: { type: "shogi", roles: ["k", "b", "i", "n", "m"] },
         kingRoles: ["k", "+k"],
+        material: {
+            equivalences: {
+                'pk-piece': 'k-piece',
+            },
+        },
     }),
 
     paradigm30: variant({
@@ -1665,6 +1686,7 @@ export const noPuzzleVariants = [
     "racingchess",
     "reformedcourier",
     "schism",
+    "shaolinking",
     "shatranj",
     "shatranjhouse",
     "shinobiplusmirror",
@@ -1681,7 +1703,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     sea:      { variants: [ "antimak", "karouk", "mak3check", "maktomic", "makhill", "makhouse" ] },
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", "yarishogi", ] },
     xiangqi:  { variants: [ ] },
-    fairy:    { variants: [ "anticapablanca", "grasshopper", "grasshopperking", "nightrider", "omega10", "paradigm30", "reformedcourier", "shatranj", "shatranjhouse", "tencubed", "wildebeest", ] },
+    fairy:    { variants: [ "anticapablanca", "grasshopper", "grasshopperking", "nightrider", "omega10", "paradigm30", "reformedcourier", "shaolinking", "shatranj", "shatranjhouse", "tencubed", "wildebeest", ] },
     army:     { variants: [ "gethenian", "khansmirror", "schism", "shinobiplusmirror", "spartanmirror" ] },
     other:    { variants: [ "cetus", "jesonmor", "joust", ] },
 };
