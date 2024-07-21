@@ -106,8 +106,9 @@ export function result(variant: Variant, status: number, result: string) {
                     text = _('Altar mate');
                     break;
                 case 'atomic':
-                case 'maktomic':
                 case 'atomicduck':
+                case 'epicatomic':
+                case 'maktomic':
                     text = _('Explosion of king');
                     break;
                 case 'kingofthehill':

@@ -110,6 +110,7 @@ V2C = {
     "joust": "ª",
     "anticapablanca": "«",
     "khansmirror": "¬",
+    "epicatomic": "®",
 }
 C2V = {v: k for k, v in V2C.items()}
 

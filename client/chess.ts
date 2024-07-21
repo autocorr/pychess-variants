@@ -134,7 +134,7 @@ export function validFen(variant: Variant, fen: string): boolean {
     }
 
     // Touching kings
-    if (variantName !== 'atomic' && touchingKings(boardState.pieces)) return false;
+    if (variantName !== 'atomic' && variantName !== 'epicatomic' && touchingKings(boardState.pieces)) return false;
 
     // Castling rights (piece virginity)
     good = (variantName === 'seirawan' || variantName === 'shouse') ? 'KQABCDEFGHkqabcdefgh-' : start[2] + "-";

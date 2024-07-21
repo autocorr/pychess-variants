@@ -681,6 +681,16 @@ export const VARIANTS: Record<string, Variant> = {
         rules: { enPassant: true, duck: true },
     }),
 
+    epicatomic: variant({
+        name: "epicatomic", displayName: "epic atomic", tooltip: "Large format Atomic.",
+        startFen: "rnnbqkbnnr/pppppppppp/10/10/10/10/PPPPPPPPPP/RNNBQKBNNR w KQkq - 0 1",
+        icon: "~",
+        boardFamily: "standard10x8", pieceFamily: "standard",
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
+        rules: { enPassant: true },
+        ui: { pieceSound: "atomic" },
+    }),
+
     petrified: variant({
         name: "petrified", tooltip: "Captured pieces turn to stone.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1628,6 +1638,7 @@ export const noPuzzleVariants = [
     "coffeethreecheck",
     "coregal",
     "dragonfly",
+    "epicatomic",
     "extinction",
     "gethenian",
     "grasshopper",
@@ -1666,7 +1677,7 @@ export const noPuzzleVariants = [
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "chess", "antichess", "atomar", "atomarhouse", "atomicduck", "atomicgiveaway", "backrank", "berolina", "coffeehouse", "coffeethreecheck", "coregal", "dragonfly", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "losers", "pawnsideways", "petrified", "pocketknight", "racingchess", "torpedo", ] },
+    standard: { variants: [ "chess", "antichess", "atomar", "atomarhouse", "atomicduck", "atomicgiveaway", "backrank", "berolina", "coffeehouse", "coffeethreecheck", "coregal", "dragonfly", "epicatomic", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "losers", "pawnsideways", "petrified", "pocketknight", "racingchess", "torpedo", ] },
     sea:      { variants: [ "antimak", "karouk", "mak3check", "maktomic", "makhill", "makhouse" ] },
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", "yarishogi", ] },
     xiangqi:  { variants: [ ] },
