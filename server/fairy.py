@@ -256,6 +256,7 @@ class FairyBoard:
         castl = ""
         capa = variant in ("capablanca", "capahouse", "anticapablanca")
         seirawan = variant in ("seirawan", "shouse")
+        grasshopper = variant == "grasshopper"
         para = variant == "paradigm30"
 
         # https://www.chessvariants.com/contests/10/crc.html
@@ -353,6 +354,8 @@ class FairyBoard:
         fen = "".join(board)
         if capa:
             body = "/pppppppppp/10/10/10/10/PPPPPPPPPP/"
+        elif grasshopper:
+            body = "/gggggggg/pppppppp/8/8/PPPPPPPP/GGGGGGGG/"
         else:
             body = "/pppppppp/8/8/8/8/PPPPPPPP/"
 
