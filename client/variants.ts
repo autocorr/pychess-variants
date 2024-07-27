@@ -1649,7 +1649,6 @@ export const noPuzzleVariants = [
     "anticapablanca",
     "antichess",
     "antimak",
-    "atomar",
     "atomarhouse",
     "atomicduck",
     "atomicgiveaway",
