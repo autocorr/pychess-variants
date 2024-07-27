@@ -1653,7 +1653,7 @@ export const noPuzzleVariants = [
     "atomicduck",
     "atomicgiveaway",
     "backrank",
-    "berolian",
+    "berolina",
     "cetus",
     "chess",
     "coffeehouse",
