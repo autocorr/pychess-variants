@@ -368,6 +368,9 @@ export const VARIANTS: Record<string, Variant> = {
         rules: { enPassant: true },
         alternateStart: {
             '': "",
+            'Tartarus I': "rnbr1bnK/pppppppp/8/8/8/P3P3/PPPPP1P1/RRBBNN1k w - - 0 1",
+            'Tartarus II': "rnbr1bnK/pppppppp/8/8/8/2P3P1/PPPP1PP1/RRBNBN1k w - - 0 1",
+            'Tartarus III': "rnbr1bnK/pppppppp/8/8/8/P1P3P1/PPPP1P2/RRBNBN1k w - - 0 1",
             'PawnsPushed': "rnbqkbnr/8/8/pppppppp/PPPPPPPP/8/8/RNBQKBNR w KQkq - 0 1",
             'PawnsPassed': "rnbqkbnr/8/8/PPPPPPPP/pppppppp/8/8/RNBQKBNR w KQkq - 0 1",
             'UpsideDown': "RNBKQBNR/PPPPPPPP/8/8/8/8/pppppppp/rnbkqbnr w - - 0 1",
