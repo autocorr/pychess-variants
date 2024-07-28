@@ -76,7 +76,7 @@ V2C = {
     "jesonmor": "„",
     "gethenian": "…",
     "shatranj": "†",
-    "grasshopper2": "‡",
+    "grasshopper": "‡",
     "nightrider": "ˆ",
     "knightmate": "‰",
     "judkins": "Š",

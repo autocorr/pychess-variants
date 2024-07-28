@@ -73,7 +73,7 @@ MONTHLY_VARIANTS = (
     "coregal",
     "dragonfly",
     "extinction",
-    "grasshopper2",
+    "grasshopper",
     "grasshopperking",
     "jesonmor",
     "judkins",

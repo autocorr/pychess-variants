@@ -700,11 +700,4 @@ nMoveRule = 50
 nFoldRule = 3
 nFoldValue = draw
 stalemateValue = loss
-
-[grasshopper2:chess]
-customPiece1 = g:gQ
-promotionPieceTypes = rnbqg
-startFen = rnbqkbnr/gggggggg/pppppppp/8/8/PPPPPPPP/GGGGGGGG/RNBQKBNR w KQkq - 0 1
-doubleStep = false
-chess960 = true
 `
