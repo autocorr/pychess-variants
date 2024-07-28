@@ -1312,8 +1312,8 @@ export const VARIANTS: Record<string, Variant> = {
         rules: { enPassant: true },
     }),
 
-    grasshopper: variant({
-        name: "grasshopper", tooltip: "Chess with added row of Grasshoppers.",
+    grasshopper2: variant({
+        name: "grasshopper2", displayName: "grasshopper", tooltip: "Chess with added row of Grasshoppers.",
         startFen: "rnbqkbnr/gggggggg/pppppppp/8/8/PPPPPPPP/GGGGGGGG/RNBQKBNR w KQkq - 0 1",
         chess960: true, icon: "🦗", icon960: "🦗",
         boardFamily: "standard8x8", pieceFamily: "grasshopper",
@@ -1664,7 +1664,7 @@ export const noPuzzleVariants = [
     "epicatomic",
     "extinction",
     "gethenian",
-    "grasshopper",
+    "grasshopper2",
     "jesonmor",
     "joust",
     "judkins",
@@ -1705,7 +1705,7 @@ export const variantGroups: { [ key: string ]: { variants: string[] } } = {
     sea:      { variants: [ "antimak", "karouk", "mak3check", "maktomic", "makhill", "makhouse" ] },
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", "yarishogi", ] },
     xiangqi:  { variants: [ ] },
-    fairy:    { variants: [ "anticapablanca", "grasshopper", "grasshopperking", "nightrider", "omega10", "paradigm30", "reformedcourier", "shaolinking", "shatranj", "shatranjhouse", "tencubed", "wildebeest", ] },
+    fairy:    { variants: [ "anticapablanca", "grasshopper2", "grasshopperking", "nightrider", "omega10", "paradigm30", "reformedcourier", "shaolinking", "shatranj", "shatranjhouse", "tencubed", "wildebeest", ] },
     army:     { variants: [ "gethenian", "khansmirror", "schism", "shinobiplusmirror", "spartanmirror" ] },
     other:    { variants: [ "cetus", "jesonmor", "joust", ] },
 };
