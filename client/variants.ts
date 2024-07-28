@@ -1274,7 +1274,7 @@ export const VARIANTS: Record<string, Variant> = {
     grasshopperking: variant({
         name: "grasshopperking", displayName: "grasshopper king", tooltip: "Kings move as grasshoppers.",
         startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-        icon: "🦗",
+        chess960: true, icon: "🦗",
         boardFamily: "standard8x8", pieceFamily: "grasshopperking",
         pieceRow: ["k", "q", "r", "b", "n", "p"],
         rules: { enPassant: true },
