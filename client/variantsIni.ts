@@ -674,13 +674,13 @@ startFen = lhatkahl/ssssssss/8/8/8/8/SSSSSSSS/LHATKAHL w - - 0 1
 
 [shaolinking]
 king = -
-commoner = k
 rook = r
 bishop = b
 knight = n
 queen = q
 customPiece1 = p:fmWfceFifmnD
-customPiece2 = g:cQ
+customPiece2 = k:msWcQ
+customPiece3 = g:pQ
 startFen = rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
 castling = true
 castlingKingPiece = k
