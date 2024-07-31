@@ -1,11 +1,5 @@
 # Shaolin King
 
-All the rules of standard Chess apply except that (1) the King is replaced with
-the Shaolin Master whose move is described below, (2) the game is won if a Pawn
-reaches the final rank ("Pawn mate"), and (3) stalemate is a loss for the
-stalemated player.  The Shaolin Master flips between alternate forms when
-moved. The first move one space to the left or right as well as a capture-only
-move as a Queen. The second form moves and captures as the Quetzal in Chak,
-i.e., may travel over any number of free spaces and hop over a piece to capture
-or land on the any number of free spaces on the other side. Note that without a
-hurdle the King is otherwise immobile.
+All the rules of standard Chess apply except that (1) the King is replaced with the Shaolin Master, described below, (2) the game is won if a Pawn reaches the final rank ("Pawn-mate"), and (3) stalemate is a loss for the stalemated player.
+
+Unlike the standard Chess King, the Shaolin Master flips between two alternate forms when moved. The Shaolin Master starts in the first form that moves and captures as Chess Queen. The second form moves and captures as the Quetzal in Chak, i.e., a [Janggi Cannon](https://en.wikipedia.org/wiki/Janggi#Cannons) that can move both orthogonally and diagonally. This second form moves by jumping over another piece. The jump can be performed over any distance provided that there is exactly one piece between the starting position and the final position. It may capture a piece if such a space is occupied an opponent's piece, provided that there is only one piece (friendly or otherwise) between the Shaolin Master and the piece to be captured. Note that without a piece to jump, the Shaolin Master in the second form is immobile. In the standard theme, the first form is shown by a King right-side up and the second form shown by a King upside-down.
