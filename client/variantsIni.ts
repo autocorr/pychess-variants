@@ -700,4 +700,5 @@ nMoveRule = 50
 nFoldRule = 3
 nFoldValue = draw
 stalemateValue = loss
+chess960 = true
 `
