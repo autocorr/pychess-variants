@@ -68,7 +68,7 @@ class FairyBoard:
         self.initial_fen = (
             initial_fen
             if initial_fen
-            else FairyBoard.start_fen(variant, chess960 or variant in ("ataxx", "joust", "racingkings"), disabled_fen)
+            else FairyBoard.start_fen(variant, chess960 or variant in ("ataxx", "joust"), disabled_fen)
         )
         self.move_stack: list[str] = []
         self.ply = 0
