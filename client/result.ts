@@ -108,6 +108,10 @@ export function result(variant: Variant, status: number, result: string) {
                 case 'shaolinking':
                     text = _('Pawn mate');
                     break;
+                case 'racingchess':
+                case 'racingkings':
+                    text = _('King crossed');
+                    break;
                 case 'atomic':
                 case 'atomicduck':
                 case 'epicatomic':

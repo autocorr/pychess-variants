@@ -112,6 +112,7 @@ V2C = {
     "khansmirror": "¬",
     "epicatomic": "®",
     "shaolinking": "¯",
+    "racingkings": "°"
 }
 C2V = {v: k for k, v in V2C.items()}
 
