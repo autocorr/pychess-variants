@@ -582,6 +582,7 @@ commoner = k
 extinctionValue = loss
 extinctionPieceTypes = k
 blastOnCapture = true
+extinctionPseudoRoyal = true
 
 # Schism Chess. White = Byzantine/Eastern Army
 [schism:chess]
