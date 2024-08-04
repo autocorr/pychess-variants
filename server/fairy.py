@@ -366,6 +366,8 @@ class FairyBoard:
             holdings = "[]"
         elif seirawan:
             holdings = "[HEhe]"
+        elif variant == "pocketknight":
+            holdings = "[Nn]"
         else:
             holdings = ""
 
