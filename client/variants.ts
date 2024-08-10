@@ -1697,7 +1697,6 @@ export const noPuzzleVariants = [
     "racingkings",
     "reformedcourier",
     "schism",
-    "shaolinking",
     "shatranj",
     "shatranjhouse",
     "shinobiplusmirror",
