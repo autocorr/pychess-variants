@@ -1,0 +1,6 @@
+.tetrarchy piece.white {
+    background-image: url('../../images/pieces/disguised/w.svg');
+}
+.tetrarchy piece.black {
+    background-image: url('../../images/pieces/disguised/b.svg');
+}

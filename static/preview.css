@@ -687,3 +687,13 @@ label.piece.piece1.shaolinking {
     background-image: url('images/pieces/disguised/g.svg');
 }
 
+label.piece.piece0.tetrarchy {
+    background-image: url('images/pieces/tetrarchy/cburnett/bK_blue.svg');
+}
+label.piece.piece1.tetrarchy {
+    background-image: url('images/pieces/tetrarchy/cburnett/bK_red.svg');
+}
+label.piece.piece2.tetrarchy {
+    background-image: url('images/pieces/disguised/g.svg');
+}
+

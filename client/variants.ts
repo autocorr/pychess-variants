@@ -93,6 +93,7 @@ export const PIECE_FAMILIES: Record<string, PieceFamily> = {
     schism: { pieceCSS: ["schism0", "disguised"] },
     khansmirror: { pieceCSS: ["khansmirror0", "disguised"] },
     shaolinking: { pieceCSS: ["shaolinking0", "disguised"] },
+    tetrarchy: { pieceCSS: ["tetrarchy0", "tetrarchy1", "disguised"] },
 };
 
 export interface Variant {
@@ -710,6 +711,22 @@ export const VARIANTS: Record<string, Variant> = {
         boardFamily: "standard8x8", pieceFamily: "standard",
         pieceRow: { white: ["k", "q", "r", "b", "n", "p", "*"], black: ["k", "q", "r", "b", "n", "p"] },
         rules: { enPassant: true },
+    }),
+
+    tetrarchy: variant({
+        name: "tetrarchy", displayName: "tetrarchy", tooltip: "At least one Tetrarch must be on the King side.",
+        startFen: "+knb+kkbn+k/pppppppp/8/8/8/8/PPPPPPPP/+KNB+KKBN+K w - - 0 1",
+        icon: "🍀",
+        boardFamily: "standard8x8", pieceFamily: "tetrarchy",
+        pieceRow: ["k", "+k", "q", "r", "b", "n", "p"],
+        rules: { enPassant: true },
+        alternateStart: {
+            "": "",
+            "Bishops swapped": "rn+k+kk+knr/pppppppp/8/8/8/8/PPPPPPPP/RN+K+KK+KNR w - - 0 1",
+            "Knights swapped": "r+kb+kkb+kr/pppppppp/8/8/8/8/PPPPPPPP/R+KB+KKB+KR w - - 0 1",
+            "True Queen": "+knbqkbn+k/pppppppp/8/8/8/8/PPPPPPPP/+KNBQKBN+K w - - 0 1",
+            "Right Wing": "rnbqk+k+k+k/pppppppp/8/8/8/8/PPPPPPPP/RNBQK+K+K+K w - - 0 1",
+        },
     }),
 
     makruk: variant({
@@ -1702,6 +1719,7 @@ export const noPuzzleVariants = [
     "shinobiplusmirror",
     "spartanmirror",
     "tencubed",
+    "tetrarchy",
     "torpedo",
     "whaleshogi",
     "wildebeest",
@@ -1709,7 +1727,7 @@ export const noPuzzleVariants = [
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "chess", "antichess", "atomar", "atomarhouse", "atomicduck", "atomicgiveaway", "backrank", "berolina", "coffeehouse", "coffeethreecheck", "coregal", "dragonfly", "epicatomic", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "losers", "pawnsideways", "petrified", "pocketknight", "racingchess", "racingkings", "torpedo", ] },
+    standard: { variants: [ "chess", "antichess", "atomar", "atomarhouse", "atomicduck", "atomicgiveaway", "backrank", "berolina", "coffeehouse", "coffeethreecheck", "coregal", "dragonfly", "epicatomic", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "losers", "pawnsideways", "petrified", "pocketknight", "racingchess", "racingkings", "tetrarchy", "torpedo", ] },
     sea:      { variants: [ "antimak", "karouk", "mak3check", "maktomic", "makhill", "makhouse" ] },
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", "yarishogi", ] },
     xiangqi:  { variants: [ ] },

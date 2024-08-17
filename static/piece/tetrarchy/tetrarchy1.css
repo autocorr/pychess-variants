@@ -1,0 +1,43 @@
+.tetrarchy piece.p-piece.white {
+    background-image: url('../../images/pieces/green/wP.svg');
+}
+.tetrarchy piece.b-piece.white {
+    background-image: url('../../images/pieces/green/wB.svg');
+}
+.tetrarchy piece.n-piece.white {
+    background-image: url('../../images/pieces/green/wN.svg');
+}
+.tetrarchy piece.r-piece.white {
+    background-image: url('../../images/pieces/green/wR.svg');
+}
+.tetrarchy piece.q-piece.white {
+    background-image: url('../../images/pieces/green/wQ.svg');
+}
+.tetrarchy piece.k-piece.white {
+    background-image: url('../../images/pieces/tetrarchy/cburnett/wK_yellow.svg');
+}
+.tetrarchy piece.pk-piece.white {
+    background-image: url('../../images/pieces/tetrarchy/cburnett/wQ_yellow.svg');
+}
+
+.tetrarchy piece.p-piece.black {
+    background-image: url('../../images/pieces/green/bP.svg');
+}
+.tetrarchy piece.b-piece.black {
+    background-image: url('../../images/pieces/green/bB.svg');
+}
+.tetrarchy piece.n-piece.black {
+    background-image: url('../../images/pieces/green/bN.svg');
+}
+.tetrarchy piece.r-piece.black {
+    background-image: url('../../images/pieces/green/bR.svg');
+}
+.tetrarchy piece.q-piece.black {
+    background-image: url('../../images/pieces/green/bQ.svg');
+}
+.tetrarchy piece.k-piece.black {
+    background-image: url('../../images/pieces/tetrarchy/cburnett/bK_red.svg');
+}
+.tetrarchy piece.pk-piece.black {
+    background-image: url('../../images/pieces/tetrarchy/cburnett/bQ_red.svg');
+}

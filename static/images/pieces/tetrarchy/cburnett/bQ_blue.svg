@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="45"
+   width="45"
+   version="1.1"
+   id="svg5736"
+   sodipodi:docname="b+K.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs5740" />
+  <sodipodi:namedview
+     id="namedview5738"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="18.377778"
+     inkscape:cx="27.206771"
+     inkscape:cy="22.527206"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g5734" />
+  <g
+     fill-rule="evenodd"
+     stroke="#000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="1.5"
+     id="g5734">
+    <g
+       stroke="none"
+       id="g5722"
+       style="fill:#2c4f78;fill-opacity:1">
+      <circle
+         cx="6"
+         cy="12"
+         r="2.75"
+         id="circle5712"
+         style="fill:#2c4f78;fill-opacity:1" />
+      <circle
+         cx="14"
+         cy="9"
+         r="2.75"
+         id="circle5714"
+         style="fill:#2c4f78;fill-opacity:1" />
+      <circle
+         cx="22.5"
+         cy="8"
+         r="2.75"
+         id="circle5716"
+         style="fill:#2c4f78;fill-opacity:1" />
+      <circle
+         cx="31"
+         cy="9"
+         r="2.75"
+         id="circle5718"
+         style="fill:#2c4f78;fill-opacity:1" />
+      <circle
+         cx="39"
+         cy="12"
+         r="2.75"
+         id="circle5720"
+         style="fill:#2c4f78;fill-opacity:1" />
+    </g>
+    <g
+       stroke-linecap="butt"
+       id="g5730"
+       style="fill:#2c4f78;fill-opacity:1;stroke:#2c4f78;stroke-opacity:1">
+      <path
+         d="m9 26c8.5-1.5 21-1.5 27 0l2.5-12.5-7.5 11.5-.3-14.1-5.2 13.6-3-14.5-3 14.5-5.2-13.6-.3 14.1-7.5-11.5z"
+         id="path5724"
+         style="fill:#2c4f78;fill-opacity:1;stroke:#2c4f78;stroke-opacity:1" />
+      <path
+         d="m9 26c0 2 1.5 2 2.5 4 1 1.5 1 1 .5 3.5-1.5 1-1.5 2.5-1.5 2.5-1.5 1.5.5 2.5.5 2.5 6.5 1 16.5 1 23 0 0 0 1.5-1 0-2.5 0 0 .5-1.5-1-2.5-.5-2.5-.5-2 .5-3.5 1-2 2.5-2 2.5-4-8.5-1.5-18.5-1.5-27 0z"
+         id="path5726"
+         style="fill:#2c4f78;fill-opacity:1;stroke:#2c4f78;stroke-opacity:1" />
+      <path
+         d="m11 38.5a35 35 1 0 0 23 0"
+         fill="none"
+         id="path5728"
+         style="fill:#2c4f78;fill-opacity:1;stroke:#2c4f78;stroke-opacity:1" />
+    </g>
+    <path
+       d="m11 29a35 35 1 0 1 23 0m-21.5 2.5h20m-21 3a35 35 1 0 0 22 0m-23 3a35 35 1 0 0 24 0"
+       fill="none"
+       stroke="#ececec"
+       id="path5732" />
+  </g>
+</svg>

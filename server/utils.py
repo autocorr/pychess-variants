@@ -747,6 +747,8 @@ def sanitize_fen(variant, initial_fen, chess960):
         non_piece = "0123456789*-"
     elif variant == "joust":
         non_piece = "~+0123456789[]*-"
+    elif variant == "tetrarchy":
+        non_piece = "~+0123456789rRqQ-"
     else:
         non_piece = "~+0123456789[]-"
     invalid1 = any((c not in start[0] + non_piece for c in init[0]))
@@ -816,6 +818,10 @@ def sanitize_fen(variant, initial_fen, chess960):
     wK = init[0].count(wking)
     if variant == "spartan":
         invalid5 = bK == 0 or bK > 2 or wK != 1
+    if variant == "tetrarchy":
+        white_king_up = any(["K" in s for s in init[0].split("+K")])
+        black_king_up = any(["k" in s for s in init[0].split("+k")])
+        invalid5 = not white_king_up or not black_king_up
     else:
         invalid5 = bK != 1 or wK != 1
 
