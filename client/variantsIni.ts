@@ -656,6 +656,7 @@ extinctionValue = win
 extinctionPieceTypes = *
 extinctionPseudoRoyal = false
 castling = false
+promotionPieceTypes = qrbnack
 
 [khansmirror]
 king = k
