@@ -614,9 +614,18 @@ export const VARIANTS: Record<string, Variant> = {
         },
     }),
 
+    antiantichess: variant({
+        name: "antiantichess", tooltip: "Take all your opponent's pieces to win.",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1",
+        chess960: true, icon: "🙃", icon960: "🙃",
+        boardFamily: "standard8x8", pieceFamily: "standard",
+        pieceRow: ["k", "q", "r", "b", "n", "p"],
+        rules: { enPassant: true },
+    }),
+
     antichess: variant({
         name: "antichess", tooltip: "Lose all your pieces to win.",
-        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        startFen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w - - 0 1",
         chess960: true, icon: "🙃", icon960: "🙃",
         boardFamily: "standard8x8", pieceFamily: "standard",
         pieceRow: ["k", "q", "r", "b", "n", "p"],
@@ -1671,6 +1680,7 @@ export const noPuzzleVariants = [
     "cannonshogi",
     "bughouse",
     // new alternates
+    "antiantichess",
     "anticapablanca",
     "antichess",
     "antimak",
@@ -1727,7 +1737,7 @@ export const noPuzzleVariants = [
 ]
 
 export const variantGroups: { [ key: string ]: { variants: string[] } } = {
-    standard: { variants: [ "chess", "antichess", "atomar", "atomarhouse", "atomicduck", "atomicgiveaway", "backrank", "berolina", "coffeehouse", "coffeethreecheck", "coregal", "dragonfly", "epicatomic", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "losers", "pawnsideways", "petrified", "pocketknight", "racingchess", "racingkings", "tetrarchy", "torpedo", ] },
+    standard: { variants: [ "chess", "antiantichess", "antichess", "atomar", "atomarhouse", "atomicduck", "atomicgiveaway", "backrank", "berolina", "coffeehouse", "coffeethreecheck", "coregal", "dragonfly", "epicatomic", "extinction", "kamikazerooks", "kinglet", "knightmate", "legan", "losers", "pawnsideways", "petrified", "pocketknight", "racingchess", "racingkings", "tetrarchy", "torpedo", ] },
     sea:      { variants: [ "antimak", "karouk", "mak3check", "maktomic", "makhill", "makhouse" ] },
     shogi:    { variants: [ "coffeeshogi", "judkins", "whaleshogi", "yarishogi", ] },
     xiangqi:  { variants: [ ] },

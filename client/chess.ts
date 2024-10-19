@@ -132,6 +132,7 @@ export function validFen(variant: Variant, fen: string): boolean {
         case 'ataxx':
         case 'joust':
         case 'anticapablanca':
+        case 'antiantichess':
         case 'antichess':
             return true;
     }

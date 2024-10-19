@@ -728,4 +728,8 @@ flagRegionBlack = *1
 nMoveRule = 50
 nFoldRule = 3
 nFoldValue = draw
+
+[antiantichess:antichess]
+stalemateValue = loss
+extinctionValue = loss
 `

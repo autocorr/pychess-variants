@@ -114,6 +114,7 @@ V2C = {
     "shaolinking": "¯",
     "racingkings": "°",
     "tetrarchy": "±",
+    "antiantichess": "²",
 }
 C2V = {v: k for k, v in V2C.items()}
 

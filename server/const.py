@@ -168,6 +168,8 @@ VARIANTS = (
     # Alternates
     "anticapablanca",
     "anticapablanca960",
+    "antiantichess",
+    "antiantichess960",
     "antichess",
     "antichess960",
     "antimak",
@@ -314,6 +316,8 @@ VARIANT_ICONS = {
     # Alternates
     "anticapablanca": "P",
     "anticapablanca960": "P",
+    "antiantichess": "🙃",
+    "antiantichess960": "🙃",
     "antichess": "🙃",
     "antichess960": "🙃",
     "antimak": "Q",
@@ -408,6 +412,7 @@ VARIANT_960_TO_PGN = {
     "grand": "Grand",
     # Alternates
     "anticapablanca": "Anticapablanca",
+    "antiantichess": "Anti-antichess",
     "antichess": "Antichess",
     "atomar": "Atomar",
     "atomarhouse": "Atomarhouse",
@@ -448,6 +453,8 @@ CATEGORIES = {
         "3check960",
         "duck",
         # Alternates
+        "antiantichess",
+        "antiantichess960",
         "antichess",
         "antichess960",
         "atomar",
@@ -721,6 +728,8 @@ TRANSLATED_VARIANT_NAMES = {
     # Alternates
     "anticapablanca": _("Anticapablanca"),
     "anticapablanca960": _("Anticapablanca 960"),
+    "antiantichess": _("Anti-antichess"),
+    "antiantichess960": _("Anti-antichess 960"),
     "antichess": _("Antichess"),
     "antichess960": _("Antichess 960"),
     "antimak": _("Antimakruk"),

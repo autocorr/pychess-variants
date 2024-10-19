@@ -62,7 +62,7 @@ MONTHLY_VARIANTS = (
     "3check960",
     "mansindam",
     # Alternates
-    "antichess",
+    "antichess960",
     "atomar",
     "backrank",
     "berolina",
